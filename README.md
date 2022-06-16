@@ -35,12 +35,6 @@ All the software used in this workshop is available for GNU/Linux, Windows and M
 
 To be done later.
 
-## Attendees
-
-* Carlos Cámara, Senior Research Software Engineer, Centre for Interdisciplinary Methodologies (University of Warwick)
-* Cagatay Turkay, Associate Professor, Centre for Interdisciplinary Methodologies (University of Warwick)
-* Add your name here
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -61,3 +55,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+It is a collaborative project, therefore following the [all-contributors specification](https://allcontributors.org/) and being grateful is a requirement.
+
+If you believe you must be credited, please do it in [this issue](https://github.com/WarwickCIM/quarto-workshop/issues/1).
+
+## Attendees
+
+* Carlos Cámara, Senior Research Software Engineer, Centre for Interdisciplinary Methodologies (University of Warwick)
+* Cagatay Turkay, Associate Professor, Centre for Interdisciplinary Methodologies (University of Warwick)
+* Add your name here
