@@ -35,6 +35,11 @@ All the software used in this workshop is available for GNU/Linux, Windows and M
 
 To be done later.
 
+```
+slides/   <-- Slides for the workshop.
+
+```
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
