@@ -1,4 +1,7 @@
 # Workshop "Quarto: A library to run them all?"
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Materials for the [RSE Conf 2022](https://rsecon2022.society-rse.org/) workshop: _"Quarto: a Library to run them all?"_, led by Carlos Cámara-Menoyo and Cagatay Turkay.
 
@@ -37,3 +40,23 @@ To be done later.
 * Carlos Cámara, Senior Research Software Engineer, Centre for Interdisciplinary Methodologies (University of Warwick)
 * Cagatay Turkay, Associate Professor, Centre for Interdisciplinary Methodologies (University of Warwick)
 * Add your name here
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://carloscamara.es/en"><img src="https://avatars.githubusercontent.com/u/706549?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Carlos Cámara</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=ccamara" title="Code">💻</a> <a href="#ideas-ccamara" title="Ideas, Planning, & Feedback">🤔</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
