@@ -3,9 +3,45 @@ title: "Quarto workshop"
 author: 
   - name: "Carlos Cámara-Menoyo"
   - name: Cagatay Turkay
-format: revealjs
+format: 
+  revealjs:
+    theme: simple
 editor: visual
 ---
+
+## Instructions
+
+https://quarto.org/docs/presentations/revealjs/
+
+## About Quarto
+
+A brief introduction...
+
+Possible outline:
+
+1.  What's quarto
+2.  What can we do with it?
+3.  How does it work?
+
+## About the workshop
+
+### Tasks and timing
+
+::: incremental
+1.  Pick one of the cases you would like to develop during this workshop[^1]
+2.  Form groups of people who want to work on the same case
+3.  Work on these tasks:
+    1.  create a document with code and text (2hours)
+:::
+
+[^1]: A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.
+
+## Cases
+
+List of proposed cases:
+
+1.  Case 1
+2.  Case 2
 
 ## Quarto
 
