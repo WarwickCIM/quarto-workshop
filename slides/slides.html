@@ -11,7 +11,7 @@
 
   <meta name="author" content="Carlos Cámara-Menoyo">
   <meta name="author" content="Cagatay Turkay">
-  <title>Quarto workshop</title>
+  <title>Quarto: A library to run them all?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -320,14 +320,84 @@
     <div class="slides">
 
 <section id="title-slide" class="center">
-  <h1 class="title">Quarto workshop</h1>
+  <h1 class="title">Quarto: A library to run them all?</h1>
   <p class="author">Carlos Cámara-Menoyo</p>
   <p class="author">Cagatay Turkay</p>
 </section>
 
-<section id="instructions" class="slide level2">
-<h2>Instructions</h2>
-<p>https://quarto.org/docs/presentations/revealjs/</p>
+<section id="introduction" class="slide level2 small">
+<h2>Introduction</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/carlos.png" alt="Carlos Cámara"></p>
+</figure>
+</div>
+<p><strong>Carlos Cámara</strong></p>
+<p><em>Senior Research Software Engineer</em> at CIM (University of Warwick)</p>
+<p>carlos.camara@warwick.ac.uk</p>
+<ul>
+<li><p>R user</p></li>
+<li><p>Interested in</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/cagatay.png" alt="Cagatay Turkay"></p>
+</figure>
+</div>
+<p><strong>Cagatay Turkay</strong></p>
+<p><em>Assistant Professor</em> at CIM (University of Warwick)</p>
+<ul>
+<li>Python user</li>
+</ul>
+</div>
+</div>
+<aside class="notes">
+<p>Ask the audience to introduce themselves</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="introduce-yourselves" class="slide level2" data-background-color="black" data-background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" data-background-opacity="0.75">
+<h2>Introduce yourselves!</h2>
+<p>Keep it short!</p>
+<ul>
+<li>Name</li>
+<li>Affiliation/Job title</li>
+<li>Preferred programming Language</li>
+</ul>
+</section>
+<section id="workshop-outline" class="slide level2">
+<h2>Workshop outline</h2>
+<ol type="1">
+<li><del>Introducing ourselves</del></li>
+<li>Introduction to Quarto (15’)</li>
+<li>Setting the environment (10’)</li>
+<li>Tasks presentation and creation of groups (15’):
+<ol type="1">
+<li><p>Tasks’ presentation</p></li>
+<li><p>Creation of groups</p></li>
+</ol></li>
+<li>Work Group and documentation</li>
+<li>Break</li>
+<li>Work Group and documentation (continuation)</li>
+<li>Discussion</li>
+</ol>
+</section>
+<section>
+<section id="quarto" class="title-slide slide level1 center" data-background-color="#2780e3">
+<h1>Quarto</h1>
+
 </section>
 <section id="about-quarto" class="slide level2">
 <h2>About Quarto</h2>
@@ -341,12 +411,15 @@
 </section>
 <section id="about-the-workshop" class="slide level2">
 <h2>About the workshop</h2>
-<h3 id="tasks">Tasks</h3>
+<h3 id="tasks-and-timing">Tasks and timing</h3>
 <div>
 <ol type="1">
 <li class="fragment">Pick one of the cases you would like to develop during this workshop<sup>1</sup></li>
 <li class="fragment">Form groups of people who want to work on the same case</li>
-<li class="fragment"></li>
+<li class="fragment">Work on these tasks:
+<ol type="1">
+<li class="fragment">create a document with code and text (2hours)</li>
+</ol></li>
 </ol>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.</p></li></ol></aside></section>
@@ -358,30 +431,13 @@
 <li>Case 2</li>
 </ol>
 </section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
-</section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
-<ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
-</ul>
-</section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
-<div class="footer footer-default">
+<section id="section" class="slide level2">
+<h2><!--#Instructions https://quarto.org/docs/presentations/revealjs/  --></h2>
+
+<img src="images/logo_black.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
-</section>
+</section></section>
 
     </div>
   </div>
@@ -594,48 +650,6 @@
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          // dispatch for htmlwidgets
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for reveal
-        if (window.Reveal) {
-          window.Reveal.addEventListener("slidechanged", function(event) {
-            fireSlideChanged(event.previousSlide, event.currentSlide);
-          });
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

@@ -1,17 +1,71 @@
 ---
-title: "Quarto workshop"
+title: "Quarto: A library to run them all?"
+# subtitle: "A collaborative exercise to use, learn and assess quarto for authoring reproducible documents in different scenarios"
 author: 
   - name: "Carlos Cámara-Menoyo"
   - name: Cagatay Turkay
 format: 
   revealjs:
-    theme: simple
+    theme: serif
+    logo: images/logo_black.png
 editor: visual
 ---
 
-## Instructions
+## Introduction {.small}
 
-https://quarto.org/docs/presentations/revealjs/
+::: columns
+::: {.column width="50%"}
+![](images/carlos.png){fig-alt="Carlos Cámara" fig-align="center"}
+
+**Carlos Cámara**
+
+*Senior Research Software Engineer* at CIM (University of Warwick)
+
+carlos.camara\@warwick.ac.uk
+
+-   R user
+
+-   Interested in
+:::
+
+::: {.column width="50%"}
+![](images/cagatay.png){fig-alt="Cagatay Turkay" fig-align="center"}
+
+**Cagatay Turkay**
+
+*Assistant Professor* at CIM (University of Warwick)
+
+-   Python user
+:::
+:::
+
+::: notes
+Ask the audience to introduce themselves
+:::
+
+## Introduce yourselves! {background-color="black" background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.75"}
+
+Keep it short!
+
+-   Name
+-   Affiliation/Job title
+-   Preferred programming Language
+
+## Workshop outline
+
+1.  ~~Introducing ourselves~~
+2.  Introduction to Quarto (15')
+3.  Setting the environment (10')
+4.  Tasks presentation and creation of groups (15'):
+    1.  Tasks' presentation
+
+    2.  Creation of groups
+5.  Work Group and documentation
+6.  Break
+7.  Work Group and documentation (continuation)
+8.  Discussion
+
+# Quarto {background-color="#2780e3"}
 
 ## About Quarto
 
@@ -43,21 +97,4 @@ List of proposed cases:
 1.  Case 1
 2.  Case 2
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
-
-## Bullets
-
-When you click the **Render** button a document will be generated that includes:
-
--   Content authored with markdown
--   Output from executable code
-
-## Code
-
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
+## <!--#Instructions https://quarto.org/docs/presentations/revealjs/  -->
