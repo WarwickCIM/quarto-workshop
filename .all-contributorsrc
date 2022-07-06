@@ -24,6 +24,15 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "brian-maher",
+      "name": "Brian Maher",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6905100?v=4",
+      "profile": "https://github.com/brian-maher",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
