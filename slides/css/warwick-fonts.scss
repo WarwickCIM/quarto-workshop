@@ -1,0 +1,26 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');
+
+// fonts
+$font-family-sans-serif: 'Lato', serif !default;
+$presentation-font-size-root: 30px;
+
+// headings
+$presentation-heading-font: $font-family-sans-serif;
+$presentation-heading-font-weight: 900;
+
+/*-- scss:rules --*/
+body { 
+  font-family: $font-family-sans-serif; 
+  font-size: $presentation-font-size-root;
+}
+
+
+h1, h2 {
+  font-family: $presentation-heading-font;
+  font-weight: $presentation-heading-font-weight;
+}
+
+h3 {
+  font-weight: 700;
+}
