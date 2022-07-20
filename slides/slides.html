@@ -9,8 +9,7 @@
 <link href="slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.550">
 
-  <meta name="author" content="Carlos Cámara-Menoyo">
-  <meta name="author" content="Cagatay Turkay">
+  <meta name="author" content="Carlos Cámara-Menoyo | Cagatay Turkay">
   <title>Quarto: A library to run them all?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -319,10 +318,11 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="center">
-  <h1 class="title">Quarto: A library to run them all?</h1>
-  <p class="author">Carlos Cámara-Menoyo</p>
-  <p class="author">Cagatay Turkay</p>
+<section id="title-slide" data-background-color="#552D62" data-background-image="https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456" data-background-opacity="0.45" class="center">
+  <h1 class="title">Quarto:<br>A library to run them all?</h1>
+  <p class="subtitle">RSE Conference 2022 | Newcastle Upon Tyne</p>
+  <p class="author">Carlos Cámara-Menoyo | Cagatay Turkay</p>
+  <p class="institute">Centre for Interdisciplinary Methodologies (University of Warwick)</p>
 </section>
 
 <section id="introduction" class="slide level2 small">
@@ -355,7 +355,7 @@
 </div>
 </div>
 <aside class="notes">
-<p>Ask the audience to introduce themselves</p>
+<p>He uses Python and I love using R and we both work together. It is partially because of that that we decided to explore using quarto in our Data Science and Data Visualisation classes. This workshop is, then, an excuse to force us using it and learn by doing.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -368,36 +368,97 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="introduce-yourselves" class="slide level2" data-background-color="black" data-background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" data-background-opacity="0.75">
+<section id="disclaimer" class="slide level2">
+<h2>Disclaimer</h2>
+<p>We are not Quarto experts! We are just users who want to share our progress and engage with other users in a co-creation process.</p>
+<aside class="notes">
+<p>He uses Python and I love using R and we both work together. It is partially because of that that we decided to explore using quarto in our Data Science and Data Visualisation classes. This workshop is, then, an excuse to force us using it and learn by doing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="introduce-yourselves" class="slide level2" data-background-color="black" data-background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" data-background-opacity="0.65">
 <h2>Introduce yourselves!</h2>
-<p>Keep it short!</p>
+<p>Keep it short, please!<sup>1</sup></p>
 <ul>
 <li>Name</li>
 <li>Affiliation/Job title</li>
 <li>Preferred programming Language</li>
+<li>Previous experience with Quarto</li>
 </ul>
-</section>
+
+<aside><div>
+<p>Feel free to add your details to <code>readme.md</code> via PR.</p>
+</div><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>We’ll have plenty of time to getting to know each other</p></li></ol></aside></section>
 <section id="workshop-outline" class="slide level2">
 <h2>Workshop outline</h2>
 <ol type="1">
 <li><del>Introducing ourselves</del></li>
-<li>Introduction to Quarto (15’)</li>
-<li>Setting the environment (10’)</li>
-<li>Tasks presentation and creation of groups (15’):
+<li>Introduction to Quarto (15’): <em>2:00 – 2:15</em></li>
+<li>Setting the environment (10’): <em>2:15 – 2:25</em></li>
+<li>Tasks presentation and creation of groups (15’): <em>2:25 – 2:40</em>
 <ol type="1">
 <li><p>Tasks’ presentation</p></li>
 <li><p>Creation of groups</p></li>
 </ol></li>
-<li>Work Group and documentation</li>
-<li>Break</li>
-<li>Work Group and documentation (continuation)</li>
-<li>Discussion</li>
+<li>Work Group and documentation (20’): <em>2:40 – 3:00</em></li>
+<li>Break (20’)<sup>1</sup>: <em>3:00 – 3:20</em></li>
+<li>Work Group and documentation (continuation) (55’) <em>3:20 – 4:15</em></li>
+<li>Discussion (35’): <em>4:15 – 4:50</em></li>
 </ol>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>There will be refreshments on the Ground Floor Foyer from 3:00 to 3:20</p></li></ol></aside></section>
 <section>
 <section id="quarto" class="title-slide slide level1 center" data-background-color="#2780e3">
 <h1>Quarto</h1>
 
+</section>
+<section id="notebooks" class="slide level2">
+<h2>Notebooks</h2>
+<p>Literate programming’s artefacts. Document containing:</p>
+<ul>
+<li>Rich text (usually explanation)</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-rmarkdown">R: Rmarkdown</h3>
+</div><div class="column" style="width:50%;">
+<h3 id="python">Python</h3>
+<ul>
+<li>Jupyter notebook</li>
+<li>Jupyter lab</li>
+<li>Jupyter book</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="features" class="slide level2">
+<h2>Features</h2>
+<ul>
+<li>Language agnostic: works with <code>R</code>, <code>Python</code>, <code>Julia</code>, <code>Observable</code>
+<ul>
+<li>Combining different languages in a single document</li>
+</ul></li>
+<li>Integration
+<ul>
+<li>IDEs: RStudio, Visual Studio Code/VS Codium, Jupyter…</li>
+<li>Formats: md, ipyn</li>
+</ul></li>
+<li>Diverse outputs
+<ul>
+<li>Formats: <code>pdf</code>, <code>html</code>, <code>epub</code>, <code>docx</code>…</li>
+<li>Media: articles, presentations (like this one!), blogs, websites, books…</li>
+</ul></li>
+<li>Authoring tools: scientific markdown, including equations, citations, crossrefs, bibliographical references, figure panels, callouts, advanced layout, and more.</li>
+<li>File format <code>qmd</code> is a text file that doesn’t include output.</li>
+</ul>
 </section>
 <section id="about-quarto" class="slide level2">
 <h2>About Quarto</h2>
@@ -409,35 +470,90 @@
 <li>How does it work?</li>
 </ol>
 </section>
+<section id="further-references" class="slide level2">
+<h2>Further references</h2>
+<ul>
+<li>https://runapp2022.talks.jamesgoldie.dev/#/james-goldie</li>
+</ul>
+</section></section>
+<section>
+<section id="the-workshop" class="title-slide slide level1 center" data-background-color="#552D62">
+<h1>The workshop</h1>
+
+</section>
+<section id="setting-the-environment" class="slide level2">
+<h2>Setting the environment</h2>
+<ol type="1">
+<li>Install git</li>
+<li>Install quarto’s binary file (<a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>)</li>
+<li>Clone this repo <code>git clone git@github.com:WarwickCIM/quarto-workshop.git</code></li>
+</ol>
+</section>
 <section id="about-the-workshop" class="slide level2">
 <h2>About the workshop</h2>
-<h3 id="tasks-and-timing">Tasks and timing</h3>
+</section>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
 <div>
 <ol type="1">
-<li class="fragment">Pick one of the cases you would like to develop during this workshop<sup>1</sup></li>
-<li class="fragment">Form groups of people who want to work on the same case</li>
-<li class="fragment">Work on these tasks:
+<li class="fragment">Pick one of the cases you would like to develop during this workshop
 <ol type="1">
-<li class="fragment">create a document with code and text (2hours)</li>
+<li class="fragment">The issue describes the steps and deliverables</li>
+</ol></li>
+<li class="fragment">Form groups of people who want to work on the same case</li>
+<li class="fragment">Work on these tasks and <strong>document your progress</strong>!
+<ol type="1">
+<li class="fragment">Generate a qmd file with the documentation</li>
+<li class="fragment">Submit Pull Request to repo</li>
+<li class="fragment">(optional) you may want to</li>
 </ol></li>
 </ol>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.</p></li></ol></aside></section>
-<section id="cases" class="slide level2">
-<h2>Cases</h2>
-<p>List of proposed cases:</p>
+<p>Read the issue and join the one you’re more interested. Feel free to propose your own tasks.</p>
+
+<!--#Instructions https://quarto.org/docs/presentations/revealjs/  -->
+<aside><div>
+<p>A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.</p>
+</div></aside></section>
+<section id="cases-1" class="slide level2">
+<h2>Cases (1)</h2>
 <ol type="1">
-<li>Case 1</li>
-<li>Case 2</li>
+<li>Create an academic article for a journal https://quarto.org/docs/journals/</li>
+<li>Combine python and r in a single document</li>
+<li>Managing external dependencies (renv, venv, conda environments…) https://quarto.org/docs/projects/virtual-environments.html</li>
+<li>Create interactive document (https://quarto.org/docs/interactive/, https://neocarto.github.io/Quarto/)</li>
+<li>Create a website for this workshop</li>
 </ol>
+<p>Read the issue and join the one you’re more interested. Feel free to propose your own tasks.</p>
+
+<aside><div>
+<p>A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.</p>
+</div></aside></section>
+<section id="section" class="slide level2" data-background-color="black" data-background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" data-background-opacity="0.85">
+<h2></h2>
+</section></section>
+<section id="reconvene" class="title-slide slide level1 center">
+<h1>Reconvene!</h1>
+
 </section>
-<section id="section" class="slide level2">
-<h2><!--#Instructions https://quarto.org/docs/presentations/revealjs/  --></h2>
+
+<section id="discussion" class="title-slide slide level1 center">
+<h1>Discussion</h1>
+<p>Some ideas:</p>
+<ul>
+<li><p>How mature is quarto to you?</p></li>
+<li><p>Do you see yourself using quarto? In which context(s)?</p></li>
+<li><p>Do you see quarto replacing your current</p></li>
+<li><p>What’s missing in Quarto? (i.e mybinder?)</p></li>
+<li><p>As compared to other formats: Format qmd (code) + output vs ipyn (json with output)</p></li>
+<li><p>As compared to other tools (i.e.&nbsp;jupyterbook, bookdown…, distill)</p></li>
+</ul>
 
 <img src="images/logo_black.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
-</section></section>
+</section>
+
 
     </div>
   </div>

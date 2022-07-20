@@ -1,9 +1,15 @@
 ---
-title: "Quarto: A library to run them all?"
+title: "Quarto:<br>A library to run them all?"
 # subtitle: "A collaborative exercise to use, learn and assess quarto for authoring reproducible documents in different scenarios"
+subtitle: "RSE Conference 2022 | Newcastle Upon Tyne"
 author: 
-  - name: "Carlos Cámara-Menoyo"
-  - name: Cagatay Turkay
+  - name: "Carlos Cámara-Menoyo | Cagatay Turkay"
+institute: Centre for Interdisciplinary Methodologies (University of Warwick)
+title-slide-attributes:
+    data-background-image: "https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456"
+    # data-background-size: contain
+    data-background-opacity: "0.45"
+    data-background-color: "#552D62"
 format: 
   revealjs:
     #theme: serif
@@ -41,43 +47,92 @@ carlos.camara\@warwick.ac.uk
 :::
 
 ::: notes
-He uses Python and I love using R and we both work together. It is partially because of that that we decided to explore using quarto in our Data Science and Data Visualisation classes. This workshop is, then, an excuse to force us using it and learn by doing.  
+He uses Python and I love using R and we both work together. It is partially because of that that we decided to explore using quarto in our Data Science and Data Visualisation classes. This workshop is, then, an excuse to force us using it and learn by doing.
 :::
 
 ## Disclaimer
 
 We are not Quarto experts! We are just users who want to share our progress and engage with other users in a co-creation process.
 
-
 ::: notes
-He uses Python and I love using R and we both work together. It is partially because of that that we decided to explore using quarto in our Data Science and Data Visualisation classes. This workshop is, then, an excuse to force us using it and learn by doing.  
+He uses Python and I love using R and we both work together. It is partially because of that that we decided to explore using quarto in our Data Science and Data Visualisation classes. This workshop is, then, an excuse to force us using it and learn by doing.
 :::
-
-
 
 ## Introduce yourselves! {background-color="black" background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.65"}
 
-Keep it short, please!^[We'll have plenty of time to getting to know each other]
+Keep it short, please![^1]
+
+[^1]: We'll have plenty of time to getting to know each other
 
 -   Name
 -   Affiliation/Job title
 -   Preferred programming Language
+-   Previous experience with Quarto
+
+::: aside
+Feel free to add your details to `readme.md` via PR.
+:::
 
 ## Workshop outline
 
 1.  ~~Introducing ourselves~~
-2.  Introduction to Quarto (15')
-3.  Setting the environment (10')
-4.  Tasks presentation and creation of groups (15'):
+2.  Introduction to Quarto (15'): _2:00 -- 2:15_
+3.  Setting the environment (10'): _2:15 -- 2:25_
+4.  Tasks presentation and creation of groups (15'): _2:25 -- 2:40_
     1.  Tasks' presentation
 
     2.  Creation of groups
-5.  Work Group and documentation
-6.  Break
-7.  Work Group and documentation (continuation)
-8.  Discussion
+5.  Work Group and documentation (20'): _2:40 -- 3:00_ 
+6.  Break (20')[^break]: _3:00 -- 3:20_
+7.  Work Group and documentation (continuation) (55') _3:20 -- 4:15_
+8.  Discussion (35'): _4:15 -- 4:50_
+
+[^break]: There will be refreshments on the Ground Floor Foyer from 3:00 to 3:20 
 
 # Quarto {background-color="#2780e3"}
+
+## Notebooks
+
+Literate programming's artefacts.
+Document containing:
+
+* Rich text (usually explanation)
+
+::: columns
+::: {.column width="50%"}
+### R: Rmarkdown
+
+
+
+:::
+::: {.column width="50%"}
+### Python
+
+* Jupyter notebook
+* Jupyter lab
+* Jupyter book
+
+:::
+:::
+
+
+
+## Features
+
+* Language agnostic: works with `R`, `Python`, `Julia`, `Observable`
+  * Combining different languages in a single document
+* Integration
+  * IDEs: RStudio, Visual Studio Code/VS Codium, Jupyter...
+  * Formats: md, ipyn
+* Diverse outputs
+  * Formats: `pdf`, `html`, `epub`, `docx`...
+  * Media: articles, presentations (like this one!), blogs, websites, books...
+* Authoring tools: scientific markdown, including equations, citations, crossrefs, bibliographical references, figure panels, callouts, advanced layout, and more.
+* File format `qmd` is a text file that doesn't include output.
+
+
+
+
 
 ## About Quarto
 
@@ -89,24 +144,67 @@ Possible outline:
 2.  What can we do with it?
 3.  How does it work?
 
+## Further references
+
+* https://runapp2022.talks.jamesgoldie.dev/#/james-goldie
+
+
+# The workshop {background-color="#552D62"}
+
+## Setting the environment
+
+1. Install git
+2. Install quarto's binary file (<https://quarto.org/docs/get-started/>)
+3. Clone this repo `git clone git@github.com:WarwickCIM/quarto-workshop.git`
+
+
 ## About the workshop
 
-### Tasks and timing
+## Overview
 
 ::: incremental
-1.  Pick one of the cases you would like to develop during this workshop[^1]
+1.  Pick one of the cases you would like to develop during this workshop
+    1. The issue describes the steps and deliverables 
 2.  Form groups of people who want to work on the same case
-3.  Work on these tasks:
-    1.  create a document with code and text (2hours)
+3.  Work on these tasks and **document your progress**!
+    1. Generate a qmd file with the documentation
+    3. Submit Pull Request to repo
+    2. (optional) you may want to
 :::
 
-[^1]: A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.
+Read the issue and join the one you're more interested. Feel free to propose your own tasks.
 
-## Cases
-
-List of proposed cases:
-
-1.  Case 1
-2.  Case 2
-
+::: aside
+A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.
+:::
 <!--#Instructions https://quarto.org/docs/presentations/revealjs/  -->
+
+## Cases (1)
+
+1. Create an academic article for a journal  https://quarto.org/docs/journals/
+2. Combine python and r in a single document
+3. Managing external dependencies (renv, venv, conda environments...) https://quarto.org/docs/projects/virtual-environments.html
+2. Create interactive document (https://quarto.org/docs/interactive/, https://neocarto.github.io/Quarto/)
+2. Create a website for this workshop
+
+Read the issue and join the one you're more interested. Feel free to propose your own tasks.
+
+::: aside
+A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.
+:::
+
+## {background-color="black" background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" background-opacity="0.85"}
+
+# Reconvene!
+
+# Discussion
+
+Some ideas: 
+
+* How mature is quarto to you?
+* Do you see yourself using quarto? In which context(s)?
+* Do you see quarto replacing your current 
+* What's missing in Quarto? (i.e mybinder?)
+
+* As compared to other formats: Format qmd (code) + output vs ipyn (json with output)
+* As compared to other tools (i.e. jupyterbook, bookdown..., distill)
