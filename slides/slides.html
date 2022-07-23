@@ -328,8 +328,13 @@
   <p class="institute">Centre for Interdisciplinary Methodologies (University of Warwick)</p>
 </section>
 
-<section id="introduction" class="slide level2 small">
-<h2>Introduction</h2>
+<section>
+<section id="introduction" class="title-slide slide level1 center" data-background-color="#552D62">
+<h1>Introduction</h1>
+<!--#Instructions https://quarto.org/docs/presentations/revealjs/  -->
+</section>
+<section id="about-us" class="slide level2 small">
+<h2>About us</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -402,9 +407,9 @@
 
 <aside><div>
 <p>Feel free to add your details to <code>readme.md</code> via PR.</p>
-</div><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>We’ll have plenty of time to getting to know each other</p></li></ol></aside></section>
-<section id="workshop-outline" class="slide level2">
-<h2>Workshop outline</h2>
+</div><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>We’ll have plenty of time to getting to know each other</p></li></ol></aside></section></section>
+<section id="workshop-outline" class="title-slide slide level1 center">
+<h1>Workshop outline</h1>
 <ol type="1">
 <li><del>Introducing ourselves</del></li>
 <li>Introduction to Quarto (15’): <em>2:00 – 2:15</em></li>
@@ -420,18 +425,53 @@
 <li>Discussion (35’): <em>4:15 – 4:50</em></li>
 </ol>
 <aside><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>There will be refreshments on the Ground Floor Foyer from 3:00 to 3:20</p></li></ol></aside></section>
+
 <section>
 <section id="quarto" class="title-slide slide level1 center" data-background-color="#2780e3">
 <h1>Quarto</h1>
 
+</section>
+<section id="preamble" class="slide level2">
+<h2>Preamble</h2>
+<ul>
+<li>Everyone agrees on the value for Literate programming in Data Science</li>
+<li>Each programming language has followed a different approach re notebooks</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-rmarkdown">R: Rmarkdown</h3>
+<ul>
+<li>“Markdown on steroids” that generates one or more outputs
+<ul>
+<li>Code blocks are configurable (size, display, labels…)</li>
+</ul></li>
+<li>Other packages:
+<ul>
+<li>bookdown, blogdown, xaringan, revealjs…</li>
+</ul></li>
+<li>Works with R only (and python via <a href="https://rstudio.github.io/reticulate/index.html"><code>{reticulate}</code></a>)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="python-jupyter-notebook">Python: Jupyter notebook</h3>
+<ul>
+<li>Single <code>JSON</code> file containing code, text and output</li>
+<li>Kernels for many programming languages</li>
+<li>Other packages (Ecosystem):
+<ul>
+<li>Jupyter lab, Jupyter book…</li>
+</ul></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="about-quarto" class="slide level2">
 <h2>About quarto</h2>
 <ul>
 <li>RStudio’s proposal for literate programming artifacts (notebooks)</li>
 <li>Rmarkdown’s Next generation<sup>1</sup></li>
+<li>Actively maintained (weekly releases)</li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn3" role="doc-endnote"><p>Do not worry, RMarkdown will continue its development</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn3" role="doc-endnote"><p>Do not worry, RMarkdown will continue its development: <a href="https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work" class="uri">https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work</a></p></li></ol></aside></section>
 <section id="rmarkdowns-next-generation" class="slide level2">
 <h2>Rmarkdown’s next generation</h2>
 <ul>
@@ -449,25 +489,6 @@
 </ul></li>
 <li>One <code>qmd</code> file, one or more outputs</li>
 </ul>
-</section>
-<section id="notebooks" class="slide level2">
-<h2>Notebooks</h2>
-<p>Literate programming’s artefacts. Document containing:</p>
-<ul>
-<li>Rich text (usually explanation)</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="r-rmarkdown">R: Rmarkdown</h3>
-</div><div class="column" style="width:50%;">
-<h3 id="python">Python</h3>
-<ul>
-<li>Jupyter notebook</li>
-<li>Jupyter lab</li>
-<li>Jupyter book</li>
-</ul>
-</div>
-</div>
 </section>
 <section id="features" class="slide level2">
 <h2>Features</h2>
@@ -519,76 +540,95 @@
 <li>Clone this repo <code>git clone git@github.com:WarwickCIM/quarto-workshop.git</code></li>
 </ol>
 </section>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
+<ol type="1">
+<li>Pick a task you would like to develop during this workshop
+<ol type="1">
+<li>The issue describes the steps and deliverables</li>
+</ol></li>
+<li>Form groups of people who want to work on the same task</li>
+<li>Work on these tasks and <strong>document your progress</strong>!
+<ol type="1">
+<li>Generate a qmd file with the documentation</li>
+<li>Submit Pull Request to repo</li>
+<li>(optional) you may want to link to your repo</li>
+</ol></li>
+</ol>
+
+<aside><div>
+<p>A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.</p>
+</div></aside></section>
 <section id="pick-your-task-and-form-groups" class="slide level2">
 <h2>1. Pick your task and form groups!</h2>
 <ol type="1">
-<li>Choose one of the <a href="https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks">provided tasks</a> (or create a new one!) <a href="https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks"><img data-src="images/task_list.png"></a></li>
-<li>Create groups of at least 3 people.</li>
-<li>Assign a task to yourselves</li>
-<li>Sit close to another for discussion</li>
+<li>Choose one of the <a href="https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks">provided tasks</a> (or create a new one!) <a href="https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks"><img data-src="images/task_list.png"></a>
+<ol type="1">
+<li>Each task has a description of what you need to do, outputs, template and reference.</li>
+</ol></li>
 </ol>
 
 <aside><div>
-<p>Each task has a description of what you need to do, outputs, template and reference.</p>
+<p>Should you want to create a new task…</p>
 </div></aside></section>
-<section id="copy-the-template-and-start-working" class="slide level2">
-<h2>Copy the template and start working</h2>
-</section>
-<section id="about-the-workshop" class="slide level2">
-<h2>About the workshop</h2>
-</section>
-<section id="overview" class="slide level2">
-<h2>Overview</h2>
-<div>
+<section id="create-groups" class="slide level2">
+<h2>2. Create groups</h2>
 <ol type="1">
-<li class="fragment">Pick one of the cases you would like to develop during this workshop
+<li>Assign a task to yourself to show interest</li>
+<li>Create a group when/if there are more than one person interested in the task</li>
+<li>Sit close one to another for discussion and group work</li>
+<li>Discuss and learn from others!
+<ul>
+<li>(and document any lesson learnt to share it with the whole group)</li>
+</ul></li>
+</ol>
+</section>
+<section id="work-and-document" class="slide level2">
+<h2>3. Work and document</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
 <ol type="1">
-<li class="fragment">The issue describes the steps and deliverables</li>
+<li>Fork the repo</li>
+<li>Use the templates
+<ol type="1">
+<li>Create a folder with your task <code>cp tasks/template  task/&lt;number&gt;_&lt;your_task&gt;</code></li>
 </ol></li>
-<li class="fragment">Form groups of people who want to work on the same case</li>
-<li class="fragment">Work on these tasks and <strong>document your progress</strong>!
+<li>Document!
 <ol type="1">
-<li class="fragment">Generate a qmd file with the documentation</li>
-<li class="fragment">Submit Pull Request to repo</li>
-<li class="fragment">(optional) you may want to</li>
+<li>Use the provided qmd template and edit it as you please</li>
 </ol></li>
 </ol>
+</div><div class="column" style="width:35%;">
+<p><img data-src="images/template.png"></p>
 </div>
-<p>Read the issue and join the one you’re more interested. Feel free to propose your own tasks.</p>
-
-<!--#Instructions https://quarto.org/docs/presentations/revealjs/  -->
-<aside><div>
-<p>A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.</p>
-</div></aside></section>
-<section id="cases-1" class="slide level2">
-<h2>Cases (1)</h2>
-<ol type="1">
-<li>Create an academic article for a journal https://quarto.org/docs/journals/</li>
-<li>Combine python and r in a single document</li>
-<li>Managing external dependencies (renv, venv, conda environments…) https://quarto.org/docs/projects/virtual-environments.html</li>
-<li>Create interactive document (https://quarto.org/docs/interactive/, https://neocarto.github.io/Quarto/)</li>
-<li>Create a website for this workshop</li>
-</ol>
-<p>Read the issue and join the one you’re more interested. Feel free to propose your own tasks.</p>
-
-<aside><div>
-<p>A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.</p>
-</div></aside></section>
-<section id="worfklow" class="slide level2">
-<h2>Worfklow</h2>
+</div>
 <div class="cell" data-reveal="true">
 <div class="cell-output-display">
 <div>
 <p>
-</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">gitGraph
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">%%{init:{'logLevel':'debug', 'theme':'base', 'gitGraph':{'rotateCommitLabel': true}} }%%
+gitGraph
        commit
+       commit id: "RSEConf22!"
+       branch task_12
+       checkout task_12
        commit
-       branch develop
-       checkout develop
+       commit id: "Documenting"
+       commit
+       checkout main
+       branch task_11
+       checkout task_11
        commit
        commit
        checkout main
-       merge develop
+       branch task_13
+       checkout task_13
+       commit
+       commit
+       checkout main
+       merge task_12
+       merge task_11
+       merge task_13
        commit
        commit
 </pre>
@@ -603,13 +643,13 @@
 <section id="section" class="slide level2" data-background-color="black" data-background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" data-background-opacity="0.85">
 <h2></h2>
 </section></section>
-<section>
 <section id="reconvene" class="title-slide slide level1 center" data-background-color="#552D62">
 <h1>Reconvene!</h1>
 
 </section>
-<section id="discussion" class="slide level2">
-<h2>Discussion</h2>
+
+<section id="discussion" class="title-slide slide level1 center">
+<h1>Discussion</h1>
 <p>Some ideas (but feel free to add yours!):</p>
 <ul>
 <li><p>How mature is quarto to you?</p></li>
@@ -623,7 +663,8 @@
 <img src="images/logo_black.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
-</section></section>
+</section>
+
 
     </div>
   </div>

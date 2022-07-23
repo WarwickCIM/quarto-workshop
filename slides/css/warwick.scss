@@ -24,6 +24,11 @@ $link-color: $w_aubergine;
   
 }
 
+.slide-primary{
+  background-color: $link-color;
+  color: white;
+}
+
 .has-dark-background {
   aside {
     color: white !important;

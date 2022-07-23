@@ -18,7 +18,11 @@ format:
 editor: visual
 ---
 
-## Introduction {.small}
+# Introduction  {background-color="#552D62"}
+
+<!--#Instructions https://quarto.org/docs/presentations/revealjs/  -->
+
+## About us  {.small}
 
 ::: columns
 ::: {.column width="50%"}
@@ -26,9 +30,9 @@ editor: visual
 
 **Carlos Cámara**
 
-*Senior Research Software Engineer* 
+*Senior Research Software Engineer*
 
-<carlos.camara@warwick.ac.uk>
+[carlos.camara\@warwick.ac.uk](mailto:carlos.camara@warwick.ac.uk){.email}
 
 -   R user
 
@@ -40,9 +44,9 @@ editor: visual
 
 **Cagatay Turkay**
 
-*Assistant Professor* 
+*Assistant Professor*
 
-<cagatay.turkay@warwick.ac.uk>
+[cagatay.turkay\@warwick.ac.uk](mailto:cagatay.turkay@warwick.ac.uk){.email}
 
 -   Python user
 -   Interested in visualisation and data science
@@ -76,85 +80,82 @@ Keep it short, please![^1]
 Feel free to add your details to `readme.md` via PR.
 :::
 
-## Workshop outline
+# Workshop outline
 
 1.  ~~Introducing ourselves~~
-2.  Introduction to Quarto (15'): _2:00 -- 2:15_
-3.  Setting the environment (10'): _2:15 -- 2:25_
-4.  Tasks presentation and creation of groups (15'): _2:25 -- 2:40_
+2.  Introduction to Quarto (15'): *2:00 -- 2:15*
+3.  Setting the environment (10'): *2:15 -- 2:25*
+4.  Tasks presentation and creation of groups (15'): *2:25 -- 2:40*
     1.  Tasks' presentation
     2.  Creation of groups
-5.  Work Group and documentation (20'): _2:40 -- 3:00_ 
-6.  Break (20')[^break]: _3:00 -- 3:20_
-7.  Work Group and documentation (continuation) (55') _3:20 -- 4:15_
-8.  Discussion (35'): _4:15 -- 4:50_
+5.  Work Group and documentation (20'): *2:40 -- 3:00*
+6.  Break (20')[^2]: *3:00 -- 3:20*
+7.  Work Group and documentation (continuation) (55') *3:20 -- 4:15*
+8.  Discussion (35'): *4:15 -- 4:50*
 
-[^break]: There will be refreshments on the Ground Floor Foyer from 3:00 to 3:20 
+[^2]: There will be refreshments on the Ground Floor Foyer from 3:00 to 3:20
 
 # Quarto {background-color="#2780e3"}
 
-## About quarto
+## Preamble
 
-* RStudio's proposal for literate programming artifacts (notebooks)
-* Rmarkdown's Next generation[^rmarkdown]
-
-
-[^rmarkdown]: Do not worry, RMarkdown will continue its development
-
-## Rmarkdown's next generation
-
-* One `qmd` file -> parser ->  one or more outputs
-* 2 files: 
-  * `qmd` containing the "source" (configuration, text and code)
-  * `*` containing the output (`pdf`, `html`, `docx`...)
-* Syntax:
-  * Config: yaml, metadata
-  * Rich text: markdown on steroids (variable text -inline code-, callouts, mermaid diagrams...)
-  * Code: code blocks (they can have special comments for configs, )
-* One `qmd` file, one or more outputs
-
-## Notebooks
-
-Literate programming's artefacts.
-Document containing:
-
-* Rich text (usually explanation)
+* Everyone agrees on the value for Literate programming in Data Science
+* Each programming language has followed a different approach re notebooks
 
 ::: columns
 ::: {.column width="50%"}
 ### R: Rmarkdown
 
-
-
+* "Markdown on steroids" that generates one or more outputs
+  - Code blocks are configurable (size, display, labels...)
+* Other packages:
+  - bookdown, blogdown, xaringan, revealjs...
+* Works with R only (and python via [`{reticulate}`](https://rstudio.github.io/reticulate/index.html))
 :::
+
 ::: {.column width="50%"}
-### Python
-
-* Jupyter notebook
-* Jupyter lab
-* Jupyter book
-
+### Python: Jupyter notebook
+- Single `JSON` file containing code, text and output
+- Kernels for many programming languages
+- Other packages (Ecosystem):
+  - Jupyter lab, Jupyter book...
 :::
 :::
 
+
+## About quarto
+
+-   RStudio's proposal for literate programming artifacts (notebooks)
+-   Rmarkdown's Next generation[^3]
+-   Actively maintained (weekly releases)
+
+[^3]: Do not worry, RMarkdown will continue its development: <https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work>
+
+## Rmarkdown's next generation
+
+-   One `qmd` file -\> parser -\> one or more outputs
+-   2 files:
+    -   `qmd` containing the "source" (configuration, text and code)
+    -   `*` containing the output (`pdf`, `html`, `docx`...)
+-   Syntax:
+    -   Config: yaml, metadata
+    -   Rich text: markdown on steroids (variable text -inline code-, callouts, mermaid diagrams...)
+    -   Code: code blocks (they can have special comments for configs, )
+-   One `qmd` file, one or more outputs
 
 
 ## Features
 
-* Language agnostic: works with `R`, `Python`, `Julia`, `Observable`
-  * Combining different languages in a single document
-* Integration
-  * IDEs: RStudio, Visual Studio Code/VS Codium, Jupyter...
-  * Formats: md, ipyn
-* Diverse outputs
-  * Formats: `pdf`, `html`, `epub`, `docx`...
-  * Media: articles, presentations (like this one!), blogs, websites, books...
-* Authoring tools: scientific markdown, including equations, citations, crossrefs, bibliographical references, figure panels, callouts, advanced layout, and more.
-* File format `qmd` is a text file that doesn't include output.
-
-
-
-
+-   Language agnostic: works with `R`, `Python`, `Julia`, `Observable`
+    -   Combining different languages in a single document
+-   Integration
+    -   IDEs: RStudio, Visual Studio Code/VS Codium, Jupyter...
+    -   Formats: md, ipyn
+-   Diverse outputs
+    -   Formats: `pdf`, `html`, `epub`, `docx`...
+    -   Media: articles, presentations (like this one!), blogs, websites, books...
+-   Authoring tools: scientific markdown, including equations, citations, crossrefs, bibliographical references, figure panels, callouts, advanced layout, and more.
+-   File format `qmd` is a text file that doesn't include output.
 
 ## About Quarto
 
@@ -168,99 +169,117 @@ Possible outline:
 
 ## Further references
 
-* https://runapp2022.talks.jamesgoldie.dev/#/james-goldie
-
+-   https://runapp2022.talks.jamesgoldie.dev/#/james-goldie
 
 # The workshop {background-color="#552D62"}
 
 ## Setting the environment
 
-1. Install git
-2. Install quarto's binary file (<https://quarto.org/docs/get-started/>)
-3. Clone this repo `git clone git@github.com:WarwickCIM/quarto-workshop.git`
-
-### 1. Pick your task and form groups!
-
-1. Choose one of the [provided tasks](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks) (or create a new one!)
-[![](images/task_list.png)](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks)
-2. Create groups of at least 3 people.
-  1. Assign a task to yourselves
-  2. Sit close to another for discussion
-  
-::: aside
-Each task has a description of what you need to do, outputs, template and reference.
-:::
-
-### 2. Read 
-
-![]
-  
-## Copy the template and start working
-
-## About the workshop
+1.  Install git
+2.  Install quarto's binary file (<https://quarto.org/docs/get-started/>)
+3.  Clone this repo `git clone git@github.com:WarwickCIM/quarto-workshop.git`
 
 ## Overview
 
-::: incremental
-1.  Pick one of the cases you would like to develop during this workshop
-    1. The issue describes the steps and deliverables 
-2.  Form groups of people who want to work on the same case
+1.  Pick a task you would like to develop during this workshop
+    1.  The issue describes the steps and deliverables
+2.  Form groups of people who want to work on the same task
 3.  Work on these tasks and **document your progress**!
-    1. Generate a qmd file with the documentation
-    3. Submit Pull Request to repo
-    2. (optional) you may want to
-:::
-
-Read the issue and join the one you're more interested. Feel free to propose your own tasks.
-
-::: aside
-A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.
-:::
-<!--#Instructions https://quarto.org/docs/presentations/revealjs/  -->
-
-## Cases (1)
-
-1. Create an academic article for a journal  https://quarto.org/docs/journals/
-2. Combine python and r in a single document
-3. Managing external dependencies (renv, venv, conda environments...) https://quarto.org/docs/projects/virtual-environments.html
-2. Create interactive document (https://quarto.org/docs/interactive/, https://neocarto.github.io/Quarto/)
-2. Create a website for this workshop
-
-Read the issue and join the one you're more interested. Feel free to propose your own tasks.
+    1.  Generate a qmd file with the documentation
+    2.  Submit Pull Request to repo
+    3.  (optional) you may want to link to your repo
 
 ::: aside
 A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.
 :::
 
-## Worfklow
+## 1. Pick your task and form groups!
+
+1.  Choose one of the [provided tasks](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks) (or create a new one!) [![](images/task_list.png)](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks)
+    1.   Each task has a description of what you need to do, outputs, template and reference.
+
+::: aside
+Should you want to create a new task...
+:::
+
+## 2. Create groups
+
+1.  Assign a task to yourself to show interest
+2.  Create a group when/if there are more than one person interested in the task
+3.  Sit close one to another for discussion and group work
+4. Discuss and learn from others! 
+    * (and document any lesson learnt to share it with the whole group)
+
+## 3. Work and document
+
+::: columns
+::: {.column width="65%"}
+1.  Fork the repo
+2.  Use the templates
+    1. Create a folder with your task `cp tasks/template  task/<number>_<your_task>`
+1.  Document!
+    1.  Use the provided qmd template and edit it as you please
+
+:::
+
+
+
+::: {.column width="35%"}
+
+![](images/template.png)
+:::
+:::
 
 
 ```{mermaid}
+%%{init:{'logLevel':'debug', 'theme':'base', 'gitGraph':{'rotateCommitLabel': true}} }%%
 gitGraph
        commit
+       commit id: "RSEConf22!"
+       branch task_12
+       checkout task_12
        commit
-       branch develop
-       checkout develop
+       commit id: "Documenting"
+       commit
+       checkout main
+       branch task_11
+       checkout task_11
        commit
        commit
        checkout main
-       merge develop
+       branch task_13
+       checkout task_13
+       commit
+       commit
+       checkout main
+       merge task_12
+       merge task_11
+       merge task_13
        commit
        commit
 ```
 
-## {background-color="black" background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" background-opacity="0.85"}
 
-# Reconvene!  {background-color="#552D62"}
- 
-## Discussion
 
-Some ideas (but feel free to add yours!): 
 
-* How mature is quarto to you?
-* Do you see yourself using quarto? In which context(s)?
-* Do you see quarto replacing your current toolkit?
-* What's missing in Quarto? (i.e mybinder?)
 
-* As compared to other formats: Format qmd (code) + output vs ipyn (json with output)
-* As compared to other tools (i.e. jupyterbook, bookdown..., distill)
+
+##  {background-color="black" background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" background-opacity="0.85"}
+
+# Reconvene! {background-color="#552D62"}
+
+# Discussion
+
+Some ideas (but feel free to add yours!):
+
+-   How mature is quarto to you?
+
+-   Do you see yourself using quarto? In which context(s)?
+
+-   Do you see quarto replacing your current toolkit?
+
+-   What's missing in Quarto? (i.e mybinder?)
+
+-   As compared to other formats: Format qmd (code) + output vs ipyn (json with output)
+
+-   As compared to other tools (i.e. jupyterbook, bookdown..., distill)
