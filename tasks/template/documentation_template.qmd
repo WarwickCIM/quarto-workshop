@@ -2,9 +2,9 @@
 title: "Combining R and Python"
 author: 
   - name: "Write your name here"
-    url: http://carloscamara.es/en
-    affiliation: University of Warwick (CIM)
-    affiliation-url: http://warwick.ac.uk/cim
+    url: http://yourwebsite.com
+    affiliation: Your affiliation
+    affiliation-url: http://yourwebsite.com
     orcid: 0000-0000-0000-0000
   - name: "Copy/adapt the previous for the subsequent authors"
 format: html
@@ -13,15 +13,7 @@ editor: visual
 
 ## Goal
 
-Create an interactive document
-
-## Detailed Process
-
-Explain here the process you followed to .
-
-```{r}
-print("You can use code blocks, too!")
-```
+Describe your goal (you can link to the github issue or copy/paste it here)
 
 ## Tools
 
@@ -32,6 +24,14 @@ List/describe any tool used to perform this task (IDE, programming language, lib
 ### Alternative tools
 
 List any
+
+## Detailed Process
+
+Explain here the process you followed to .accomplish your assigned task.
+
+```{r}
+print("You can use code blocks, too!")
+```
 
 ## Discussion
 
