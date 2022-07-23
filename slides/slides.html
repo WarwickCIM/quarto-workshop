@@ -313,12 +313,15 @@
       margin-right: 0; 
     }
   </style>
+  <script src="slides_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="slides_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="slides_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-color="#552D62" data-background-image="https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456" data-background-opacity="0.45" class="center">
+<section id="title-slide" data-background-color="#552D62" data-background-image="https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456" data-background-opacity="0.40" class="center">
   <h1 class="title">Quarto:<br>A library to run them all?</h1>
   <p class="subtitle">RSE Conference 2022 | Newcastle Upon Tyne</p>
   <p class="author">Carlos Cámara-Menoyo | Cagatay Turkay</p>
@@ -335,11 +338,11 @@
 </figure>
 </div>
 <p><strong>Carlos Cámara</strong></p>
-<p><em>Senior Research Software Engineer</em> at CIM (University of Warwick)</p>
-<p>carlos.camara@warwick.ac.uk</p>
+<p><em>Senior Research Software Engineer</em></p>
+<p><a href="mailto:carlos.camara@warwick.ac.uk" class="email">carlos.camara@warwick.ac.uk</a></p>
 <ul>
 <li><p>R user</p></li>
-<li><p>Interested in</p></li>
+<li><p>Interested in reproducibility, open science, geospatial data, visualisation</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -348,9 +351,11 @@
 </figure>
 </div>
 <p><strong>Cagatay Turkay</strong></p>
-<p><em>Assistant Professor</em> at CIM (University of Warwick)</p>
+<p><em>Assistant Professor</em></p>
+<p><a href="mailto:cagatay.turkay@warwick.ac.uk" class="email">cagatay.turkay@warwick.ac.uk</a></p>
 <ul>
 <li>Python user</li>
+<li>Interested in visualisation and data science</li>
 </ul>
 </div>
 </div>
@@ -385,7 +390,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="introduce-yourselves" class="slide level2" data-background-color="black" data-background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" data-background-opacity="0.65">
+<section id="introduce-yourselves" class="slide level2" data-background-color="black" data-background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" data-background-opacity="0.6">
 <h2>Introduce yourselves!</h2>
 <p>Keep it short, please!<sup>1</sup></p>
 <ul>
@@ -406,8 +411,8 @@
 <li>Setting the environment (10’): <em>2:15 – 2:25</em></li>
 <li>Tasks presentation and creation of groups (15’): <em>2:25 – 2:40</em>
 <ol type="1">
-<li><p>Tasks’ presentation</p></li>
-<li><p>Creation of groups</p></li>
+<li>Tasks’ presentation</li>
+<li>Creation of groups</li>
 </ol></li>
 <li>Work Group and documentation (20’): <em>2:40 – 3:00</em></li>
 <li>Break (20’)<sup>1</sup>: <em>3:00 – 3:20</em></li>
@@ -419,6 +424,31 @@
 <section id="quarto" class="title-slide slide level1 center" data-background-color="#2780e3">
 <h1>Quarto</h1>
 
+</section>
+<section id="about-quarto" class="slide level2">
+<h2>About quarto</h2>
+<ul>
+<li>RStudio’s proposal for literate programming artifacts (notebooks)</li>
+<li>Rmarkdown’s Next generation<sup>1</sup></li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn3" role="doc-endnote"><p>Do not worry, RMarkdown will continue its development</p></li></ol></aside></section>
+<section id="rmarkdowns-next-generation" class="slide level2">
+<h2>Rmarkdown’s next generation</h2>
+<ul>
+<li>One <code>qmd</code> file -&gt; parser -&gt; one or more outputs</li>
+<li>2 files:
+<ul>
+<li><code>qmd</code> containing the “source” (configuration, text and code)</li>
+<li><code>*</code> containing the output (<code>pdf</code>, <code>html</code>, <code>docx</code>…)</li>
+</ul></li>
+<li>Syntax:
+<ul>
+<li>Config: yaml, metadata</li>
+<li>Rich text: markdown on steroids (variable text -inline code-, callouts, mermaid diagrams…)</li>
+<li>Code: code blocks (they can have special comments for configs, )</li>
+</ul></li>
+<li>One <code>qmd</code> file, one or more outputs</li>
+</ul>
 </section>
 <section id="notebooks" class="slide level2">
 <h2>Notebooks</h2>
@@ -460,7 +490,7 @@
 <li>File format <code>qmd</code> is a text file that doesn’t include output.</li>
 </ul>
 </section>
-<section id="about-quarto" class="slide level2">
+<section id="about-quarto-1" class="slide level2">
 <h2>About Quarto</h2>
 <p>A brief introduction…</p>
 <p>Possible outline:</p>
@@ -488,6 +518,21 @@
 <li>Install quarto’s binary file (<a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a>)</li>
 <li>Clone this repo <code>git clone git@github.com:WarwickCIM/quarto-workshop.git</code></li>
 </ol>
+</section>
+<section id="pick-your-task-and-form-groups" class="slide level2">
+<h2>1. Pick your task and form groups!</h2>
+<ol type="1">
+<li>Choose one of the <a href="https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks">provided tasks</a> (or create a new one!) <a href="https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks"><img data-src="images/task_list.png"></a></li>
+<li>Create groups of at least 3 people.</li>
+<li>Assign a task to yourselves</li>
+<li>Sit close to another for discussion</li>
+</ol>
+
+<aside><div>
+<p>Each task has a description of what you need to do, outputs, template and reference.</p>
+</div></aside></section>
+<section id="copy-the-template-and-start-working" class="slide level2">
+<h2>Copy the template and start working</h2>
 </section>
 <section id="about-the-workshop" class="slide level2">
 <h2>About the workshop</h2>
@@ -529,21 +574,47 @@
 <aside><div>
 <p>A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.</p>
 </div></aside></section>
+<section id="worfklow" class="slide level2">
+<h2>Worfklow</h2>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">gitGraph
+       commit
+       commit
+       branch develop
+       checkout develop
+       commit
+       commit
+       checkout main
+       merge develop
+       commit
+       commit
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section>
 <section id="section" class="slide level2" data-background-color="black" data-background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" data-background-opacity="0.85">
 <h2></h2>
 </section></section>
-<section id="reconvene" class="title-slide slide level1 center">
+<section>
+<section id="reconvene" class="title-slide slide level1 center" data-background-color="#552D62">
 <h1>Reconvene!</h1>
 
 </section>
-
-<section id="discussion" class="title-slide slide level1 center">
-<h1>Discussion</h1>
-<p>Some ideas:</p>
+<section id="discussion" class="slide level2">
+<h2>Discussion</h2>
+<p>Some ideas (but feel free to add yours!):</p>
 <ul>
 <li><p>How mature is quarto to you?</p></li>
 <li><p>Do you see yourself using quarto? In which context(s)?</p></li>
-<li><p>Do you see quarto replacing your current</p></li>
+<li><p>Do you see quarto replacing your current toolkit?</p></li>
 <li><p>What’s missing in Quarto? (i.e mybinder?)</p></li>
 <li><p>As compared to other formats: Format qmd (code) + output vs ipyn (json with output)</p></li>
 <li><p>As compared to other tools (i.e.&nbsp;jupyterbook, bookdown…, distill)</p></li>
@@ -552,8 +623,7 @@
 <img src="images/logo_black.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
-</section>
-
+</section></section>
 
     </div>
   </div>

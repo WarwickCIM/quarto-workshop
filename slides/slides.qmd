@@ -8,7 +8,7 @@ institute: Centre for Interdisciplinary Methodologies (University of Warwick)
 title-slide-attributes:
     data-background-image: "https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456"
     # data-background-size: contain
-    data-background-opacity: "0.45"
+    data-background-opacity: "0.40"
     data-background-color: "#552D62"
 format: 
   revealjs:
@@ -26,13 +26,13 @@ editor: visual
 
 **Carlos Cámara**
 
-*Senior Research Software Engineer* at CIM (University of Warwick)
+*Senior Research Software Engineer* 
 
-carlos.camara\@warwick.ac.uk
+<carlos.camara@warwick.ac.uk>
 
 -   R user
 
--   Interested in
+-   Interested in reproducibility, open science, geospatial data, visualisation
 :::
 
 ::: {.column width="50%"}
@@ -40,9 +40,12 @@ carlos.camara\@warwick.ac.uk
 
 **Cagatay Turkay**
 
-*Assistant Professor* at CIM (University of Warwick)
+*Assistant Professor* 
+
+<cagatay.turkay@warwick.ac.uk>
 
 -   Python user
+-   Interested in visualisation and data science
 :::
 :::
 
@@ -58,7 +61,7 @@ We are not Quarto experts! We are just users who want to share our progress and 
 He uses Python and I love using R and we both work together. It is partially because of that that we decided to explore using quarto in our Data Science and Data Visualisation classes. This workshop is, then, an excuse to force us using it and learn by doing.
 :::
 
-## Introduce yourselves! {background-color="black" background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.65"}
+## Introduce yourselves! {background-color="black" background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.6"}
 
 Keep it short, please![^1]
 
@@ -80,7 +83,6 @@ Feel free to add your details to `readme.md` via PR.
 3.  Setting the environment (10'): _2:15 -- 2:25_
 4.  Tasks presentation and creation of groups (15'): _2:25 -- 2:40_
     1.  Tasks' presentation
-
     2.  Creation of groups
 5.  Work Group and documentation (20'): _2:40 -- 3:00_ 
 6.  Break (20')[^break]: _3:00 -- 3:20_
@@ -90,6 +92,26 @@ Feel free to add your details to `readme.md` via PR.
 [^break]: There will be refreshments on the Ground Floor Foyer from 3:00 to 3:20 
 
 # Quarto {background-color="#2780e3"}
+
+## About quarto
+
+* RStudio's proposal for literate programming artifacts (notebooks)
+* Rmarkdown's Next generation[^rmarkdown]
+
+
+[^rmarkdown]: Do not worry, RMarkdown will continue its development
+
+## Rmarkdown's next generation
+
+* One `qmd` file -> parser ->  one or more outputs
+* 2 files: 
+  * `qmd` containing the "source" (configuration, text and code)
+  * `*` containing the output (`pdf`, `html`, `docx`...)
+* Syntax:
+  * Config: yaml, metadata
+  * Rich text: markdown on steroids (variable text -inline code-, callouts, mermaid diagrams...)
+  * Code: code blocks (they can have special comments for configs, )
+* One `qmd` file, one or more outputs
 
 ## Notebooks
 
@@ -157,6 +179,23 @@ Possible outline:
 2. Install quarto's binary file (<https://quarto.org/docs/get-started/>)
 3. Clone this repo `git clone git@github.com:WarwickCIM/quarto-workshop.git`
 
+### 1. Pick your task and form groups!
+
+1. Choose one of the [provided tasks](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks) (or create a new one!)
+[![](images/task_list.png)](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks)
+2. Create groups of at least 3 people.
+  1. Assign a task to yourselves
+  2. Sit close to another for discussion
+  
+::: aside
+Each task has a description of what you need to do, outputs, template and reference.
+:::
+
+### 2. Read 
+
+![]
+  
+## Copy the template and start working
 
 ## About the workshop
 
@@ -193,17 +232,34 @@ Read the issue and join the one you're more interested. Feel free to propose you
 A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.
 :::
 
+## Worfklow
+
+
+```{mermaid}
+gitGraph
+       commit
+       commit
+       branch develop
+       checkout develop
+       commit
+       commit
+       checkout main
+       merge develop
+       commit
+       commit
+```
+
 ## {background-color="black" background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" background-opacity="0.85"}
 
-# Reconvene!
+# Reconvene!  {background-color="#552D62"}
+ 
+## Discussion
 
-# Discussion
-
-Some ideas: 
+Some ideas (but feel free to add yours!): 
 
 * How mature is quarto to you?
 * Do you see yourself using quarto? In which context(s)?
-* Do you see quarto replacing your current 
+* Do you see quarto replacing your current toolkit?
 * What's missing in Quarto? (i.e mybinder?)
 
 * As compared to other formats: Format qmd (code) + output vs ipyn (json with output)
