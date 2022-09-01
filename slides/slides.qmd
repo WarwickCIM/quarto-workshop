@@ -143,7 +143,7 @@ Feel free to add your details to `readme.md` via PR.
 ## About quarto
 
 -   "Open-source scientific and technical publishing system built on Pandoc" - [quarto.org](https://quarto.org/)
--   Developed by Posit (RStudio) as Rmarkdown's next generation. "Code output via integration with Jupyter, Knitr, and Observable" - [GitHub Repo](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
+-   Developed by [Posit](https://posit.co/) (RStudio) as Rmarkdown's next generation. "Code output via integration with Jupyter, Knitr, and Observable" - [GitHub Repo](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
 -   Batteries included ("articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more") - [quarto.org](https://quarto.org/)
 -   Code chunks in .qmd markdown files are evaluated by the language engine, and the document is built using Pandoc with reasonable default formatting
 
@@ -197,11 +197,11 @@ Possible outline:
 
 ## Overview
 
-1.  Pick a task you would like to develop during this workshop
+1.  Pick a case you would like to develop during this workshop
     1.  The issue describes the steps and deliverables
-2.  Create groups of people who want to work on the same task
-3.  Work on these tasks and **document your progress**!
-    1.  Generate a qmd file with the documentation
+2.  Create groups of people who want to work on the same case
+3.  Work on your case and **document your progress**!
+    1.  Generate a `qmd` file with the documentation
     2.  Submit Pull Request to repo
     3.  (optional) you may want to link to your repo
 
@@ -209,10 +209,10 @@ Possible outline:
 A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.
 :::
 
-## 1. Pick your task and create groups!
+## 1. Pick your case and create a group!
 
-1.  Choose one of the [provided tasks](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks) (or create a new one!) [![](images/task_list.png)](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks)
-    1.  Each task has a description of what you need to do, outputs, template and reference.
+1.  Choose one of the [provided cases](https://github.com/WarwickCIM/quarto-workshop/labels/cases) (or create a new one!) [![](images/task_list.png)](https://github.com/WarwickCIM/quarto-workshop/labels/cases)
+    1.  Each case has a description of what you need to do, outputs, template and reference.
 
 ::: aside
 Should you want to create a new task...
@@ -220,7 +220,7 @@ Should you want to create a new task...
 
 ## 2. Create groups
 
-1.  Assign a task to yourself to show interest
+1.  Assign a case to yourself to show interest
 2.  Create a group when/if there are more than one person interested in the task
 3.  Sit close one to another for discussion and group work
 4.  Discuss and learn from others!
