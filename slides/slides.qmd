@@ -3,8 +3,8 @@ title: "Quarto:<br>A library to run them all?"
 # subtitle: "A collaborative exercise to use, learn and assess quarto for authoring reproducible documents in different scenarios"
 subtitle: "RSE Conference 2022 | Newcastle Upon Tyne"
 author: 
-  - name: "Carlos Cámara-Menoyo | Cagatay Turkay"
-institute: Centre for Interdisciplinary Methodologies (University of Warwick)
+  - name: "Carlos Cámara-Menoyo | James Tripp"
+institute: Centre for Interdisciplinary Methodologies (University of Warwick) | IT Services (University of Warwick)
 title-slide-attributes:
     data-background-image: "https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456"
     # data-background-size: contain
@@ -42,14 +42,14 @@ editor: visual
 ::: {.column width="50%"}
 ![](images/cagatay.png){fig-alt="Cagatay Turkay" fig-align="center"}
 
-**Cagatay Turkay**
+**James Tripp**
 
-*Assistant Professor*
+*Research Software Engineer*
 
-[cagatay.turkay\@warwick.ac.uk](mailto:cagatay.turkay@warwick.ac.uk){.email}
+[james.tripp\@warwick.ac.uk](mailto:cagatay.turkay@warwick.ac.uk){.email}
 
--   Python user
--   Interested in visualisation and data science
+-   Python, R and PHP user
+-   Interested in research software engineering, data science and digital humanities
 :::
 :::
 
@@ -80,55 +80,52 @@ Keep it short, please![^1]
 Feel free to add your details to `readme.md` via PR.
 :::
 
-# Workshop outline
+# Goals
 
-1.  ~~Introducing ourselves~~
-2.  Introduction to Quarto (15'): *2:00 -- 2:15*
-3.  Setting the environment (10'): *2:15 -- 2:25*
-4.  Tasks presentation and creation of groups (15'): *2:25 -- 2:40*
-    1.  Tasks' presentation
-    2.  Creation of groups
-5.  Work Group and documentation (20'): *2:40 -- 3:00*
-6.  Break (20')[^2]: *3:00 -- 3:20*
-7.  Work Group and documentation (continuation) (55') *3:20 -- 4:15*
-8.  Discussion (35'): *4:15 -- 4:50*
+* Introduce Quarto
+* Facilitate you working with Quatro
+* Have a discussion evaluating Quatro
 
-[^2]: There will be refreshments on the Ground Floor Foyer from 3:00 to 3:20
+# Plan
+
+1. Introduce Quarto and setup (25m)
+2. Group formation and tasks (15m)
+3. Working in groups - with break! (1hr 35m)
+4. Discussion (35m)
 
 # Quarto {background-color="#2780e3"}
 
 ## Preamble
 
-* Everyone agrees on the value for Literate programming in Data Science
-* Each programming language has followed a different approach re notebooks
+* Literate programming is important
+* Lots of different solutions, some are language specific
 
 ::: columns
 ::: {.column width="50%"}
 ### R: Rmarkdown
 
-* "Markdown on steroids" that generates one or more outputs
-  - Code blocks are configurable (size, display, labels...)
-* Other packages:
-  - bookdown, blogdown, xaringan, revealjs...
-* Works with R only (and python via [`{reticulate}`](https://rstudio.github.io/reticulate/index.html))
+* Markdown with configurable code blocks
+* Focus on R (but does support other languages [see here](https://bookdown.org/yihui/rmarkdown/language-engines.html))
+* Can compile to other formats:
+    - bookdown, blogdown, ...
 :::
 
 ::: {.column width="50%"}
 ### Python: Jupyter notebook
 - Single `JSON` file containing code, text and output
 - Kernels for many programming languages
-- Other packages (Ecosystem):
-  - Jupyter lab, Jupyter book...
+- Can compile to other formats:
+  - Jupyter book, nbconvert, ...
 :::
 :::
 
 
 ## About quarto
 
--   RStudio's proposal for literate programming artifacts (notebooks)
--   Rmarkdown's Next generation[^3]
--   Actively maintained (weekly releases)
--   Relatively new (first development pre-release from January 2021)
+-   "Open-source scientific and technical publishing system built on Pandoc" - [quarto.org](https://quarto.org/)
+-   Developed by Posit (RStudio) as Rmarkdown's next generation. "Code output via integration with Jupyter, Knitr, and Observable" - [GitHub Repo](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
+-   Batteries included ("articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more") - [quarto.org](https://quarto.org/)
+-   Code chunks in .qmd markdown files are evaluated by the language engine, and the document is built using Pandoc with reasonable default formatting
 
 [^3]: Do not worry, RMarkdown will continue its development: <https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work>
 
@@ -147,16 +144,17 @@ Feel free to add your details to `readme.md` via PR.
 
 ## Features
 
--   Language agnostic: works with `R`, `Python`, `Julia`, `Observable`
-    -   Combining different languages in a single document
--   Integration
-    -   IDEs: RStudio, Visual Studio Code/VS Codium, Jupyter...
-    -   Formats: md, ipyn
+-   Works with `R`, `Python`, `Julia`, `Observable`
+    -   Can combine different languages in a single document
+-   Integrations - [getting started](https://quarto.org/docs/get-started/)
+    -   RStudio
+    -   Visual Studio Code/VS Codium
+    -   Jupyter
 -   Diverse outputs
     -   Formats: `pdf`, `html`, `epub`, `docx`...
     -   Media: articles, presentations (like this one!), blogs, websites, books...
 -   Authoring tools: scientific markdown, including equations, citations, crossrefs, bibliographical references, figure panels, callouts, advanced layout, and more.
--   File format `qmd` is a text file that doesn't include output.
+-   File format `qmd` is a text file that doesn't include output. Human readable and good for version control.
 
 ## About Quarto
 
