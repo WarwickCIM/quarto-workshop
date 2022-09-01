@@ -77,29 +77,27 @@ He uses Python and I love using R and we both work together. It is partially bec
 
 ## Disclaimer {background-color="black" background-image="https://images.unsplash.com/photo-1608094920984-5b54ce1bb792?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.4"}
 
-
 **About us**
 
-We are not Quarto experts! 
+We are not Quarto experts!
 
 We are not affiliated in any way to Quarto or Posit. We do not have any commercial interest.
 
-We are just quarto users who want to share our progress and engage with other users in a co-creation process with an attitude of _healthy skepticism_.
+We are just quarto users who want to share our progress and engage with other users in a co-creation process with an attitude of *healthy skepticism*.
 
 . . .
 
 **About the session**
 
-This is not (just) a talk about quarto. Others have done it very well before[^others].
-We will be presenting quarto's main claims and seeing how it compares to other alternatives.
+This is not (just) a talk about quarto. Others have done it very well before[^1]. We will be presenting quarto's main claims and seeing how it compares to other alternatives.
 
-[^others]: See references' section
+[^1]: See references' section
 
 ## Introduce yourselves! {background-color="black" background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.6"}
 
-Keep it short, please![^1]
+Keep it short, please![^2]
 
-[^1]: We'll have plenty of time to getting to know each other
+[^2]: We'll have plenty of time to getting to know each other
 
 -   Name
 -   Affiliation/Job title
@@ -176,7 +174,7 @@ Feel free to add your details to `readme.md` via PR.
 
 -   Works with `R`, `Python`, `Julia`, `Observable`
     -   Can combine different languages in a single document
-    
+
 ## Features: Integrations
 
 -   [getting started](https://quarto.org/docs/get-started/)
@@ -189,7 +187,7 @@ Feel free to add your details to `readme.md` via PR.
 -   Diverse outputs
     -   Formats: `pdf`, `html`, `epub`, `docx`...
     -   Media: articles, presentations (like this one!), blogs, websites, books...
-    
+
 ## Features: Authoring
 
 -   Authoring tools: scientific markdown, including equations, citations, crossrefs, bibliographical references, figure panels, callouts, advanced layout, and more.
@@ -197,7 +195,6 @@ Feel free to add your details to `readme.md` via PR.
 . . .
 
 -   File format `qmd` is a text file that doesn't include output. Human readable and good for version control.
-
 
 ## About Quarto
 
@@ -211,9 +208,11 @@ Possible outline:
 
 ## Further references
 
--   [Hello Quarto! A Quarto Chat with NASA Openscapes, co-hosted with R-Ladies Santa Barbara](https://www.openscapes.org/blog/2022/06/22/hello-quarto/)
--   James Goldie: [Quarto: Create beautiful documents with R, Python, Julia and Observable](https://runapp2022.talks.jamesgoldie.dev/#/james-goldie)
--   [RStudio's 2-hour workshop on quarto](https://www.youtube.com/watch?v=yvi5uXQMvu4)
+-   [*Hello Quarto! A Quarto Chat with NASA Openscapes, co-hosted with R-Ladies Santa Barbara*](https://www.openscapes.org/blog/2022/06/22/hello-quarto/)
+-   Mine Çetinkaya-Rundel and Julia Stewart Lowndes: [*Hello quarto*](https://mine.quarto.pub/hello-quarto/#/hello-quarto-title)
+-   James Goldie: [*Quarto: Create beautiful documents with R, Python, Julia and Observable*](https://runapp2022.talks.jamesgoldie.dev/#/james-goldie)
+-   Tom Mock: [*2-hour workshop on quarto*]() ([Video Recording](https://www.youtube.com/watch?v=yvi5uXQMvu4), [Slides](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html))
+
 
 # The workshop {background-color="#552D62"}
 
