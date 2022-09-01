@@ -3,7 +3,7 @@ title: "Quarto:<br>A library to run them all?"
 # subtitle: "A collaborative exercise to use, learn and assess quarto for authoring reproducible documents in different scenarios"
 subtitle: "RSE Conference 2022 | Newcastle Upon Tyne"
 author: 
-  - name: "Carlos Cámara-Menoyo | James Tripp"
+  - name: "Carlos Cámara-Menoyo |  Cagatay Turkay | James Tripp"
 institute: Centre for Interdisciplinary Methodologies (University of Warwick) | IT Services (University of Warwick)
 title-slide-attributes:
     data-background-image: "https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456"
@@ -18,29 +18,47 @@ format:
 editor: visual
 ---
 
-# Introduction  {background-color="#552D62"}
+# Introduction {background-color="#552D62"}
 
 <!--#Instructions https://quarto.org/docs/presentations/revealjs/  -->
 
-## About us  {.small}
+## About us {.smaller}
+
+<!-- ::: {style="max-width: 200px; float: right;"} -->
+
+<!-- -->
+
+<!-- ::: -->
 
 ::: columns
-::: {.column width="50%"}
-![](images/carlos.png){fig-alt="Carlos Cámara" fig-align="center"}
+::: {.column width="33%"}
+![](images/carlos.png){fig-alt="Carlos Cámara" fig-align="center" width="250"}
 
 **Carlos Cámara**
 
-*Senior Research Software Engineer*
+*Research Software Engineer*
 
 [carlos.camara\@warwick.ac.uk](mailto:carlos.camara@warwick.ac.uk){.email}
 
 -   R user
-
 -   Interested in reproducibility, open science, geospatial data, visualisation
 :::
 
-::: {.column width="50%"}
-![](images/cagatay.png){fig-alt="Cagatay Turkay" fig-align="center"}
+::: {.column width="33%"}
+![](images/cagatay.png){fig-alt="Carlos Cámara" fig-align="center" width="250"}
+
+**Cagatay Turkay**
+
+*Professor*
+
+[cagatay.turkay\@warwick.ac.uk](mailto:cagatay.turkay@warwick.ac.uk)
+
+-   Python user
+-   Interested in visualisation and data science
+:::
+
+::: {.column width="33%"}
+![](images/james.png){fig-alt="Carlos Cámara" fig-align="center" width="250"}
 
 **James Tripp**
 
@@ -59,11 +77,13 @@ He uses Python and I love using R and we both work together. It is partially bec
 
 ## Disclaimer
 
-We are not Quarto experts! We are just users who want to share our progress and engage with other users in a co-creation process.
+We are not Quarto experts! 
 
-::: notes
-He uses Python and I love using R and we both work together. It is partially because of that that we decided to explore using quarto in our Data Science and Data Visualisation classes. This workshop is, then, an excuse to force us using it and learn by doing.
-:::
+We are not affiliated in any way to Quarto or Posit. We do not have any commercial interest.
+
+We are just quarto users who want to share our progress and engage with other users in a co-creation process with an attitude of _healthy skepticism_.
+
+
 
 ## Introduce yourselves! {background-color="black" background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.6"}
 
@@ -82,43 +102,43 @@ Feel free to add your details to `readme.md` via PR.
 
 # Goals
 
-* Introduce Quarto
-* Facilitate you working with Quatro
-* Have a discussion evaluating Quatro
+-   Introduce Quarto
+-   Facilitate you working with Quatro
+-   Have a discussion evaluating Quatro
 
 # Plan
 
-1. Introduce Quarto and setup (25m)
-2. Group formation and tasks (15m)
-3. Working in groups - with break! (1hr 35m)
-4. Discussion (35m)
+1.  Introduce Quarto and setup (25m)
+2.  Group formation and tasks (15m)
+3.  Working in groups - with break! (1hr 35m)
+4.  Discussion (35m)
 
 # Quarto {background-color="#2780e3"}
 
 ## Preamble
 
-* Literate programming is important
-* Lots of different solutions, some are language specific
+-   Literate programming is important
+-   Lots of different solutions, some are language specific
 
 ::: columns
 ::: {.column width="50%"}
 ### R: Rmarkdown
 
-* Markdown with configurable code blocks
-* Focus on R (but does support other languages [see here](https://bookdown.org/yihui/rmarkdown/language-engines.html))
-* Can compile to other formats:
-    - bookdown, blogdown, ...
+-   Markdown with configurable code blocks
+-   Focus on R (but does support other languages [see here](https://bookdown.org/yihui/rmarkdown/language-engines.html))
+-   Can compile to other formats:
+    -   bookdown, blogdown, ...
 :::
 
 ::: {.column width="50%"}
 ### Python: Jupyter notebook
-- Single `JSON` file containing code, text and output
-- Kernels for many programming languages
-- Can compile to other formats:
-  - Jupyter book, nbconvert, ...
-:::
-:::
 
+-   Single `JSON` file containing code, text and output
+-   Kernels for many programming languages
+-   Can compile to other formats:
+    -   Jupyter book, nbconvert, ...
+:::
+:::
 
 ## About quarto
 
@@ -126,8 +146,6 @@ Feel free to add your details to `readme.md` via PR.
 -   Developed by Posit (RStudio) as Rmarkdown's next generation. "Code output via integration with Jupyter, Knitr, and Observable" - [GitHub Repo](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
 -   Batteries included ("articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more") - [quarto.org](https://quarto.org/)
 -   Code chunks in .qmd markdown files are evaluated by the language engine, and the document is built using Pandoc with reasonable default formatting
-
-[^3]: Do not worry, RMarkdown will continue its development: <https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work>
 
 ## Rmarkdown's next generation
 
@@ -140,7 +158,6 @@ Feel free to add your details to `readme.md` via PR.
     -   Rich text: markdown on steroids (variable text -inline code-, callouts, mermaid diagrams...)
     -   Code: code blocks (they can have special comments for configs, )
 -   One `qmd` file, one or more outputs
-
 
 ## Features
 
@@ -195,7 +212,7 @@ A list of cases will be provided by organisers, but you are free to propose one 
 ## 1. Pick your task and create groups!
 
 1.  Choose one of the [provided tasks](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks) (or create a new one!) [![](images/task_list.png)](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks)
-    1.   Each task has a description of what you need to do, outputs, template and reference.
+    1.  Each task has a description of what you need to do, outputs, template and reference.
 
 ::: aside
 Should you want to create a new task...
@@ -206,8 +223,8 @@ Should you want to create a new task...
 1.  Assign a task to yourself to show interest
 2.  Create a group when/if there are more than one person interested in the task
 3.  Sit close one to another for discussion and group work
-4. Discuss and learn from others! 
-    * (and document any lesson learnt to share it with the whole group)
+4.  Discuss and learn from others!
+    -   (and document any lesson learnt to share it with the whole group)
 
 ## 3. Work and document
 
@@ -215,20 +232,15 @@ Should you want to create a new task...
 ::: {.column width="65%"}
 1.  Fork the repo
 2.  Use the templates
-    1. Create a folder with your task `cp tasks/template  task/<number>_<your_task>`
-1.  Document!
+    1.  Create a folder with your task `cp tasks/template  task/<number>_<your_task>`
+3.  Document!
     1.  Use the provided qmd template and edit it as you please
-
 :::
 
-
-
 ::: {.column width="35%"}
-
 ![](images/template.png)
 :::
 :::
-
 
 ```{mermaid}
 %%{init:{'logLevel':'debug', 'theme':'base', 'gitGraph':{'rotateCommitLabel': true}} }%%
@@ -258,11 +270,6 @@ gitGraph
        commit
 ```
 
-
-
-
-
-
 ##  {background-color="black" background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" background-opacity="0.85"}
 
 # Reconvene! {background-color="#552D62"}
@@ -279,8 +286,8 @@ Some ideas (but feel free to add yours!):
 
 -   What's missing in Quarto? (i.e mybinder?)
 
--   Quarto, compared to 
+-   Quarto, compared to
 
-    - Other formats: Format `*.qmd` (code) + output vs `*.ipynb` (json with output)
+    -   Other formats: Format `*.qmd` (code) + output vs `*.ipynb` (json with output)
 
-    - Other tools (i.e. jupyterbook, bookdown..., distill)
+    -   Other tools (i.e. jupyterbook, bookdown..., distill)

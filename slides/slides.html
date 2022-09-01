@@ -9,7 +9,7 @@
 <link href="slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.0.38">
 
-  <meta name="author" content="Carlos Cámara-Menoyo | Cagatay Turkay">
+  <meta name="author" content="Carlos Cámara-Menoyo | Cagatay Turkay | James Tripp">
   <title>Quarto: A library to run them all?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -324,8 +324,8 @@
 <section id="title-slide" data-background-color="#552D62" data-background-image="https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456" data-background-opacity="0.40" class="center">
   <h1 class="title">Quarto:<br>A library to run them all?</h1>
   <p class="subtitle">RSE Conference 2022 | Newcastle Upon Tyne</p>
-  <p class="author">Carlos Cámara-Menoyo | Cagatay Turkay</p>
-  <p class="institute">Centre for Interdisciplinary Methodologies (University of Warwick)</p>
+  <p class="author">Carlos Cámara-Menoyo | Cagatay Turkay | James Tripp</p>
+  <p class="institute">Centre for Interdisciplinary Methodologies (University of Warwick) | IT Services (University of Warwick)</p>
 </section>
 
 <section>
@@ -333,34 +333,50 @@
 <h1>Introduction</h1>
 <!--#Instructions https://quarto.org/docs/presentations/revealjs/  -->
 </section>
-<section id="about-us" class="slide level2 small">
+<section id="about-us" class="slide level2 smaller">
 <h2>About us</h2>
+<!-- ::: {style="max-width: 200px; float: right;"} -->
+<!-- -->
+<!-- ::: -->
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:33%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/carlos.png" alt="Carlos Cámara"></p>
+<p><img data-src="images/carlos.png" alt="Carlos Cámara" width="250"></p>
 </figure>
 </div>
 <p><strong>Carlos Cámara</strong></p>
-<p><em>Senior Research Software Engineer</em></p>
+<p><em>Research Software Engineer</em></p>
 <p><a href="mailto:carlos.camara@warwick.ac.uk" class="email">carlos.camara@warwick.ac.uk</a></p>
 <ul>
-<li><p>R user</p></li>
-<li><p>Interested in reproducibility, open science, geospatial data, visualisation</p></li>
+<li>R user</li>
+<li>Interested in reproducibility, open science, geospatial data, visualisation</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:33%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/cagatay.png" alt="Cagatay Turkay"></p>
+<p><img data-src="images/cagatay.png" alt="Carlos Cámara" width="250"></p>
 </figure>
 </div>
 <p><strong>Cagatay Turkay</strong></p>
-<p><em>Assistant Professor</em></p>
-<p><a href="mailto:cagatay.turkay@warwick.ac.uk" class="email">cagatay.turkay@warwick.ac.uk</a></p>
+<p><em>Professor</em></p>
+<p><a href="mailto:cagatay.turkay@warwick.ac.uk">cagatay.turkay@warwick.ac.uk</a></p>
 <ul>
 <li>Python user</li>
 <li>Interested in visualisation and data science</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/james.png" alt="Carlos Cámara" width="250"></p>
+</figure>
+</div>
+<p><strong>James Tripp</strong></p>
+<p><em>Research Software Engineer</em></p>
+<p><a href="mailto:cagatay.turkay@warwick.ac.uk" class="email">james.tripp@warwick.ac.uk</a></p>
+<ul>
+<li>Python, R and PHP user</li>
+<li>Interested in research software engineering, data science and digital humanities</li>
 </ul>
 </div>
 </div>
@@ -380,20 +396,9 @@
 </section>
 <section id="disclaimer" class="slide level2">
 <h2>Disclaimer</h2>
-<p>We are not Quarto experts! We are just users who want to share our progress and engage with other users in a co-creation process.</p>
-<aside class="notes">
-<p>He uses Python and I love using R and we both work together. It is partially because of that that we decided to explore using quarto in our Data Science and Data Visualisation classes. This workshop is, then, an excuse to force us using it and learn by doing.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<p>We are not Quarto experts!</p>
+<p>We are not affiliated in any way to Quarto or Posit. We do not have any commercial interest.</p>
+<p>We are just quarto users who want to share our progress and engage with other users in a co-creation process with an attitude of <em>healthy skepticism</em>.</p>
 </section>
 <section id="introduce-yourselves" class="slide level2" data-background-color="black" data-background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" data-background-opacity="0.6">
 <h2>Introduce yourselves!</h2>
@@ -408,23 +413,24 @@
 <aside><div>
 <p>Feel free to add your details to <code>readme.md</code> via PR.</p>
 </div><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>We’ll have plenty of time to getting to know each other</p></li></ol></aside></section></section>
-<section id="workshop-outline" class="title-slide slide level1 center">
-<h1>Workshop outline</h1>
+<section id="goals" class="title-slide slide level1 center">
+<h1>Goals</h1>
+<ul>
+<li>Introduce Quarto</li>
+<li>Facilitate you working with Quatro</li>
+<li>Have a discussion evaluating Quatro</li>
+</ul>
+</section>
+
+<section id="plan" class="title-slide slide level1 center">
+<h1>Plan</h1>
 <ol type="1">
-<li><del>Introducing ourselves</del></li>
-<li>Introduction to Quarto (15’): <em>2:00 – 2:15</em></li>
-<li>Setting the environment (10’): <em>2:15 – 2:25</em></li>
-<li>Tasks presentation and creation of groups (15’): <em>2:25 – 2:40</em>
-<ol type="1">
-<li>Tasks’ presentation</li>
-<li>Creation of groups</li>
-</ol></li>
-<li>Work Group and documentation (20’): <em>2:40 – 3:00</em></li>
-<li>Break (20’)<sup>1</sup>: <em>3:00 – 3:20</em></li>
-<li>Work Group and documentation (continuation) (55’) <em>3:20 – 4:15</em></li>
-<li>Discussion (35’): <em>4:15 – 4:50</em></li>
+<li>Introduce Quarto and setup (25m)</li>
+<li>Group formation and tasks (15m)</li>
+<li>Working in groups - with break! (1hr 35m)</li>
+<li>Discussion (35m)</li>
 </ol>
-<aside><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>There will be refreshments on the Ground Floor Foyer from 3:00 to 3:20</p></li></ol></aside></section>
+</section>
 
 <section>
 <section id="quarto" class="title-slide slide level1 center" data-background-color="#2780e3">
@@ -434,31 +440,28 @@
 <section id="preamble" class="slide level2">
 <h2>Preamble</h2>
 <ul>
-<li>Everyone agrees on the value for Literate programming in Data Science</li>
-<li>Each programming language has followed a different approach re notebooks</li>
+<li>Literate programming is important</li>
+<li>Lots of different solutions, some are language specific</li>
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="r-rmarkdown">R: Rmarkdown</h3>
 <ul>
-<li>“Markdown on steroids” that generates one or more outputs
+<li>Markdown with configurable code blocks</li>
+<li>Focus on R (but does support other languages <a href="https://bookdown.org/yihui/rmarkdown/language-engines.html">see here</a>)</li>
+<li>Can compile to other formats:
 <ul>
-<li>Code blocks are configurable (size, display, labels…)</li>
+<li>bookdown, blogdown, …</li>
 </ul></li>
-<li>Other packages:
-<ul>
-<li>bookdown, blogdown, xaringan, revealjs…</li>
-</ul></li>
-<li>Works with R only (and python via <a href="https://rstudio.github.io/reticulate/index.html"><code>{reticulate}</code></a>)</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <h3 id="python-jupyter-notebook">Python: Jupyter notebook</h3>
 <ul>
 <li>Single <code>JSON</code> file containing code, text and output</li>
 <li>Kernels for many programming languages</li>
-<li>Other packages (Ecosystem):
+<li>Can compile to other formats:
 <ul>
-<li>Jupyter lab, Jupyter book…</li>
+<li>Jupyter book, nbconvert, …</li>
 </ul></li>
 </ul>
 </div>
@@ -467,12 +470,12 @@
 <section id="about-quarto" class="slide level2">
 <h2>About quarto</h2>
 <ul>
-<li>RStudio’s proposal for literate programming artifacts (notebooks)</li>
-<li>Rmarkdown’s Next generation<sup>1</sup></li>
-<li>Actively maintained (weekly releases)</li>
-<li>Relatively new (first development pre-release from January 2021)</li>
+<li>“Open-source scientific and technical publishing system built on Pandoc” - <a href="https://quarto.org/">quarto.org</a></li>
+<li>Developed by Posit (RStudio) as Rmarkdown’s next generation. “Code output via integration with Jupyter, Knitr, and Observable” - <a href="https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/">GitHub Repo</a></li>
+<li>Batteries included (“articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more”) - <a href="https://quarto.org/">quarto.org</a></li>
+<li>Code chunks in .qmd markdown files are evaluated by the language engine, and the document is built using Pandoc with reasonable default formatting</li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn3" role="doc-endnote"><p>Do not worry, RMarkdown will continue its development: <a href="https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work" class="uri">https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work</a></p></li></ol></aside></section>
+</section>
 <section id="rmarkdowns-next-generation" class="slide level2">
 <h2>Rmarkdown’s next generation</h2>
 <ul>
@@ -494,14 +497,15 @@
 <section id="features" class="slide level2">
 <h2>Features</h2>
 <ul>
-<li>Language agnostic: works with <code>R</code>, <code>Python</code>, <code>Julia</code>, <code>Observable</code>
+<li>Works with <code>R</code>, <code>Python</code>, <code>Julia</code>, <code>Observable</code>
 <ul>
-<li>Combining different languages in a single document</li>
+<li>Can combine different languages in a single document</li>
 </ul></li>
-<li>Integration
+<li>Integrations - <a href="https://quarto.org/docs/get-started/">getting started</a>
 <ul>
-<li>IDEs: RStudio, Visual Studio Code/VS Codium, Jupyter…</li>
-<li>Formats: md, ipyn</li>
+<li>RStudio</li>
+<li>Visual Studio Code/VS Codium</li>
+<li>Jupyter</li>
 </ul></li>
 <li>Diverse outputs
 <ul>
@@ -509,7 +513,7 @@
 <li>Media: articles, presentations (like this one!), blogs, websites, books…</li>
 </ul></li>
 <li>Authoring tools: scientific markdown, including equations, citations, crossrefs, bibliographical references, figure panels, callouts, advanced layout, and more.</li>
-<li>File format <code>qmd</code> is a text file that doesn’t include output.</li>
+<li>File format <code>qmd</code> is a text file that doesn’t include output. Human readable and good for version control.</li>
 </ul>
 </section>
 <section id="about-quarto-1" class="slide level2">
