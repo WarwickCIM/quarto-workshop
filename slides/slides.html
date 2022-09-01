@@ -394,12 +394,17 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="disclaimer" class="slide level2">
+<section id="disclaimer" class="slide level2" data-background-color="black" data-background-image="https://images.unsplash.com/photo-1608094920984-5b54ce1bb792?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" data-background-opacity="0.4">
 <h2>Disclaimer</h2>
+<p><strong>About us</strong></p>
 <p>We are not Quarto experts!</p>
 <p>We are not affiliated in any way to Quarto or Posit. We do not have any commercial interest.</p>
 <p>We are just quarto users who want to share our progress and engage with other users in a co-creation process with an attitude of <em>healthy skepticism</em>.</p>
-</section>
+<div class="fragment">
+<p><strong>About the session</strong></p>
+<p>This is not (just) a talk about quarto. Others have done it very well before<sup>1</sup>. We will be presenting quarto’s main claims and seeing how it compares to other alternatives.</p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>See references’ section</p></li></ol></aside></section>
 <section id="introduce-yourselves" class="slide level2" data-background-color="black" data-background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" data-background-opacity="0.6">
 <h2>Introduce yourselves!</h2>
 <p>Keep it short, please!<sup>1</sup></p>
@@ -412,7 +417,7 @@
 
 <aside><div>
 <p>Feel free to add your details to <code>readme.md</code> via PR.</p>
-</div><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>We’ll have plenty of time to getting to know each other</p></li></ol></aside></section></section>
+</div><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>We’ll have plenty of time to getting to know each other</p></li></ol></aside></section></section>
 <section id="goals" class="title-slide slide level1 center">
 <h1>Goals</h1>
 <ul>
@@ -443,6 +448,7 @@
 <li>Literate programming is important</li>
 <li>Lots of different solutions, some are language specific</li>
 </ul>
+<div class="fragment">
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="r-rmarkdown">R: Rmarkdown</h3>
@@ -451,6 +457,7 @@
 <li>Focus on R (but does support other languages <a href="https://bookdown.org/yihui/rmarkdown/language-engines.html">see here</a>)</li>
 <li>Can compile to other formats:
 <ul>
+<li>natively</li>
 <li>bookdown, blogdown, …</li>
 </ul></li>
 </ul>
@@ -464,6 +471,7 @@
 <li>Jupyter book, nbconvert, …</li>
 </ul></li>
 </ul>
+</div>
 </div>
 </div>
 </section>
@@ -494,27 +502,46 @@
 <li>One <code>qmd</code> file, one or more outputs</li>
 </ul>
 </section>
-<section id="features" class="slide level2">
-<h2>Features</h2>
+<section id="features-programming-languages" class="slide level2">
+<h2>Features: Programming languages</h2>
 <ul>
 <li>Works with <code>R</code>, <code>Python</code>, <code>Julia</code>, <code>Observable</code>
 <ul>
 <li>Can combine different languages in a single document</li>
 </ul></li>
-<li>Integrations - <a href="https://quarto.org/docs/get-started/">getting started</a>
+</ul>
+</section>
+<section id="features-integrations" class="slide level2">
+<h2>Features: Integrations</h2>
+<ul>
+<li><a href="https://quarto.org/docs/get-started/">getting started</a>
 <ul>
 <li>RStudio</li>
 <li>Visual Studio Code/VS Codium</li>
 <li>Jupyter</li>
 </ul></li>
+</ul>
+</section>
+<section id="features-outputs" class="slide level2">
+<h2>Features: Outputs</h2>
+<ul>
 <li>Diverse outputs
 <ul>
 <li>Formats: <code>pdf</code>, <code>html</code>, <code>epub</code>, <code>docx</code>…</li>
 <li>Media: articles, presentations (like this one!), blogs, websites, books…</li>
 </ul></li>
+</ul>
+</section>
+<section id="features-authoring" class="slide level2">
+<h2>Features: Authoring</h2>
+<ul>
 <li>Authoring tools: scientific markdown, including equations, citations, crossrefs, bibliographical references, figure panels, callouts, advanced layout, and more.</li>
+</ul>
+<div class="fragment">
+<ul>
 <li>File format <code>qmd</code> is a text file that doesn’t include output. Human readable and good for version control.</li>
 </ul>
+</div>
 </section>
 <section id="about-quarto-1" class="slide level2">
 <h2>About Quarto</h2>
@@ -529,7 +556,9 @@
 <section id="further-references" class="slide level2">
 <h2>Further references</h2>
 <ul>
-<li>https://runapp2022.talks.jamesgoldie.dev/#/james-goldie</li>
+<li><a href="https://www.openscapes.org/blog/2022/06/22/hello-quarto/">Hello Quarto! A Quarto Chat with NASA Openscapes, co-hosted with R-Ladies Santa Barbara</a></li>
+<li>James Goldie: <a href="https://runapp2022.talks.jamesgoldie.dev/#/james-goldie">Quarto: Create beautiful documents with R, Python, Julia and Observable</a></li>
+<li><a href="https://www.youtube.com/watch?v=yvi5uXQMvu4">RStudio’s 2-hour workshop on quarto</a></li>
 </ul>
 </section></section>
 <section>
