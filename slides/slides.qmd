@@ -14,7 +14,9 @@ format:
   revealjs:
     #theme: serif
     theme: [default, css/warwick.scss, css/warwick-fonts.scss]
-    logo: images/logo_black.png
+    logo: images/logo_black.png 
+    transition: slide
+    background-transition: fade
 editor: visual
 ---
 
@@ -299,7 +301,10 @@ gitGraph
 
 ##  {background-color="black" background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" background-opacity="0.85"}
 
-# Reconvene! {background-color="#552D62"}
+# Reconvene! {background-color="#552D62" auto-animate=true auto-animate-easing="ease-in-out"}
+
+
+# RSECon-vene? {background-color="#552D62" background-image="https://i2-prod.chroniclelive.co.uk/incoming/article5680478.ece/ALTERNATES/s1227b/Quayside-at-night-by-Alan-Firth.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
 
 # Discussion
 
@@ -318,3 +323,5 @@ Some ideas (but feel free to add yours!):
     -   Other formats: Format `*.qmd` (code) + output vs `*.ipynb` (json with output)
 
     -   Other tools (i.e. jupyterbook, bookdown..., distill)
+
+# Thank you! {background-color="#552D62"}
