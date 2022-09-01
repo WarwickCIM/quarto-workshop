@@ -128,6 +128,7 @@ Feel free to add your details to `readme.md` via PR.
 -   RStudio's proposal for literate programming artifacts (notebooks)
 -   Rmarkdown's Next generation[^3]
 -   Actively maintained (weekly releases)
+-   Relatively new (first development pre-release from January 2021)
 
 [^3]: Do not worry, RMarkdown will continue its development: <https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work>
 
@@ -183,7 +184,7 @@ Possible outline:
 
 1.  Pick a task you would like to develop during this workshop
     1.  The issue describes the steps and deliverables
-2.  Form groups of people who want to work on the same task
+2.  Create groups of people who want to work on the same task
 3.  Work on these tasks and **document your progress**!
     1.  Generate a qmd file with the documentation
     2.  Submit Pull Request to repo
@@ -193,7 +194,7 @@ Possible outline:
 A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.
 :::
 
-## 1. Pick your task and form groups!
+## 1. Pick your task and create groups!
 
 1.  Choose one of the [provided tasks](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks) (or create a new one!) [![](images/task_list.png)](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks)
     1.   Each task has a description of what you need to do, outputs, template and reference.
@@ -280,6 +281,8 @@ Some ideas (but feel free to add yours!):
 
 -   What's missing in Quarto? (i.e mybinder?)
 
--   As compared to other formats: Format qmd (code) + output vs ipyn (json with output)
+-   Quarto, compared to 
 
--   As compared to other tools (i.e. jupyterbook, bookdown..., distill)
+    - Other formats: Format `*.qmd` (code) + output vs `*.ipynb` (json with output)
+
+    - Other tools (i.e. jupyterbook, bookdown..., distill)

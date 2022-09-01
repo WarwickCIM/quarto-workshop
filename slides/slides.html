@@ -5,9 +5,9 @@
 <script src="slides_files/libs/quarto-html/popper.min.js"></script>
 <script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet">
+<link href="slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.550">
+  <meta name="generator" content="quarto-1.0.38">
 
   <meta name="author" content="Carlos Cámara-Menoyo | Cagatay Turkay">
   <title>Quarto: A library to run them all?</title>
@@ -317,7 +317,7 @@
   <script src="slides_files/libs/quarto-diagram/mermaid-init.js"></script>
   <link href="slides_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
-<body>
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
@@ -470,6 +470,7 @@
 <li>RStudio’s proposal for literate programming artifacts (notebooks)</li>
 <li>Rmarkdown’s Next generation<sup>1</sup></li>
 <li>Actively maintained (weekly releases)</li>
+<li>Relatively new (first development pre-release from January 2021)</li>
 </ul>
 <aside><ol class="aside-footnotes"><li id="fn3" role="doc-endnote"><p>Do not worry, RMarkdown will continue its development: <a href="https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work" class="uri">https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work</a></p></li></ol></aside></section>
 <section id="rmarkdowns-next-generation" class="slide level2">
@@ -547,7 +548,7 @@
 <ol type="1">
 <li>The issue describes the steps and deliverables</li>
 </ol></li>
-<li>Form groups of people who want to work on the same task</li>
+<li>Create groups of people who want to work on the same task</li>
 <li>Work on these tasks and <strong>document your progress</strong>!
 <ol type="1">
 <li>Generate a qmd file with the documentation</li>
@@ -559,8 +560,8 @@
 <aside><div>
 <p>A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.</p>
 </div></aside></section>
-<section id="pick-your-task-and-form-groups" class="slide level2">
-<h2>1. Pick your task and form groups!</h2>
+<section id="pick-your-task-and-create-groups" class="slide level2">
+<h2>1. Pick your task and create groups!</h2>
 <ol type="1">
 <li>Choose one of the <a href="https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks">provided tasks</a> (or create a new one!) <a href="https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Atasks"><img data-src="images/task_list.png"></a>
 <ol type="1">
@@ -656,8 +657,11 @@ gitGraph
 <li><p>Do you see yourself using quarto? In which context(s)?</p></li>
 <li><p>Do you see quarto replacing your current toolkit?</p></li>
 <li><p>What’s missing in Quarto? (i.e mybinder?)</p></li>
-<li><p>As compared to other formats: Format qmd (code) + output vs ipyn (json with output)</p></li>
-<li><p>As compared to other tools (i.e.&nbsp;jupyterbook, bookdown…, distill)</p></li>
+<li><p>Quarto, compared to</p>
+<ul>
+<li><p>Other formats: Format <code>*.qmd</code> (code) + output vs <code>*.ipynb</code> (json with output)</p></li>
+<li><p>Other tools (i.e.&nbsp;jupyterbook, bookdown…, distill)</p></li>
+</ul></li>
 </ul>
 
 <img src="images/logo_black.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -879,6 +883,24 @@ gitGraph
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
       tabsets.forEach(function(tabset) {
         const tabby = new Tabby('#' + tabset.id);
