@@ -41,7 +41,11 @@ All the software used in this workshop is available for GNU/Linux, Windows and M
 To be done later.
 
 ```
-slides/   <-- Slides for the workshop.
+assets/       <-- Images and media used in slides.
+slides/       <-- Slides for the workshop.
+cases/        <-- Quarto use cases, each case in a folder.
+|-- <case_n>  <-- Each case should reside in a folder.
+|-- template  <-- Template for documenting the process.
 
 ```
 
@@ -72,6 +76,4 @@ If you believe you must be credited, please do it in [this issue](https://github
 
 ## Attendees
 
-* Carlos Cámara, Senior Research Software Engineer, Centre for Interdisciplinary Methodologies (University of Warwick)
-* Cagatay Turkay, Associate Professor, Centre for Interdisciplinary Methodologies (University of Warwick)
-* Add your name here
+Please, introduce yourselves in [this issue](https://github.com/WarwickCIM/quarto-workshop/issues/17)
