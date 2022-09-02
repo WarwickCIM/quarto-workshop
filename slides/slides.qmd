@@ -18,6 +18,7 @@ format:
     transition: slide
     background-transition: fade
 editor: visual
+from: markdown+emoji
 ---
 
 # Introduction {background-color="#552D62"}
@@ -88,7 +89,7 @@ Let us know about your knowledge about quarto
 
 ::: aside
 
-Usually, we'll be asking you to introduce yourselves, but given the large number of attendees, we have done that via this github issue.
+Usually, we'll be asking you to introduce yourselves, but given the large number of attendees, we have done that via [this github issue](https://github.com/WarwickCIM/quarto-workshop/issues/17).
 
 :::
 
@@ -109,22 +110,6 @@ We are just quarto users who want to share our progress and engage with other us
 This is not (just) a talk about quarto. Others have done it very well before[^1]. We will be presenting quarto's main claims and seeing how it compares to other alternatives.
 
 [^1]: See references' section
-
-
-
-## Introduce yourselves! {background-color="black" background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.6"}
-
-Keep it short, please![^2]
-
-[^2]: We'll have plenty of time to getting to know each other
-
--   Name
--   Affiliation/Job title
--   Preferred programming Language
--   Previous experience with Quarto
-
-::: aside
-Feel free to add your details to `readme.md` via PR.
 :::
 
 # Goals
@@ -152,7 +137,7 @@ Feel free to add your details to `readme.md` via PR.
 
 . . .
 
-::: columns
+::: columns 
 ::: {.column width="50%"}
 ### R: Rmarkdown
 
@@ -177,56 +162,24 @@ Feel free to add your details to `readme.md` via PR.
 
 -   "Open-source scientific and technical publishing system built on Pandoc" - [quarto.org](https://quarto.org/)
 -   Developed by [Posit](https://posit.co/) (RStudio) as Rmarkdown's next generation. "Code output via integration with Jupyter, Knitr, and Observable" - [GitHub Repo](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
+
+. . .
+
 -   Batteries included ("articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more") - [quarto.org](https://quarto.org/)
 -   Code chunks in .qmd markdown files are evaluated by the language engine, and the document is built using Pandoc with reasonable default formatting
 
-## Rmarkdown's next generation
-
--   One `qmd` file -\> parser -\> one or more outputs
--   2 files:
-    -   `qmd` containing the "source" (configuration, text and code)
-    -   `*` containing the output (`pdf`, `html`, `docx`...)
--   Syntax:
-    -   Config: yaml, metadata
-    -   Rich text: markdown on steroids (variable text -inline code-, callouts, mermaid diagrams...)
-    -   Code: code blocks (they can have special comments for configs, )
--   One `qmd` file, one or more outputs
-
-## Features: Programming languages
+## Features
 
 -   Works with `R`, `Python`, `Julia`, `Observable`
-    -   Can combine different languages in a single document
-
-## Features: Integrations
-
--   [getting started](https://quarto.org/docs/get-started/)
+    -   Can combine different languages in a single document!
+-   Integrations - see [getting started](https://quarto.org/docs/get-started/)
     -   RStudio
     -   Visual Studio Code/VS Codium
     -   Jupyter
-
-## Features: Outputs
-
 -   Diverse outputs
     -   Formats: `pdf`, `html`, `epub`, `docx`...
     -   Media: articles, presentations (like this one!), blogs, websites, books...
 
-## Features: Authoring
-
--   Authoring tools: scientific markdown, including equations, citations, crossrefs, bibliographical references, figure panels, callouts, advanced layout, and more.
-
-. . .
-
--   File format `qmd` is a text file that doesn't include output. Human readable and good for version control.
-
-## About Quarto
-
-A brief introduction...
-
-Possible outline:
-
-1.  What's quarto
-2.  What can we do with it?
-3.  How does it work?
 
 ## Further references
 
@@ -235,66 +188,63 @@ Possible outline:
 -   James Goldie: [*Quarto: Create beautiful documents with R, Python, Julia and Observable*](https://runapp2022.talks.jamesgoldie.dev/#/james-goldie)
 -   Tom Mock: [*2-hour workshop on quarto*]() ([Video Recording](https://www.youtube.com/watch?v=yvi5uXQMvu4), [Slides](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html))
 
+# Plan
+
+1.  Welcome and introduction (10m) ✔️
+2.  Introduction to Quarto (25m) ✔️
+3.  Use cases
+    1.  Group formation and cases (15m)
+    2.  Working in groups - with break! (1hr 35m)
+4.  Large group Discussion (40m)
+5.  Farewell (10m)
 
 # Use cases {background-color="#552D62"}
 
-## Overview
+# Group formation and cases {background-image="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" background-size="contain" background-opacity="0.1"}
 
-1.  Pick a case [from the list](https://github.com/WarwickCIM/quarto-workshop/labels/cases) you would like to develop during this workshop
-2.  Create groups of people who want to work on the same case and assign roles:
-3.  Work on your case and **document your progress**!
+1. Choose a case from the ([case list](https://github.com/WarwickCIM/quarto-workshop/labels/cases)) on GitHub
 
-::: aside
+. . .
 
-This assumes you have already:
+2. Each case has a place in the room. Please go to the place for your corresponding case.
 
-1. Installed quarto in your machine (instructions here)
-2. read the case studies and you have a preference for at least one of them)
+3. Form groups of 4 or 5. Say hi to your new friends.
 
-:::
+. . .
 
-## Use cases and groups creation {background-image="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" background-size="contain" background-opacity="0.1"}
+4. Choose Documentors and Spokesperson
 
-1. There's a designated areas for every use case
-2. Move to the designated area, according to the use case you'd like to work on
-3. Meet and greet
-4. Assign roles:
-    1. Documentator(s) (at least one person)
-    2. Spokesperson/representative (one person, only)
+# Plan
 
-::: aside
-This assumes you have already read the case studies and you have a preference for at least one of them.
-
-If you haven't, please join one of the existing groups (or create a new one) whenever you're ready.
-:::
+1.  Welcome and introduction (10m) ✔️
+2.  Introduction to Quarto (25m) ✔️
+3.  Use cases
+    1.  Group formation and cases (15m) ✔️
+    2.  Working in groups - with break! (1hr 35m)
+4.  Large group Discussion (40m)
+5.  Farewell (10m)
 
 ## Work on your case
 
-
 1. Install quarto's binaries: <https://quarto.org/docs/get-started/>
 2. Fork [this repository](https://github.com/WarwickCIM/quarto-workshop/)
+
+. . .
+
 3. Create a new folder for your case under `cases/`
-4. Copy the template from  `cases/template/documentation_template.qmd `  to your folder, which will be used to document the process
+4. Copy the template from  [`cases/template/documentation_template.qmd`](https://github.com/WarwickCIM/quarto-workshop/blob/main/cases/template/documentation_template.qmd) to your folder, which will be used to document the process
 5. Make any changes needed
+
+. . .
+
 6. Commit any changes
 7. Submit Pull Request to the [Workshop's GitHub repo](https://github.com/WarwickCIM/quarto-workshop/)
 
 
 ::: callout-important
 
-**Do not forget about documenting the process!**
+**Please document the process!**
 :::
-
-
-
-
-## Some resources
-
-Should you need them, these resources may be useful for your work group
-
-1. [Instructions for installing Quarto](https://quarto.org/docs/get-started/)
-2. [Workshop's Repository](https://github.com/WarwickCIM/quarto-workshop) containing slides, instructions, issues...
-   1. [List of use cases](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Acases)
 
 ##  {background-color="black" background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" background-opacity="0.85"}
 
@@ -310,23 +260,29 @@ See you at 16:00
 
 # RSECon-vene? {background-color="#552D62" background-image="https://i2-prod.chroniclelive.co.uk/incoming/article5680478.ece/ALTERNATES/s1227b/Quayside-at-night-by-Alan-Firth.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
 
-# Discussion
+# Plan
+
+1.  Welcome and introduction (10m) ✔️
+2.  Introduction to Quarto (25m) ✔️
+3.  Use cases ✔️
+    1.  Group formation and cases (15m) ✔️
+    2.  Working in groups - with break! (1hr 35m) ✔️
+4.  Large group Discussion (40m)
+5.  Farewell (10m)
+
+
+# Group Feedback {background-color="#552D62" background-image="images/feedback.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
+
+* Spokesperson from each group
+* What did you do? What were your thoughts?
+
+# Group Discussion {background-color="#552D62" background-image="images/pelican-discussion.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
 
 Some ideas (but feel free to add yours!):
 
--   How mature is quarto to you?
-
--   Do you see yourself using quarto? In which context(s)?
-
--   Do you see quarto replacing your current toolkit?
-
--   What's missing in Quarto? (i.e mybinder?)
-
--   Quarto, compared to
-
-    -   Other formats: Format `*.qmd` (code) + output vs `*.ipynb` (json with output)
-
-    -   Other tools (i.e. jupyterbook, bookdown..., distill)
+* How are you going to use quarto in the future?
+* If not, why not?
+* What's missing?
 
 # What's next? {background-color="#552D62"}
 
