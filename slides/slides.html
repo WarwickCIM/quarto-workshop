@@ -7,7 +7,7 @@
 <link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.0.18">
+  <meta name="generator" content="quarto-1.0.38">
 
   <meta name="author" content="Carlos Cámara-Menoyo | Cagatay Turkay | James Tripp">
   <title>Quarto: A library to run them all?</title>
@@ -414,7 +414,11 @@
 <p><strong>About the session</strong></p>
 <p>This is not (just) a talk about quarto. Others have done it very well before<sup>1</sup>. We will be presenting quarto’s main claims and seeing how it compares to other alternatives.</p>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>See references’ section :::</p></li></ol></aside></section></section>
+<div class="fragment">
+<p><strong>About the slides</strong></p>
+<p>These slides have been created with quarto (of course!)</p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>See references’ section</p></li></ol></aside></section></section>
 <section id="goals" class="title-slide slide level1 center">
 <h1>Goals</h1>
 <ul>
@@ -605,10 +609,10 @@
 </div>
 </div>
 </section>
-<section id="section" class="slide level2" data-background-color="black" data-background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" data-background-opacity="0.85">
-<h2></h2>
+<section id="let-the-games-begin" class="slide level2" data-background-color="black" data-background-image="images/hunger_games_noloop.gif" data-background-opacity="0.85">
+<h2>Let the games begin!</h2>
 </section></section>
-<section id="section-1" class="title-slide slide level1 center">
+<section id="section" class="title-slide slide level1 center">
 <h1></h1>
 <div class="r-fit-text">
 <p>See you at 16:00</p>
@@ -904,7 +908,10 @@
         }
       }
       const toggleBodyColorPrimary = () => {
-        toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
       }
       toggleBodyColorPrimary();  
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

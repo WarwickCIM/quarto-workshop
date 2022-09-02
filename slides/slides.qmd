@@ -109,8 +109,14 @@ We are just quarto users who want to share our progress and engage with other us
 
 This is not (just) a talk about quarto. Others have done it very well before[^1]. We will be presenting quarto's main claims and seeing how it compares to other alternatives.
 
+. . .
+
+**About the slides**
+
+These slides have been created with quarto (of course!)
+
 [^1]: See references' section
-:::
+
 
 # Goals
 
@@ -246,7 +252,9 @@ This is not (just) a talk about quarto. Others have done it very well before[^1]
 **Please document the process!**
 :::
 
-##  {background-color="black" background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" background-opacity="0.85"}
+##  Let the games begin! {background-color="black" background-image="images/hunger_games_noloop.gif" background-opacity="0.85"}
+
+
 
 # 
 
