@@ -3,7 +3,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Materials for the [RSE Conf 2022](https://rsecon2022.society-rse.org/) workshop: _"Quarto: a Library to run them all?"_, led by Carlos Cámara-Menoyo and Cagatay Turkay.
+Materials for the [RSE Conf 2022](https://rsecon2022.society-rse.org/) workshop: _"Quarto: a Library to run them all?"_, led by Carlos Cámara-Menoyo, James Tripp and Cagatay Turkay.
 
 
 ## Overview
