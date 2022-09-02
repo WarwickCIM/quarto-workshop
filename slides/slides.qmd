@@ -110,7 +110,7 @@ Keep it short, please![^2]
 Feel free to add your details to `readme.md` via PR.
 :::
 
-# Goals
+## Goals
 
 -   Introduce Quarto
 -   Facilitate you working with Quatro
@@ -118,10 +118,13 @@ Feel free to add your details to `readme.md` via PR.
 
 # Plan
 
-1.  Introduce Quarto and setup (25m)
-2.  Group formation and tasks (15m)
-3.  Working in groups - with break! (1hr 35m)
-4.  Discussion (35m)
+1.  Welcome and introduction (10m) ✔️
+2.  Introduction to Quarto (25m)
+3.  Use cases
+    1.  Group formation and cases (15m)
+    2.  Working in groups - with break! (1hr 35m)
+4.  Large group Discussion (40m)
+5.  Farewell (10m)
 
 # Quarto {background-color="#2780e3"}
 
@@ -216,96 +219,74 @@ Possible outline:
 -   Tom Mock: [*2-hour workshop on quarto*]() ([Video Recording](https://www.youtube.com/watch?v=yvi5uXQMvu4), [Slides](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html))
 
 
-# The workshop {background-color="#552D62"}
-
-## Setting the environment
-
-1.  Install git
-2.  Install quarto's binary file (<https://quarto.org/docs/get-started/>)
-3.  Clone this repo `git clone git@github.com:WarwickCIM/quarto-workshop.git`
+# Use cases {background-color="#552D62"}
 
 ## Overview
 
-1.  Pick a case you would like to develop during this workshop
-    1.  The issue describes the steps and deliverables
-2.  Create groups of people who want to work on the same case
+1.  Pick a case [from the list](https://github.com/WarwickCIM/quarto-workshop/labels/cases) you would like to develop during this workshop
+2.  Create groups of people who want to work on the same case and assign roles:
 3.  Work on your case and **document your progress**!
-    1.  Generate a `qmd` file with the documentation
-    2.  Submit Pull Request to repo
-    3.  (optional) you may want to link to your repo
 
 ::: aside
-A list of cases will be provided by organisers, but you are free to propose one and develop it, in case there is more people who want to join you.
+
+This assumes you have already:
+
+1. Installed quarto in your machine (instructions here)
+2. read the case studies and you have a preference for at least one of them)
+
 :::
 
-## 1. Pick your case and create a group!
+## Use cases and groups creation {background-image="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" background-size="contain" background-opacity="0.1"}
 
-1.  Choose one of the [provided cases](https://github.com/WarwickCIM/quarto-workshop/labels/cases) (or create a new one!) [![](images/task_list.png)](https://github.com/WarwickCIM/quarto-workshop/labels/cases)
-    1.  Each case has a description of what you need to do, outputs, template and reference.
+1. There's a designated areas for every use case
+2. Move to the designated area, according to the use case you'd like to work on
+3. Meet and greet
+4. Assign roles:
+    1. Documentator(s) (at least one person)
+    2. Spokesperson/representative (one person, only)
 
 ::: aside
-Should you want to create a new task...
+This assumes you have already read the case studies and you have a preference for at least one of them.
+
+If you haven't, please join one of the existing groups (or create a new one) whenever you're ready.
 :::
 
-## 2. Create groups
+## Work on your case
 
-1.  Assign a case to yourself to show interest
-2.  Create a group when/if there are more than one person interested in the task
-3.  Sit close one to another for discussion and group work
-4.  Discuss and learn from others!
-    -   (and document any lesson learnt to share it with the whole group)
 
-## 3. Work and document
+1. Install quarto's binaries: <https://quarto.org/docs/get-started/>
+2. Fork [this repository](https://github.com/WarwickCIM/quarto-workshop/)
+3. Create a new folder for your case under `cases/`
+4. Copy the template from  `cases/template/documentation_template.qmd `  to your folder, which will be used to document the process
+5. Make any changes needed
+6. Commit any changes
+7. Submit Pull Request to the [Workshop's GitHub repo](https://github.com/WarwickCIM/quarto-workshop/)
 
-::: columns
-::: {.column width="65%"}
-1.  Fork the repo
-2.  Use the templates
-    1.  Create a folder with your task `cp tasks/template  task/<number>_<your_task>`
-3.  Document!
-    1.  Use the provided qmd template and edit it as you please
+
+::: callout-important
+
+**Do not forget about documenting the process!**
 :::
 
-::: {.column width="35%"}
-![](images/template.png)
-:::
-:::
 
-## Process' outline
 
-Create a mermaid diagram for the process? (here or elsewhere)
 
-Also consider removing this one:
+## Some resources
 
-```{mermaid}
-%%{init:{'logLevel':'debug', 'theme':'base', 'gitGraph':{'rotateCommitLabel': true}} }%%
-gitGraph
-       commit
-       commit id: "RSEConf22!"
-       branch case_12
-       checkout case_12
-       commit
-       commit id: "Documenting"
-       commit
-       checkout main
-       branch case_11
-       checkout case_11
-       commit
-       commit
-       checkout main
-       branch case_13
-       checkout case_13
-       commit
-       commit
-       checkout main
-       merge case_12
-       merge case_11
-       merge case_13
-       commit
-       commit
-```
+Should you need them, these resources may be useful for your work group
+
+1. [Instructions for installing Quarto](https://quarto.org/docs/get-started/)
+2. [Workshop's Repository](https://github.com/WarwickCIM/quarto-workshop) containing slides, instructions, issues...
+   1. [List of use cases](https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Acases)
 
 ##  {background-color="black" background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" background-opacity="0.85"}
+
+# 
+
+::: {.r-fit-text}
+See you at 16:00
+:::
+
 
 # Reconvene! {background-color="#552D62" auto-animate=true auto-animate-easing="ease-in-out"}
 
