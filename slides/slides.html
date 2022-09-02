@@ -7,7 +7,7 @@
 <link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.0.38">
+  <meta name="generator" content="quarto-1.0.18">
 
   <meta name="author" content="Carlos Cámara-Menoyo | Cagatay Turkay | James Tripp">
   <title>Quarto: A library to run them all?</title>
@@ -402,7 +402,7 @@
 </ol>
 
 <aside><div>
-<p>Usually, we’ll be asking you to introduce yourselves, but given the large number of attendees, we have done that via this github issue.</p>
+<p>Usually, we’ll be asking you to introduce yourselves, but given the large number of attendees, we have done that via <a href="https://github.com/WarwickCIM/quarto-workshop/issues/17">this github issue</a>.</p>
 </div></aside></section>
 <section id="disclaimer" class="slide level2" data-background-color="black" data-background-image="https://images.unsplash.com/photo-1608094920984-5b54ce1bb792?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" data-background-opacity="0.4">
 <h2>Disclaimer</h2>
@@ -414,20 +414,7 @@
 <p><strong>About the session</strong></p>
 <p>This is not (just) a talk about quarto. Others have done it very well before<sup>1</sup>. We will be presenting quarto’s main claims and seeing how it compares to other alternatives.</p>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>See references’ section</p></li></ol></aside></section>
-<section id="introduce-yourselves" class="slide level2" data-background-color="black" data-background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" data-background-opacity="0.6">
-<h2>Introduce yourselves!</h2>
-<p>Keep it short, please!<sup>1</sup></p>
-<ul>
-<li>Name</li>
-<li>Affiliation/Job title</li>
-<li>Preferred programming Language</li>
-<li>Previous experience with Quarto</li>
-</ul>
-
-<aside><div>
-<p>Feel free to add your details to <code>readme.md</code> via PR.</p>
-</div><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>We’ll have plenty of time to getting to know each other</p></li></ol></aside></section></section>
+<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>See references’ section :::</p></li></ol></aside></section></section>
 <section id="goals" class="title-slide slide level1 center">
 <h1>Goals</h1>
 <ul>
@@ -495,78 +482,33 @@
 <ul>
 <li>“Open-source scientific and technical publishing system built on Pandoc” - <a href="https://quarto.org/">quarto.org</a></li>
 <li>Developed by <a href="https://posit.co/">Posit</a> (RStudio) as Rmarkdown’s next generation. “Code output via integration with Jupyter, Knitr, and Observable” - <a href="https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/">GitHub Repo</a></li>
+</ul>
+<div class="fragment">
+<ul>
 <li>Batteries included (“articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more”) - <a href="https://quarto.org/">quarto.org</a></li>
 <li>Code chunks in .qmd markdown files are evaluated by the language engine, and the document is built using Pandoc with reasonable default formatting</li>
 </ul>
+</div>
 </section>
-<section id="rmarkdowns-next-generation" class="slide level2">
-<h2>Rmarkdown’s next generation</h2>
-<ul>
-<li>One <code>qmd</code> file -&gt; parser -&gt; one or more outputs</li>
-<li>2 files:
-<ul>
-<li><code>qmd</code> containing the “source” (configuration, text and code)</li>
-<li><code>*</code> containing the output (<code>pdf</code>, <code>html</code>, <code>docx</code>…)</li>
-</ul></li>
-<li>Syntax:
-<ul>
-<li>Config: yaml, metadata</li>
-<li>Rich text: markdown on steroids (variable text -inline code-, callouts, mermaid diagrams…)</li>
-<li>Code: code blocks (they can have special comments for configs, )</li>
-</ul></li>
-<li>One <code>qmd</code> file, one or more outputs</li>
-</ul>
-</section>
-<section id="features-programming-languages" class="slide level2">
-<h2>Features: Programming languages</h2>
+<section id="features" class="slide level2">
+<h2>Features</h2>
 <ul>
 <li>Works with <code>R</code>, <code>Python</code>, <code>Julia</code>, <code>Observable</code>
 <ul>
-<li>Can combine different languages in a single document</li>
+<li>Can combine different languages in a single document!</li>
 </ul></li>
-</ul>
-</section>
-<section id="features-integrations" class="slide level2">
-<h2>Features: Integrations</h2>
-<ul>
-<li><a href="https://quarto.org/docs/get-started/">getting started</a>
+<li>Integrations - see <a href="https://quarto.org/docs/get-started/">getting started</a>
 <ul>
 <li>RStudio</li>
 <li>Visual Studio Code/VS Codium</li>
 <li>Jupyter</li>
 </ul></li>
-</ul>
-</section>
-<section id="features-outputs" class="slide level2">
-<h2>Features: Outputs</h2>
-<ul>
 <li>Diverse outputs
 <ul>
 <li>Formats: <code>pdf</code>, <code>html</code>, <code>epub</code>, <code>docx</code>…</li>
 <li>Media: articles, presentations (like this one!), blogs, websites, books…</li>
 </ul></li>
 </ul>
-</section>
-<section id="features-authoring" class="slide level2">
-<h2>Features: Authoring</h2>
-<ul>
-<li>Authoring tools: scientific markdown, including equations, citations, crossrefs, bibliographical references, figure panels, callouts, advanced layout, and more.</li>
-</ul>
-<div class="fragment">
-<ul>
-<li>File format <code>qmd</code> is a text file that doesn’t include output. Human readable and good for version control.</li>
-</ul>
-</div>
-</section>
-<section id="about-quarto-1" class="slide level2">
-<h2>About Quarto</h2>
-<p>A brief introduction…</p>
-<p>Possible outline:</p>
-<ol type="1">
-<li>What’s quarto</li>
-<li>What can we do with it?</li>
-<li>How does it work?</li>
-</ol>
 </section>
 <section id="further-references" class="slide level2">
 <h2>Further references</h2>
@@ -577,51 +519,74 @@
 <li>Tom Mock: <a href=""><em>2-hour workshop on quarto</em></a> (<a href="https://www.youtube.com/watch?v=yvi5uXQMvu4">Video Recording</a>, <a href="https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html">Slides</a>)</li>
 </ul>
 </section></section>
-<section>
+<section id="plan-1" class="title-slide slide level1 center">
+<h1>Plan</h1>
+<ol type="1">
+<li>Welcome and introduction (10m) ✔️</li>
+<li>Introduction to Quarto (25m) ✔️</li>
+<li>Use cases
+<ol type="1">
+<li>Group formation and cases (15m)</li>
+<li>Working in groups - with break! (1hr 35m)</li>
+</ol></li>
+<li>Large group Discussion (40m)</li>
+<li>Farewell (10m)</li>
+</ol>
+</section>
+
 <section id="use-cases" class="title-slide slide level1 center" data-background-color="#552D62">
 <h1>Use cases</h1>
 
 </section>
-<section id="overview" class="slide level2">
-<h2>Overview</h2>
-<ol type="1">
-<li>Pick a case <a href="https://github.com/WarwickCIM/quarto-workshop/labels/cases">from the list</a> you would like to develop during this workshop</li>
-<li>Create groups of people who want to work on the same case and assign roles:</li>
-<li>Work on your case and <strong>document your progress</strong>!</li>
-</ol>
 
-<aside><div>
-<p>This assumes you have already:</p>
+<section id="group-formation-and-cases" class="title-slide slide level1 center" data-background-image="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" data-background-size="contain" data-background-opacity="0.1">
+<h1>Group formation and cases</h1>
 <ol type="1">
-<li>Installed quarto in your machine (instructions here)</li>
-<li>read the case studies and you have a preference for at least one of them)</li>
+<li>Choose a case from the (<a href="https://github.com/WarwickCIM/quarto-workshop/labels/cases">case list</a>) on GitHub</li>
 </ol>
-</div></aside></section>
-<section id="use-cases-and-groups-creation" class="slide level2" data-background-image="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" data-background-size="contain" data-background-opacity="0.1">
-<h2>Use cases and groups creation</h2>
+<div class="fragment">
+<ol start="2" type="1">
+<li><p>Each case has a place in the room. Please go to the place for your corresponding case.</p></li>
+<li><p>Form groups of 4 or 5. Say hi to your new friends.</p></li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="4" type="1">
+<li>Choose Documentors and Spokesperson</li>
+</ol>
+</div>
+</section>
+
+<section>
+<section id="plan-2" class="title-slide slide level1 center">
+<h1>Plan</h1>
 <ol type="1">
-<li>There’s a designated areas for every use case</li>
-<li>Move to the designated area, according to the use case you’d like to work on</li>
-<li>Meet and greet</li>
-<li>Assign roles:
+<li>Welcome and introduction (10m) ✔️</li>
+<li>Introduction to Quarto (25m) ✔️</li>
+<li>Use cases
 <ol type="1">
-<li>Documentator(s) (at least one person)</li>
-<li>Spokesperson/representative (one person, only)</li>
+<li>Group formation and cases (15m) ✔️</li>
+<li>Working in groups - with break! (1hr 35m)</li>
 </ol></li>
+<li>Large group Discussion (40m)</li>
+<li>Farewell (10m)</li>
 </ol>
-
-<aside><div>
-<p>This assumes you have already read the case studies and you have a preference for at least one of them.</p>
-<p>If you haven’t, please join one of the existing groups (or create a new one) whenever you’re ready.</p>
-</div></aside></section>
+</section>
 <section id="work-on-your-case" class="slide level2">
 <h2>Work on your case</h2>
 <ol type="1">
 <li>Install quarto’s binaries: <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a></li>
 <li>Fork <a href="https://github.com/WarwickCIM/quarto-workshop/">this repository</a></li>
+</ol>
+<div class="fragment">
+<ol start="3" type="1">
 <li>Create a new folder for your case under <code>cases/</code></li>
-<li>Copy the template from <code>cases/template/documentation_template.qmd</code> to your folder, which will be used to document the process</li>
+<li>Copy the template from <a href="https://github.com/WarwickCIM/quarto-workshop/blob/main/cases/template/documentation_template.qmd"><code>cases/template/documentation_template.qmd</code></a> to your folder, which will be used to document the process</li>
 <li>Make any changes needed</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="6" type="1">
 <li>Commit any changes</li>
 <li>Submit Pull Request to the <a href="https://github.com/WarwickCIM/quarto-workshop/">Workshop’s GitHub repo</a></li>
 </ol>
@@ -634,21 +599,11 @@
 <p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Do not forget about documenting the process!</strong></p>
+<p><strong>Please document the process!</strong></p>
 </div>
 </div>
 </div>
-</section>
-<section id="some-resources" class="slide level2">
-<h2>Some resources</h2>
-<p>Should you need them, these resources may be useful for your work group</p>
-<ol type="1">
-<li><a href="https://quarto.org/docs/get-started/">Instructions for installing Quarto</a></li>
-<li><a href="https://github.com/WarwickCIM/quarto-workshop">Workshop’s Repository</a> containing slides, instructions, issues…
-<ol type="1">
-<li><a href="https://github.com/WarwickCIM/quarto-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Acases">List of use cases</a></li>
-</ol></li>
-</ol>
+</div>
 </section>
 <section id="section" class="slide level2" data-background-color="black" data-background-image="https://cdn.smartlydressedgames.com/original/2X/7/73bdfa5eed7a5961444409cad426106a7658220b.jpg" data-background-opacity="0.85">
 <h2></h2>
@@ -670,19 +625,36 @@
 
 </section>
 
-<section id="discussion" class="title-slide slide level1 center">
-<h1>Discussion</h1>
+<section id="plan-3" class="title-slide slide level1 center">
+<h1>Plan</h1>
+<ol type="1">
+<li>Welcome and introduction (10m) ✔️</li>
+<li>Introduction to Quarto (25m) ✔️</li>
+<li>Use cases ✔️
+<ol type="1">
+<li>Group formation and cases (15m) ✔️</li>
+<li>Working in groups - with break! (1hr 35m) ✔️</li>
+</ol></li>
+<li>Large group Discussion (40m)</li>
+<li>Farewell (10m)</li>
+</ol>
+</section>
+
+<section id="group-feedback" class="title-slide slide level1 center" data-background-color="#552D62" data-background-image="images/feedback.jpg" data-background-opacity="0.4" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
+<h1 data-id="quarto-animate-title">Group Feedback</h1>
+<ul>
+<li>Spokesperson from each group</li>
+<li>What did you do? What were your thoughts?</li>
+</ul>
+</section>
+
+<section id="group-discussion" class="title-slide slide level1 center" data-background-color="#552D62" data-background-image="images/pelican-discussion.jpg" data-background-opacity="0.4" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
+<h1 data-id="quarto-animate-title">Group Discussion</h1>
 <p>Some ideas (but feel free to add yours!):</p>
 <ul>
-<li><p>How mature is quarto to you?</p></li>
-<li><p>Do you see yourself using quarto? In which context(s)?</p></li>
-<li><p>Do you see quarto replacing your current toolkit?</p></li>
-<li><p>What’s missing in Quarto? (i.e mybinder?)</p></li>
-<li><p>Quarto, compared to</p>
-<ul>
-<li><p>Other formats: Format <code>*.qmd</code> (code) + output vs <code>*.ipynb</code> (json with output)</p></li>
-<li><p>Other tools (i.e.&nbsp;jupyterbook, bookdown…, distill)</p></li>
-</ul></li>
+<li>How are you going to use quarto in the future?</li>
+<li>If not, why not?</li>
+<li>What’s missing?</li>
 </ul>
 </section>
 
@@ -932,10 +904,7 @@
         }
       }
       const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
+        toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
       }
       toggleBodyColorPrimary();  
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
