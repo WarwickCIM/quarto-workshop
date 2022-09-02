@@ -77,6 +77,21 @@ editor: visual
 He uses Python and I love using R and we both work together. It is partially because of that that we decided to explore using quarto in our Data Science and Data Visualisation classes. This workshop is, then, an excuse to force us using it and learn by doing.
 :::
 
+## About you {background-color="black" background-image="https://healthyschoolspa.org/wp-content/uploads/2019/02/Kids-in-Class.jpeg" background-opacity="0.5"}
+
+Let us know about your knowledge about quarto
+
+1. Experts
+2. Some degree of knowledge
+3. Never used before, but I know what it is
+3. I do not know what it is
+
+::: aside
+
+Usually, we'll be asking you to introduce yourselves, but given the large number of attendees, we have done that via this github issue.
+
+:::
+
 ## Disclaimer {background-color="black" background-image="https://images.unsplash.com/photo-1608094920984-5b54ce1bb792?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.4"}
 
 **About us**
@@ -95,6 +110,8 @@ This is not (just) a talk about quarto. Others have done it very well before[^1]
 
 [^1]: See references' section
 
+
+
 ## Introduce yourselves! {background-color="black" background-image="https://images.unsplash.com/flagged/photo-1580139624070-910f651c1b78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.6"}
 
 Keep it short, please![^2]
@@ -110,7 +127,7 @@ Keep it short, please![^2]
 Feel free to add your details to `readme.md` via PR.
 :::
 
-## Goals
+# Goals
 
 -   Introduce Quarto
 -   Facilitate you working with Quatro
