@@ -5,9 +5,9 @@
 <script src="slides_files/libs/quarto-html/popper.min.js"></script>
 <script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet">
+<link href="slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.563">
+  <meta name="generator" content="quarto-1.0.38">
 
   <meta name="author" content="Carlos Cámara-Menoyo | Cagatay Turkay | James Tripp">
   <title>Quarto: A library to run them all?</title>
@@ -317,7 +317,7 @@
   <script src="slides_files/libs/quarto-diagram/mermaid-init.js"></script>
   <link href="slides_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
-<body>
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
@@ -637,6 +637,11 @@
 <p><img data-src="images/template.png"></p>
 </div>
 </div>
+</section>
+<section id="process-outline" class="slide level2">
+<h2>Process’ outline</h2>
+<p>Create a mermaid diagram for the process? (here or elsewhere)</p>
+<p>Also consider removing this one:</p>
 <div class="cell" data-reveal="true">
 <div class="cell-output-display">
 <div>
@@ -645,25 +650,25 @@
 gitGraph
        commit
        commit id: "RSEConf22!"
-       branch task_12
-       checkout task_12
+       branch case_12
+       checkout case_12
        commit
        commit id: "Documenting"
        commit
        checkout main
-       branch task_11
-       checkout task_11
+       branch case_11
+       checkout case_11
        commit
        commit
        checkout main
-       branch task_13
-       checkout task_13
+       branch case_13
+       checkout case_13
        commit
        commit
        checkout main
-       merge task_12
-       merge task_11
-       merge task_13
+       merge case_12
+       merge case_11
+       merge case_13
        commit
        commit
 </pre>
@@ -704,8 +709,20 @@ gitGraph
 </ul>
 </section>
 
-<section id="thank-you" class="title-slide slide level1 center" data-background-color="#552D62">
-<h1>Thank you!</h1>
+<section id="whats-next" class="title-slide slide level1 center" data-background-color="#552D62">
+<h1>What’s next?</h1>
+<p>If you’ve enjoyed the workshop and want to keep exploring quarto, there are some things that can be done:</p>
+<ul>
+<li>Tell us how we did (fill in this form)</li>
+<li>Keep in touch with us!</li>
+<li>Keep extending the use cases and convert this into a repository for quarto use cases</li>
+<li>…</li>
+</ul>
+</section>
+
+<section id="thanks" class="title-slide slide level1 center" data-background-color="#552D62">
+<h1>Thanks!</h1>
+<p>Carlos Cámara | James Tripp | Cagatay Turkay</p>
 
 <img src="images/logo_black.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
@@ -926,6 +943,24 @@ gitGraph
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
       tabsets.forEach(function(tabset) {
         const tabby = new Tabby('#' + tabset.id);

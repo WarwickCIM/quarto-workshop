@@ -271,30 +271,36 @@ Should you want to create a new task...
 :::
 :::
 
+## Process' outline
+
+Create a mermaid diagram for the process? (here or elsewhere)
+
+Also consider removing this one:
+
 ```{mermaid}
 %%{init:{'logLevel':'debug', 'theme':'base', 'gitGraph':{'rotateCommitLabel': true}} }%%
 gitGraph
        commit
        commit id: "RSEConf22!"
-       branch task_12
-       checkout task_12
+       branch case_12
+       checkout case_12
        commit
        commit id: "Documenting"
        commit
        checkout main
-       branch task_11
-       checkout task_11
+       branch case_11
+       checkout case_11
        commit
        commit
        checkout main
-       branch task_13
-       checkout task_13
+       branch case_13
+       checkout case_13
        commit
        commit
        checkout main
-       merge task_12
-       merge task_11
-       merge task_13
+       merge case_12
+       merge case_11
+       merge case_13
        commit
        commit
 ```
@@ -324,4 +330,15 @@ Some ideas (but feel free to add yours!):
 
     -   Other tools (i.e. jupyterbook, bookdown..., distill)
 
-# Thank you! {background-color="#552D62"}
+# What's next? {background-color="#552D62"}
+
+If you've enjoyed the workshop and want to keep exploring quarto, there are some things that can be done:
+
+- Tell us how we did (fill in this form)
+- Keep in touch with us!
+- Keep extending the use cases and convert this into a repository for quarto use cases
+- ...
+
+# Thanks! {background-color="#552D62"}
+
+Carlos Cámara | James Tripp | Cagatay Turkay
