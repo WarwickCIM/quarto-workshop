@@ -41,7 +41,6 @@ All the software used in this workshop is available for GNU/Linux, Windows and M
 To be done later.
 
 ```
-assets/       <-- Images and media used in slides.
 slides/       <-- Slides for the workshop.
 cases/        <-- Quarto use cases, each case in a folder.
 |-- <case_n>  <-- Each case should reside in a folder.
