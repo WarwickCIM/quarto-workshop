@@ -196,7 +196,7 @@ From a technical standpoint (Adapted from [Mock, 2022](https://jthomasmock.githu
 
 [^development]: Development started in January 2021 and is under heavy development (weekly releases)
 
-## How does it work? (1){.smaller}
+## How does it work? (Overview){.smaller}
 
 ::: columns
 ::: {.column width="50%"}
@@ -251,7 +251,9 @@ In this case, an **html document** (line 6) with text, code (folded -see line 9)
 :::
 :::
 
-## How does it work? (2)
+## How does it work?
+
+This is what happens behind the scenes:
 
 ![](images/quarto-diagram.drawio.svg)
 
