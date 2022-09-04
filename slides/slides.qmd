@@ -8,8 +8,8 @@ institute: Centre for Interdisciplinary Methodologies (University of Warwick) | 
 title-slide-attributes:
     data-background-image: "https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456"
     # data-background-size: contain
+    #data-background-color: "#552D62"
     data-background-opacity: "0.40"
-    data-background-color: "#552D62"
 format: 
   revealjs:
     #theme: serif
@@ -21,7 +21,26 @@ editor: visual
 from: markdown+emoji
 ---
 
-# Introduction {background-color="#552D62"}
+# Goals
+
+-   Introduce Quarto
+-   Facilitate you working with Quatro
+-   Have a discussion evaluating Quatro
+
+# Plan
+
+1.  Introductions (10m) 
+2.  Introduction to Quarto (25m)
+3.  Use cases
+    1.  Group formation and cases (15m)
+    2.  Working in groups - with break! (1hr 35m)
+4.  Large group Discussion (40m)
+5.  Farewell (10m)
+
+
+# Introductions {background-color="#552D62"}
+
+Let's get to know each other
 
 <!--#Instructions https://quarto.org/docs/presentations/revealjs/  -->
 
@@ -80,16 +99,27 @@ He uses Python and I love using R and we both work together. It is partially bec
 
 ## About you {background-color="black" background-image="https://healthyschoolspa.org/wp-content/uploads/2019/02/Kids-in-Class.jpeg" background-opacity="0.5"}
 
-Let us know about your knowledge about quarto
+Let us know about your **prior knowledge about quarto**
 
 1. Experts
 2. Some degree of knowledge
 3. Never used before, but I know what it is
 3. I do not know what it is
 
+. . .
+
+About your **preferred programming language**:
+
+1. R
+2. Python
+
+. . . 
+
+About **this workshop**: Have you had time to read cases' descriptions?
+
 ::: aside
 
-Usually, we'll be asking you to introduce yourselves, but given the large number of attendees, we have done that via [this github issue](https://github.com/WarwickCIM/quarto-workshop/issues/17).
+Usually, we'd be asking you to introduce yourselves, but given the large number of attendees, we have done that via [this github issue](https://github.com/WarwickCIM/quarto-workshop/issues/17){style="color:white!important;text-decoration:underline"}.
 
 :::
 
@@ -118,23 +148,9 @@ These slides have been created with quarto (of course!)
 [^1]: See references' section
 
 
-# Goals
-
--   Introduce Quarto
--   Facilitate you working with Quatro
--   Have a discussion evaluating Quatro
-
-# Plan
-
-1.  Welcome and introduction (10m) ✔️
-2.  Introduction to Quarto (25m)
-3.  Use cases
-    1.  Group formation and cases (15m)
-    2.  Working in groups - with break! (1hr 35m)
-4.  Large group Discussion (40m)
-5.  Farewell (10m)
-
 # Quarto {background-color="#2780e3"}
+
+A brief overview to quarto (thats why we are here, right?)
 
 ## Preamble
 
@@ -164,49 +180,257 @@ These slides have been created with quarto (of course!)
 :::
 :::
 
-## About quarto
+## What's quarto?
+
+According to their creators: 
 
 -   "Open-source scientific and technical publishing system built on Pandoc" - [quarto.org](https://quarto.org/)
--   Developed by [Posit](https://posit.co/) (RStudio) as Rmarkdown's next generation. "Code output via integration with Jupyter, Knitr, and Observable" - [GitHub Repo](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
+-   Developed[^development] by [Posit](https://posit.co/) (RStudio) as Rmarkdown's next generation. "Code output via integration with Jupyter, Knitr, and Observable" - [GitHub Repo](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
+
+
+. . . 
+
+From a technical standpoint (Adapted from [Mock, 2022](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html#/so-what-is-quarto)):
+
+> Quarto is a **command line interface** (CLI) [that **renders** plain text formats (`.qmd`, `.rmd`, `.md`) OR mixed formats (`.ipynb`/Jupyter notebook)]{.fragment} [into different **formats** (PDF/Word/HTML)]{.fragment}  [and **outputs** (reports, books, websites, presentations...).]{.fragment} 
+
+[^development]: Development started in January 2021 and is under heavy development (weekly releases)
+
+## How does it work? (1){.smaller}
+
+::: columns
+::: {.column width="50%"}
+
+From a `qmd` file...
+
+````{.r code-line-numbers="|1-10|12-16|17-26"}
+---
+title: "ggplot2 demo"
+author: "Norah Jones"
+date: "5/22/2021"
+format: 
+    html:
+    fig-width: 8
+    fig-height: 4
+    code-fold: true
+---
+
+## Air Quality
+
+@fig-airquality further explores the impact of temperature 
+    on ozone level.
+
+```{{r}}
+#| label: fig-airquality
+#| fig-cap: Temperature and ozone level.
+#| warning: false
+library(ggplot2)
+ggplot(airquality, aes(Temp, Ozone)) + 
+    geom_point() + 
+    geom_smooth(method = "loess"
+)
+```
+````
+
+Anatomy:
+
+* Frontmatter defintions
+* Content
+    * Text (Markdown with batteries)
+    * Code blocks 
+
+:::
+
+::: {.column width="50%" .fragment}
+
+... to its output.
+
+![](https://quarto.org/images/hello-knitr.png)
+
+In this case, an **html document** (line 6) with text, code (folded -see line 9) and output.
+:::
+:::
+
+## How does it work? (2)
+
+![](images/quarto-diagram.drawio.svg)
+
+
+## How can quarto be called? {.smaller}
+
+From CLI:
+
+```{.bash}
+quarto --help
+```
 
 . . .
 
--   Batteries included ("articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more") - [quarto.org](https://quarto.org/)
--   Code chunks in .qmd markdown files are evaluated by the language engine, and the document is built using Pandoc with reasonable default formatting
+From your favourite IDE:
 
-## Features
+::: r-stack
+![](https://quarto.org/docs/tools/images/rstudio-preview.png){.fragment width="1500" fig-alt="A screenshot of a Quarto document rendered inside RStudio"}
 
--   Works with `R`, `Python`, `Julia`, `Observable`
-    -   Can combine different languages in a single document!
--   Integrations - see [getting started](https://quarto.org/docs/get-started/)
+![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){.fragment width="1500" fig-alt="A screenshot of a Quarto document rendered inside JupyterLab"}
+
+![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment width="1500" fig-alt="A screenshot of a Quarto document rendered inside VSCode"}
+:::
+
+
+## What can quarto do? {.smaller}
+
+::: aside
+Visit [Quarto's gallery](https://quarto.org/docs/gallery/) for more examples
+:::
+
+:::: panel-tabset
+
+### Documents
+
+Articles and reports in html, docx, pdf, with complex layouts or based on templates.
+
+<!-- [![](images/gallery_document_tufte.png)](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html) -->
+
+[![Shamely copied from Quarto's gallery](images/gallery_documents.png)](https://quarto.org/docs/gallery/)
+
+### Presentations
+
+In ppt, [beamer](https://latex-beamer.com/) or [revealjs](https://revealjs.com/)
+
+[![](images/gallery_slides_mock_workshop.png)](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html)
+
+### Projects
+
+Such as websites, blogs, wikis... (several `*.qmd` files + `_quarto.yml` with config)
+
+::: columns
+
+::: {.column width="33%"}
+**Websites**
+
+Image here
+:::
+::: {.column width="33%"}
+**Blogs**
+
+Image here
+
+:::
+::: {.column width="33%"}
+**Wikis**
+
+Image here
+:::
+:::
+
+::::
+
+## What can quarto do? (Interactivity) {.smaller}
+
+Additionally, we can add interactivity[^interactivity] to the previous outputs:
+
+[^interactivity]: More info: [Interactivity overview (Official Guide)](https://quarto.org/docs/interactive/)
+
+::: panel-tabset
+
+### htmlwidgets
+
+
+
+```{r}
+#| code-fold: true
+#| echo: true
+library(leaflet)
+
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat=54.9734625, lng=-1.6242486, popup="RSECon 2022")
+
+```
+
+<small>Documentation here <https://quarto.org/docs/interactive/widgets/htmlwidgets.html></small>
+
+
+### jupyterwidgets
+
+```{.python}
+import plotly.express as px
+import plotly.io as pio
+df = px.data.iris()
+fig = px.scatter(df, x="sepal_width", y="sepal_length", 
+                 color="species", 
+                 marginal_y="violin", marginal_x="box", 
+                 trendline="ols", template="simple_white")
+fig.show()
+```
+
+<small>Documentation here: <https://quarto.org/docs/interactive/widgets/jupyter.html></small>
+
+### shiny
+
+[![Diamonds' explorer](images/gallery_shiny.png)](https://jjallaire.shinyapps.io/diamonds-explorer/)
+
+Documentation here: <https://quarto.org/docs/interactive/shiny/>
+
+### Observable
+
+[![Penguin's explorer](images/gallery_observable_penguins.png)](https://quarto.org/docs/interactive/ojs/)
+
+Documentation here: <https://quarto.org/docs/interactive/ojs/>
+
+:::
+
+
+## Key features {background-color="rgb(236, 248, 232)"}
+ 
+-   Language agnostic (Works with `R`, `Python`, `Julia`, `Observable`):
+    -   Can combine different languages in a single document
+    -   Same syntax
+    -   One command line
+
+. . . 
+
+-   IDE Agnostic (Integrations - see [getting started](https://quarto.org/docs/get-started/))
     -   RStudio
     -   Visual Studio Code/VS Codium
     -   Jupyter
+
+. . . 
+
 -   Diverse outputs
     -   Formats: `pdf`, `html`, `epub`, `docx`...
     -   Media: articles, presentations (like this one!), blogs, websites, books...
+-   Sensible defaults
+    -   Bootstrap
+
+
+## Key features {background-color="rgb(255, 241, 232)"}
+
+Most of the "not so great" features derive from being under heavy development:
+
+-   New features to come (to be at par with knitr and to surpass it)
+    - No new features added to `knitr`
+-   Not as mature as other solutions
+-   Weekly releases 
+    - Different versions, different results
 
 
 ## Further references
 
--   [*Hello Quarto! A Quarto Chat with NASA Openscapes, co-hosted with R-Ladies Santa Barbara*](https://www.openscapes.org/blog/2022/06/22/hello-quarto/)
--   Mine Çetinkaya-Rundel and Julia Stewart Lowndes: [*Hello quarto*](https://mine.quarto.pub/hello-quarto/#/hello-quarto-title)
+These references introduce quarto way more extensively than we just did:
+
 -   James Goldie: [*Quarto: Create beautiful documents with R, Python, Julia and Observable*](https://runapp2022.talks.jamesgoldie.dev/#/james-goldie)
--   Tom Mock: [*2-hour workshop on quarto*]() ([Video Recording](https://www.youtube.com/watch?v=yvi5uXQMvu4), [Slides](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html))
-
-# Plan
-
-1.  Welcome and introduction (10m) ✔️
-2.  Introduction to Quarto (25m) ✔️
-3.  Use cases
-    1.  Group formation and cases (15m)
-    2.  Working in groups - with break! (1hr 35m)
-4.  Large group Discussion (40m)
-5.  Farewell (10m)
+-   [*Hello Quarto! A Quarto Chat with NASA Openscapes, co-hosted with R-Ladies Santa Barbara*](https://www.openscapes.org/blog/2022/06/22/hello-quarto/)
+    -   Mine Çetinkaya-Rundel and Julia Stewart Lowndes: [*Hello quarto*](https://mine.quarto.pub/hello-quarto/#/hello-quarto-title)
+-   Tom Mock: [Getting started with Quarto: *2-hour workshop on quarto*](https://jthomasmock.github.io/quarto-2hr-webinar/) 
+    -   [Video Recording](https://www.youtube.com/watch?v=yvi5uXQMvu4)
+    -   [Slides](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html)
 
 # Use cases {background-color="#552D62"}
 
-# Group formation and cases {background-image="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" background-size="contain" background-opacity="0.1"}
+Your turn, now
+
+## Group formation and cases {background-image="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" background-size="contain" background-opacity="0.1"}
 
 1. Choose a case from the ([case list](https://github.com/WarwickCIM/quarto-workshop/labels/cases)) on GitHub
 
@@ -219,16 +443,6 @@ These slides have been created with quarto (of course!)
 . . .
 
 4. Choose Documentors and Spokesperson
-
-# Plan
-
-1.  Welcome and introduction (10m) ✔️
-2.  Introduction to Quarto (25m) ✔️
-3.  Use cases
-    1.  Group formation and cases (15m) ✔️
-    2.  Working in groups - with break! (1hr 35m)
-4.  Large group Discussion (40m)
-5.  Farewell (10m)
 
 ## Work on your case
 
@@ -263,28 +477,19 @@ See you at 16:00
 :::
 
 
-# Reconvene! {background-color="#552D62" auto-animate=true auto-animate-easing="ease-in-out"}
+# [R]{data-id="R"}econ[vene]{data-id="convene"}! {background-color="#552D62" auto-animate=true auto-animate-easing="ease-in-out"}
+For the large group discussion
 
 
-# RSECon-vene? {background-color="#552D62" background-image="https://i2-prod.chroniclelive.co.uk/incoming/article5680478.ece/ALTERNATES/s1227b/Quayside-at-night-by-Alan-Firth.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
+# [R]{data-id="R"}SECon-[vene]{data-id="convene"}? {background-color="#552D62" background-image="https://i2-prod.chroniclelive.co.uk/incoming/article5680478.ece/ALTERNATES/s1227b/Quayside-at-night-by-Alan-Firth.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
+For the large group discussion
 
-# Plan
-
-1.  Welcome and introduction (10m) ✔️
-2.  Introduction to Quarto (25m) ✔️
-3.  Use cases ✔️
-    1.  Group formation and cases (15m) ✔️
-    2.  Working in groups - with break! (1hr 35m) ✔️
-4.  Large group Discussion (40m)
-5.  Farewell (10m)
-
-
-# Group Feedback {background-color="#552D62" background-image="images/feedback.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
+## Group Feedback {background-color="#552D62" background-image="images/feedback.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
 
 * Spokesperson from each group
 * What did you do? What were your thoughts?
 
-# Group Discussion {background-color="#552D62" background-image="images/pelican-discussion.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
+## Group Discussion {background-color="#552D62" background-image="images/pelican-discussion.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
 
 Some ideas (but feel free to add yours!):
 
@@ -292,7 +497,7 @@ Some ideas (but feel free to add yours!):
 * If not, why not?
 * What's missing?
 
-# What's next? {background-color="#552D62"}
+# What's next?
 
 If you've enjoyed the workshop and want to keep exploring quarto, there are some things that can be done:
 
@@ -303,4 +508,8 @@ If you've enjoyed the workshop and want to keep exploring quarto, there are some
 
 # Thanks! {background-color="#552D62"}
 
-Carlos Cámara | James Tripp | Cagatay Turkay
+**Carlos Cámara**, carlos.camara@warwick.ac.uk, [https://carloscamara.es/en](https://carloscamara.es/en){style="color:white!important; text-decoration:underline"} 
+
+**James Tripp**, james.tripp@warwick.ac.uk
+
+**Cagatay Turkay**, cagatay.turkay@warwick.ac.uk
