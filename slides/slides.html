@@ -5,9 +5,9 @@
 <script src="slides_files/libs/quarto-html/popper.min.js"></script>
 <script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="slides_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet">
 <link href="slides_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.1.179">
+  <meta name="generator" content="quarto-0.9.563">
 
   <meta name="author" content="Carlos Cámara-Menoyo | Cagatay Turkay | James Tripp">
   <title>Quarto: A library to run them all?</title>
@@ -19,15 +19,10 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -387,16 +382,16 @@
   <link href="slides_files/libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
   <script src="slides_files/libs/leaflet-1.3.1/leaflet.js"></script>
   <link href="slides_files/libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-  <script src="slides_files/libs/proj4-2.6.2/proj4.min.js"></script>
+  <script src="slides_files/libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
   <script src="slides_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
   <link href="slides_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-  <script src="slides_files/libs/leaflet-binding-2.1.1/leaflet.js"></script>
+  <script src="slides_files/libs/leaflet-binding-2.0.3/leaflet.js"></script>
 </head>
-<body class="quarto-light">
+<body>
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456" data-background-opacity="0.40" class="center">
+<section id="title-slide" data-background-color="#552D62" data-background-image="https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456" data-background-opacity="0.40" class="center">
   <h1 class="title">Quarto:<br>A library to run them all?</h1>
   <p class="subtitle">RSE Conference 2022 | Newcastle Upon Tyne</p>
   <p class="author">Carlos Cámara-Menoyo | Cagatay Turkay | James Tripp</p>
@@ -531,7 +526,7 @@
 <p><strong>About the slides</strong></p>
 <p>These slides have been created with quarto (of course!)</p>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>See references’ section</p></li></ol></aside></section></section>
+<aside><ol class="aside-footnotes"><li id="fn1" role="doc-endnote"><p>See references’ section</p></li></ol></aside></section></section>
 <section>
 <section id="quarto" class="title-slide slide level1 center" data-background-color="#2780e3">
 <h1>Quarto</h1>
@@ -583,7 +578,7 @@
 <p>Quarto is a <strong>command line interface</strong> (CLI) <span class="fragment">that <strong>renders</strong> plain text formats (<code>.qmd</code>, <code>.rmd</code>, <code>.md</code>) OR mixed formats (<code>.ipynb</code>/Jupyter notebook)</span> <span class="fragment">into different <strong>formats</strong> (PDF/Word/HTML)</span> <span class="fragment">and <strong>outputs</strong> (reports, books, websites, presentations…).</span></p>
 </blockquote>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn2"><p>Development started in January 2021 and is under heavy development (weekly releases)</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>Development started in January 2021 and is under heavy development (weekly releases)</p></li></ol></aside></section>
 <section id="how-does-it-work-overview" class="slide level2 smaller">
 <h2>How does it work? (Overview)</h2>
 <div class="columns">
@@ -661,7 +656,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://quarto.org/docs/gallery/"><img data-src="images/gallery_documents.png"></a></p>
-<p></p><figcaption>Shamely copied from Quarto’s gallery</figcaption><p></p>
+<p></p><figcaption aria-hidden="true">Shamely copied from Quarto’s gallery</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -710,8 +705,8 @@
 <span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">addMarkers</span>(<span class="at">lat=</span><span class="fl">54.9734625</span>, <span class="at">lng=</span><span class="sc">-</span><span class="fl">1.6242486</span>, <span class="at">popup=</span><span class="st">"RSECon 2022"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-da1a71c95e3b37a8e6ec" style="width:960px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-da1a71c95e3b37a8e6ec">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.9734625,-1.6242486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"RSECon 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[54.9734625,54.9734625],"lng":[-1.6242486,-1.6242486]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1760f87f124b4b9e9df0" style="width:960px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1760f87f124b4b9e9df0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.9734625,-1.6242486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"RSECon 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[54.9734625,54.9734625],"lng":[-1.6242486,-1.6242486]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><small>Documentation here <a href="https://quarto.org/docs/interactive/widgets/htmlwidgets.html" class="uri">https://quarto.org/docs/interactive/widgets/htmlwidgets.html</a></small></p>
@@ -731,7 +726,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://jjallaire.shinyapps.io/diamonds-explorer/"><img data-src="images/gallery_shiny.png"></a></p>
-<p></p><figcaption>Diamonds’ explorer</figcaption><p></p>
+<p></p><figcaption aria-hidden="true">Diamonds’ explorer</figcaption><p></p>
 </figure>
 </div>
 <p>Documentation here: <a href="https://quarto.org/docs/interactive/shiny/" class="uri">https://quarto.org/docs/interactive/shiny/</a></p>
@@ -740,14 +735,14 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://quarto.org/docs/interactive/ojs/"><img data-src="images/gallery_observable_penguins.png"></a></p>
-<p></p><figcaption>Penguin’s explorer</figcaption><p></p>
+<p></p><figcaption aria-hidden="true">Penguin’s explorer</figcaption><p></p>
 </figure>
 </div>
 <p>Documentation here: <a href="https://quarto.org/docs/interactive/ojs/" class="uri">https://quarto.org/docs/interactive/ojs/</a></p>
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn3"><p>More info: <a href="https://quarto.org/docs/interactive/">Interactivity overview (Official Guide)</a></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn3" role="doc-endnote"><p>More info: <a href="https://quarto.org/docs/interactive/">Interactivity overview (Official Guide)</a></p></li></ol></aside></section>
 <section id="key-features" class="slide level2" data-background-color="rgb(236, 248, 232)">
 <h2>Key features</h2>
 <ul>
@@ -1182,24 +1177,6 @@
 
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
       tabsets.forEach(function(tabset) {
         const tabby = new Tabby('#' + tabset.id);
@@ -1248,8 +1225,7 @@
       for (var i=0; i<noterefs.length; i++) {
         const ref = noterefs[i];
         tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          let href = ref.getAttribute('href');
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
