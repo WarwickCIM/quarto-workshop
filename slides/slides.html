@@ -402,23 +402,23 @@
 <h1>Goals</h1>
 <ul>
 <li>Introduce Quarto</li>
-<li>Facilitate you working with Quatro</li>
-<li>Have a discussion evaluating Quatro</li>
+<li>Facilitate you working with Quarto</li>
+<li>Have a discussion evaluating Quarto</li>
 </ul>
 </section>
 
 <section id="plan" class="title-slide slide level1 center">
 <h1>Plan</h1>
 <ol type="1">
-<li>Introductions (10m)</li>
-<li>Introduction to Quarto (25m)</li>
+<li>Introductions</li>
+<li>Introduction to Quarto</li>
 <li>Use cases
 <ol type="1">
-<li>Group formation and cases (15m)</li>
-<li>Working in groups - with break! (1hr 35m)</li>
+<li>Group formation and cases</li>
+<li>Working in groups - with break!</li>
 </ol></li>
-<li>Large group Discussion (40m)</li>
-<li>Farewell (10m)</li>
+<li>Large group Discussion</li>
+<li>Farewell</li>
 </ol>
 </section>
 
@@ -628,19 +628,61 @@
 </section>
 <section id="how-does-it-work" class="slide level2">
 <h2>How does it work?</h2>
-<p>This is what happens behind the scenes:</p>
+<p>This is what happens behind the scenes for single file documents:</p>
 
-<img data-src="images/quarto-diagram.drawio.svg" class="r-stretch"></section>
+<img data-src="images/quarto-diagram.drawio.svg" class="r-stretch"><div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Not comprehensive (i.e.&nbsp;does not include projects, bibliographical references and cross-references -tables, figures, chapters-, add custom css, including files within files…)</p>
+</div>
+</div>
+</div>
+</section>
 <section id="how-can-quarto-be-called" class="slide level2 smaller">
 <h2>How can quarto be called?</h2>
+<div class="columns">
+<div class="column">
 <p>From CLI:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">quarto</span> <span class="at">--help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="fragment">
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">quarto</span> <span class="at">--help</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="ex">Usage:</span>   quarto </span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="ex">Version:</span> 0.9.563</span>
+<span id="cb2-5"><a href="#cb2-5"></a>                  </span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a>  <span class="ex">Description:</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a>    <span class="ex">Quarto</span> CLI</span>
+<span id="cb2-10"><a href="#cb2-10"></a></span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="ex">Options:</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a></span>
+<span id="cb2-13"><a href="#cb2-13"></a>    <span class="ex">-h,</span> <span class="at">--help</span>     <span class="at">-</span> Show this help.                            </span>
+<span id="cb2-14"><a href="#cb2-14"></a>    <span class="ex">-V,</span> <span class="at">--version</span>  <span class="at">-</span> Show the version number for this program.  </span>
+<span id="cb2-15"><a href="#cb2-15"></a></span>
+<span id="cb2-16"><a href="#cb2-16"></a>  <span class="ex">Commands:</span></span>
+<span id="cb2-17"><a href="#cb2-17"></a></span>
+<span id="cb2-18"><a href="#cb2-18"></a>    <span class="ex">render</span>          [input] [args...]   <span class="at">-</span> Render input file<span class="er">(</span><span class="ex">s</span><span class="kw">)</span> <span class="ex">to</span> various document types.   </span>
+<span id="cb2-19"><a href="#cb2-19"></a>    <span class="ex">preview</span>         [file] [args...]    <span class="at">-</span> Render and preview a document or website project. </span>
+<span id="cb2-20"><a href="#cb2-20"></a>    <span class="ex">serve</span>           [input]             <span class="at">-</span> Serve a Shiny interactive document.               </span>
+<span id="cb2-21"><a href="#cb2-21"></a>    <span class="ex">create-project</span>  [dir]               <span class="at">-</span> Create a project for rendering multiple documents </span>
+<span id="cb2-22"><a href="#cb2-22"></a>    <span class="ex">convert</span>         <span class="op">&lt;</span>input<span class="op">&gt;</span>             - Convert documents to alternate representations.   </span>
+<span id="cb2-23"><a href="#cb2-23"></a>    <span class="ex">pandoc</span>          [args...]           <span class="at">-</span> Run the version of Pandoc embedded within Quarto. </span>
+<span id="cb2-24"><a href="#cb2-24"></a>    <span class="ex">run</span>             [script] [args...]  <span class="at">-</span> Run a TypeScript, R, Python, or Lua script.       </span>
+<span id="cb2-25"><a href="#cb2-25"></a>    <span class="ex">tools</span>           <span class="op">&lt;</span>command<span class="op">&gt;</span> [tool]    <span class="at">-</span> Installation and update of ancillary tools.       </span>
+<span id="cb2-26"><a href="#cb2-26"></a>    <span class="ex">check</span>           [target]            <span class="at">-</span> Verify correct functioning of Quarto installation.</span>
+<span id="cb2-27"><a href="#cb2-27"></a>    <span class="bu">help</span>            [command]           <span class="at">-</span> Show this help or the help of a sub-command.  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
 <p>From your favourite IDE:</p>
 <div class="r-stack">
 <p><img data-src="https://quarto.org/docs/tools/images/rstudio-preview.png" class="fragment" alt="A screenshot of a Quarto document rendered inside RStudio" width="1500"></p>
 <p><img data-src="https://quarto.org/docs/tools/images/jupyterlab-preview.png" class="fragment" alt="A screenshot of a Quarto document rendered inside JupyterLab" width="1500"></p>
 <p><img data-src="https://quarto.org/docs/computations/images/python-vscode.png" class="fragment" alt="A screenshot of a Quarto document rendered inside VSCode" width="1500"></p>
+</div>
 </div>
 </div>
 </section>
@@ -735,8 +777,8 @@
 <span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">addMarkers</span>(<span class="at">lat=</span><span class="fl">54.9734625</span>, <span class="at">lng=</span><span class="sc">-</span><span class="fl">1.6242486</span>, <span class="at">popup=</span><span class="st">"RSECon 2022"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-39114b5da044316a43f8" style="width:960px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-39114b5da044316a43f8">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.9734625,-1.6242486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"RSECon 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[54.9734625,54.9734625],"lng":[-1.6242486,-1.6242486]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d8d88fcddc5c5a021d7f" style="width:960px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d8d88fcddc5c5a021d7f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.9734625,-1.6242486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"RSECon 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[54.9734625,54.9734625],"lng":[-1.6242486,-1.6242486]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -782,7 +824,7 @@
 <ul>
 <li>New features to come (to be at par with knitr and to surpass it)
 <ul>
-<li>No new features added to <code>knitr</code></li>
+<li>No new features added to <code>Rmarkdown</code><sup>1</sup></li>
 </ul></li>
 <li>Not as mature as other solutions</li>
 <li>Weekly releases
@@ -790,7 +832,7 @@
 <li>Different versions, different results</li>
 </ul></li>
 </ul>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn4" role="doc-endnote"><p>For more info about replacing Rmarkdown with quarto, you can refer to <a href="https://quarto.org/docs/faq/rmarkdown.html">these FAQs on quarto’s webiste</a> and Yihui Xie’s blog post <a href="https://yihui.org/en/2022/04/quarto-r-markdown/">With Quarto Coming, is R Markdown Going Away? No</a></p></li></ol></aside></section>
 <section id="further-references" class="slide level2">
 <h2>Further references</h2>
 <p>These references introduce quarto way more extensively than we just did:</p>
@@ -822,7 +864,7 @@
 </ol>
 <p><span class="fragment">2. Each case has a place in the room. Please go to the place for your corresponding case.</span></p>
 <p><span class="fragment">3. Form groups of 4 or 5. Say hi to your new friends</span></p>
-<p><span class="fragment">4. Choose Documentors and Spokesperson</span></p>
+<p><span class="fragment">4. Choose <strong>Documentors</strong> and <strong>Spokesperson</strong></span></p>
 </div><div class="column">
 <p><img data-src="images/task_list.png"></p>
 <p><img data-src="images/task_description.png"></p>
@@ -902,7 +944,8 @@
 <h1>What’s next?</h1>
 <p>If you’ve enjoyed the workshop and want to keep exploring quarto, there are some things that can be done:</p>
 <ul>
-<li>Tell us how we did (fill in this form)</li>
+<li>Tell us how we did (fill in <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vc-6Ce9HZUSSZTVG8ur2vAQZ2Cjv6lBImQbzP-oFJcdUREEwWjIwU1YxQkowMURYMVpUVUxCRjhGMy4u">this form</a>)</li>
+<li>We can continue the discussion on the repos’ <a href="https://github.com/WarwickCIM/quarto-workshop/discussions">discussions section</a></li>
 <li>Keep in touch with us!</li>
 <li>Keep extending the use cases and convert this into a repository for quarto use cases</li>
 <li>…</li>
@@ -916,7 +959,7 @@
 <p><strong>Cagatay Turkay</strong>, cagatay.turkay@warwick.ac.uk</p>
 
 <img src="images/logo_black.png" class="slide-logo r-stretch"><div class="footer footer-default">
-
+<p>https://bit.ly/rsecon22-quarto</p>
 </div>
 </section>
 

@@ -15,6 +15,7 @@ format:
     #theme: serif
     theme: [default, css/warwick.scss, css/warwick-fonts.scss]
     logo: images/logo_black.png 
+    footer: https://bit.ly/rsecon22-quarto
     transition: slide
     background-transition: fade
 editor: visual
@@ -24,18 +25,18 @@ from: markdown+emoji
 # Goals
 
 -   Introduce Quarto
--   Facilitate you working with Quatro
--   Have a discussion evaluating Quatro
+-   Facilitate you working with Quarto
+-   Have a discussion evaluating Quarto
 
 # Plan
 
-1.  Introductions (10m) 
-2.  Introduction to Quarto (25m)
+1.  Introductions 
+2.  Introduction to Quarto
 3.  Use cases
-    1.  Group formation and cases (15m)
-    2.  Working in groups - with break! (1hr 35m)
-4.  Large group Discussion (40m)
-5.  Farewell (10m)
+    1.  Group formation and cases 
+    2.  Working in groups - with break! 
+4.  Large group Discussion 
+5.  Farewell
 
 
 # Introductions {background-color="#552D62"}
@@ -254,20 +255,58 @@ In this case, an **html document** (line 6) with text, code (folded -see line 9)
 
 ## How does it work?
 
-This is what happens behind the scenes:
+This is what happens behind the scenes for single file documents:
 
 ![](images/quarto-diagram.drawio.svg)
+
+::: callout-note
+
+Not comprehensive (i.e. does not include projects, bibliographical references and cross-references -tables, figures, chapters-, add custom css, including files within files...)
+
+:::
 
 
 ## How can quarto be called? {.smaller}
 
+::: columns
+
+::: {.column}
 From CLI:
 
-```{.bash}
+```bash
 quarto --help
+
+  Usage:   quarto 
+  Version: 0.9.563
+                  
+
+  Description:
+
+    Quarto CLI
+
+  Options:
+
+    -h, --help     - Show this help.                            
+    -V, --version  - Show the version number for this program.  
+
+  Commands:
+
+    render          [input] [args...]   - Render input file(s) to various document types.   
+    preview         [file] [args...]    - Render and preview a document or website project. 
+    serve           [input]             - Serve a Shiny interactive document.               
+    create-project  [dir]               - Create a project for rendering multiple documents 
+    convert         <input>             - Convert documents to alternate representations.   
+    pandoc          [args...]           - Run the version of Pandoc embedded within Quarto. 
+    run             [script] [args...]  - Run a TypeScript, R, Python, or Lua script.       
+    tools           <command> [tool]    - Installation and update of ancillary tools.       
+    check           [target]            - Verify correct functioning of Quarto installation.
+    help            [command]           - Show this help or the help of a sub-command.  
 ```
 
-. . .
+:::
+
+::: {.column}
+
 
 From your favourite IDE:
 
@@ -277,6 +316,9 @@ From your favourite IDE:
 ![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){.fragment width="1500" fig-alt="A screenshot of a Quarto document rendered inside JupyterLab"}
 
 ![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment width="1500" fig-alt="A screenshot of a Quarto document rendered inside VSCode"}
+:::
+
+:::
 :::
 
 
@@ -415,11 +457,12 @@ leaflet() %>%
 Most of the "not so great" features derive from being under heavy development:
 
 -   New features to come (to be at par with knitr and to surpass it)
-    - No new features added to `knitr`
+    - No new features added to `Rmarkdown`[^rmd]
 -   Not as mature as other solutions
 -   Weekly releases 
     - Different versions, different results
 
+[^rmd]: For more info about replacing Rmarkdown with quarto, you can refer to [these FAQs on quarto's webiste](https://quarto.org/docs/faq/rmarkdown.html) and Yihui Xie’s blog post [With Quarto Coming, is R Markdown Going Away? No](https://yihui.org/en/2022/04/quarto-r-markdown/)
 
 ## Further references
 
@@ -521,7 +564,8 @@ Some ideas (but feel free to add yours!):
 
 If you've enjoyed the workshop and want to keep exploring quarto, there are some things that can be done:
 
-- Tell us how we did (fill in this form)
+- Tell us how we did (fill in [this form](https://forms.office.com/Pages/ResponsePage.aspx?id=vc-6Ce9HZUSSZTVG8ur2vAQZ2Cjv6lBImQbzP-oFJcdUREEwWjIwU1YxQkowMURYMVpUVUxCRjhGMy4u))
+- We can continue the discussion on the repos' [discussions section](https://github.com/WarwickCIM/quarto-workshop/discussions  )
 - Keep in touch with us!
 - Keep extending the use cases and convert this into a repository for quarto use cases
 - ...
