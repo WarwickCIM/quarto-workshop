@@ -500,10 +500,9 @@
 </ol>
 <div class="fragment">
 <p>About your <strong>preferred programming language</strong>:</p>
-<ol type="1">
-<li>R</li>
-<li>Python</li>
-</ol>
+<ul>
+<li>R <span class="fragment">| Python</span> <span class="fragment">| Julia</span></li>
+</ul>
 </div>
 <div class="fragment">
 <p>About <strong>this workshop</strong>: Have you had time to read cases’ descriptions?</p>
@@ -530,12 +529,13 @@
 <section>
 <section id="quarto" class="title-slide slide level1 center" data-background-color="#2780e3">
 <h1>Quarto</h1>
-<p>A brief overview to quarto (thats why we are here, right?)</p>
+<p>A brief overview to quarto</p>
+<p><span class="smaller">(that’s why we are here, right?)</span></p>
 </section>
 <section id="preamble" class="slide level2">
 <h2>Preamble</h2>
 <ul>
-<li>Literate programming is important</li>
+<li>Agreement on importance of Literate programming (concept) and notebooks (artifacts)</li>
 <li>Lots of different solutions, some are language specific</li>
 </ul>
 <div class="fragment">
@@ -569,8 +569,8 @@
 <h2>What’s quarto?</h2>
 <p>According to their creators:</p>
 <ul>
-<li>“Open-source scientific and technical publishing system built on Pandoc” - <a href="https://quarto.org/">quarto.org</a></li>
 <li>Developed<sup>1</sup> by <a href="https://posit.co/">Posit</a> (RStudio) as Rmarkdown’s next generation. “Code output via integration with Jupyter, Knitr, and Observable” - <a href="https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/">GitHub Repo</a></li>
+<li>“Open-source scientific and technical publishing system built on Pandoc” - <a href="https://quarto.org/">quarto.org</a></li>
 </ul>
 <div class="fragment">
 <p>From a technical standpoint (Adapted from <a href="https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html#/so-what-is-quarto">Mock, 2022</a>):</p>
@@ -651,7 +651,16 @@
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Documents</a></li><li><a href="#tabset-1-2">Presentations</a></li><li><a href="#tabset-1-3">Projects</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
+<div class="columns">
+<div class="column">
 <p>Articles and reports in html, docx, pdf, with complex layouts or based on templates.</p>
+<p>Some examples:</p>
+<ul>
+<li>Tufte-inspired layout (in <a href="https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html">HTML</a> and <a href="https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.pdf">PDF</a>)</li>
+<li>Multi-page document with a template, aimed at being printed (<a href="https://github.com/nmfs-opensci/quarto_titlepages/blob/main/titlepages/bg-image/article.qmd">source</a>, <a href="https://nmfs-opensci.github.io/quarto_titlepages/titlepages/bg-image/article.pdf">PDF</a>)</li>
+<li>Docx document (<a href="https://github.com/quarto-dev/quarto-gallery/blob/main/articles/msword/msword.qmd">source</a>, <a href="https://quarto-dev.github.io/quarto-gallery/articles/msword/msword.docx">output</a>)</li>
+</ul>
+</div><div class="column">
 <!-- [![](images/gallery_document_tufte.png)](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html) -->
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -660,26 +669,42 @@
 </figure>
 </div>
 </div>
+</div>
+</div>
 <div id="tabset-1-2">
+<div class="columns">
+<div class="column">
 <p>In ppt, <a href="https://latex-beamer.com/">beamer</a> or <a href="https://revealjs.com/">revealjs</a></p>
+</div><div class="column">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html"><img data-src="images/gallery_slides_mock_workshop.png"></a></p>
+<p><a href="https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html"><img data-src="images/quarto_gallery_slides.png"></a></p>
 </figure>
 </div>
 </div>
+</div>
+</div>
 <div id="tabset-1-3">
-<p>Such as websites, blogs, wikis… (several <code>*.qmd</code> files + <code>_quarto.yml</code> with config)</p>
 <div class="columns">
-<div class="column" style="width:33%;">
-<p><strong>Websites</strong></p>
-<p>Image here</p>
-</div><div class="column" style="width:33%;">
-<p><strong>Blogs</strong></p>
-<p>Image here</p>
-</div><div class="column" style="width:33%;">
-<p><strong>Wikis</strong></p>
-<p>Image here</p>
+<div class="column">
+<p>Combine several <code>*.qmd</code> files + <code>_quarto.yml</code> with config. Project is generated using <code>quarto render</code> instead of <code>quarto preview</code></p>
+<ul>
+<li>Websites
+<ul>
+<li>Quarto website (<a href="https://github.com/quarto-dev/quarto-web">source</a>, <a href="https://quarto.org">output</a>)</li>
+</ul></li>
+<li>Books
+<ul>
+<li>Telling stories with data (<a href="https://github.com/RohanAlexander/telling_stories">source</a>, <a href="https://tellingstorieswithdata.com/">output</a>)</li>
+</ul></li>
+<li>Blogs
+<ul>
+<li>A quarto tip a day (<a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">source</a>, <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">output</a>)</li>
+</ul></li>
+<li>Wikis</li>
+</ul>
+</div><div class="column">
+<p><img data-src="images/quarto_gallery_books.png"></p>
 </div>
 </div>
 </div>
@@ -690,11 +715,16 @@
 </div></aside></section>
 <section id="what-can-quarto-do-interactivity" class="slide level2 smaller">
 <h2>What can quarto do? (Interactivity)</h2>
+<div class="columns">
+<div class="column">
 <p>Additionally, we can add interactivity<sup>1</sup> to the previous outputs:</p>
-<div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">htmlwidgets</a></li><li><a href="#tabset-2-2">jupyterwidgets</a></li><li><a href="#tabset-2-3">shiny</a></li><li><a href="#tabset-2-4">Observable</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1">
+<ul>
+<li>htmlwidgets (<a href="https://quarto.org/docs/interactive/widgets/htmlwidgets.html">Documentation</a>)</li>
+<li>jupyterwidgets (<a href="https://quarto.org/docs/interactive/widgets/jupyter.html">Documentation</a>)</li>
+<li>shiny (<a href="https://quarto.org/docs/interactive/shiny/">Documentation</a>)</li>
+<li>ObservableJS (<a href="https://quarto.org/docs/interactive/ojs/">Documentation</a>)</li>
+</ul>
+</div><div class="column">
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -705,45 +735,14 @@
 <span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">addMarkers</span>(<span class="at">lat=</span><span class="fl">54.9734625</span>, <span class="at">lng=</span><span class="sc">-</span><span class="fl">1.6242486</span>, <span class="at">popup=</span><span class="st">"RSECon 2022"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-1760f87f124b4b9e9df0" style="width:960px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1760f87f124b4b9e9df0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.9734625,-1.6242486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"RSECon 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[54.9734625,54.9734625],"lng":[-1.6242486,-1.6242486]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-39114b5da044316a43f8" style="width:960px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-39114b5da044316a43f8">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.9734625,-1.6242486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"RSECon 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[54.9734625,54.9734625],"lng":[-1.6242486,-1.6242486]}},"evals":[],"jsHooks":[]}</script>
 </div>
-</div>
-<p><small>Documentation here <a href="https://quarto.org/docs/interactive/widgets/htmlwidgets.html" class="uri">https://quarto.org/docs/interactive/widgets/htmlwidgets.html</a></small></p>
-</div>
-<div id="tabset-2-2">
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="im">import</span> plotly.io <span class="im">as</span> pio</span>
-<span id="cb4-3"><a href="#cb4-3"></a>df <span class="op">=</span> px.data.iris()</span>
-<span id="cb4-4"><a href="#cb4-4"></a>fig <span class="op">=</span> px.scatter(df, x<span class="op">=</span><span class="st">"sepal_width"</span>, y<span class="op">=</span><span class="st">"sepal_length"</span>, </span>
-<span id="cb4-5"><a href="#cb4-5"></a>                 color<span class="op">=</span><span class="st">"species"</span>, </span>
-<span id="cb4-6"><a href="#cb4-6"></a>                 marginal_y<span class="op">=</span><span class="st">"violin"</span>, marginal_x<span class="op">=</span><span class="st">"box"</span>, </span>
-<span id="cb4-7"><a href="#cb4-7"></a>                 trendline<span class="op">=</span><span class="st">"ols"</span>, template<span class="op">=</span><span class="st">"simple_white"</span>)</span>
-<span id="cb4-8"><a href="#cb4-8"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><small>Documentation here: <a href="https://quarto.org/docs/interactive/widgets/jupyter.html" class="uri">https://quarto.org/docs/interactive/widgets/jupyter.html</a></small></p>
-</div>
-<div id="tabset-2-3">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://jjallaire.shinyapps.io/diamonds-explorer/"><img data-src="images/gallery_shiny.png"></a></p>
-<p></p><figcaption aria-hidden="true">Diamonds’ explorer</figcaption><p></p>
-</figure>
-</div>
-<p>Documentation here: <a href="https://quarto.org/docs/interactive/shiny/" class="uri">https://quarto.org/docs/interactive/shiny/</a></p>
-</div>
-<div id="tabset-2-4">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://quarto.org/docs/interactive/ojs/"><img data-src="images/gallery_observable_penguins.png"></a></p>
-<p></p><figcaption aria-hidden="true">Penguin’s explorer</figcaption><p></p>
-</figure>
-</div>
-<p>Documentation here: <a href="https://quarto.org/docs/interactive/ojs/" class="uri">https://quarto.org/docs/interactive/ojs/</a></p>
 </div>
 </div>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn3" role="doc-endnote"><p>More info: <a href="https://quarto.org/docs/interactive/">Interactivity overview (Official Guide)</a></p></li></ol></aside></section>
-<section id="key-features" class="slide level2" data-background-color="rgb(236, 248, 232)">
+<section id="key-features" class="slide level2 smaller" data-background-color="rgb(236, 248, 232)">
 <h2>Key features</h2>
 <ul>
 <li>Language agnostic (Works with <code>R</code>, <code>Python</code>, <code>Julia</code>, <code>Observable</code>):
@@ -807,7 +806,8 @@
 <li><a href="https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html">Slides</a></li>
 </ul></li>
 </ul>
-</section></section>
+</section>
+</section>
 <section>
 <section id="use-cases" class="title-slide slide level1 center" data-background-color="#552D62">
 <h1>Use cases</h1>
@@ -815,19 +815,18 @@
 </section>
 <section id="group-formation-and-cases" class="slide level2" data-background-image="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" data-background-size="contain" data-background-opacity="0.1">
 <h2>Group formation and cases</h2>
+<div class="columns">
+<div class="column">
 <ol type="1">
 <li>Choose a case from the (<a href="https://github.com/WarwickCIM/quarto-workshop/labels/cases">case list</a>) on GitHub</li>
 </ol>
-<div class="fragment">
-<ol start="2" type="1">
-<li><p>Each case has a place in the room. Please go to the place for your corresponding case.</p></li>
-<li><p>Form groups of 4 or 5. Say hi to your new friends.</p></li>
-</ol>
+<p><span class="fragment">2. Each case has a place in the room. Please go to the place for your corresponding case.</span></p>
+<p><span class="fragment">3. Form groups of 4 or 5. Say hi to your new friends</span></p>
+<p><span class="fragment">4. Choose Documentors and Spokesperson</span></p>
+</div><div class="column">
+<p><img data-src="images/task_list.png"></p>
+<p><img data-src="images/task_description.png"></p>
 </div>
-<div class="fragment">
-<ol start="4" type="1">
-<li>Choose Documentors and Spokesperson</li>
-</ol>
 </div>
 </section>
 <section id="work-on-your-case" class="slide level2">

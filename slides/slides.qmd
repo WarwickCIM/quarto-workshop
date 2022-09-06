@@ -110,8 +110,7 @@ Let us know about your **prior knowledge about quarto**
 
 About your **preferred programming language**:
 
-1. R
-2. Python
+* R [| Python]{.fragment} [| Julia]{.fragment}  
 
 . . . 
 
@@ -150,11 +149,13 @@ These slides have been created with quarto (of course!)
 
 # Quarto {background-color="#2780e3"}
 
-A brief overview to quarto (thats why we are here, right?)
+A brief overview to quarto 
+
+[(that's why we are here, right?)]{.smaller}
 
 ## Preamble
 
--   Literate programming is important
+-   Agreement on importance of Literate programming (concept) and notebooks (artifacts)
 -   Lots of different solutions, some are language specific
 
 . . .
@@ -184,8 +185,8 @@ A brief overview to quarto (thats why we are here, right?)
 
 According to their creators: 
 
--   "Open-source scientific and technical publishing system built on Pandoc" - [quarto.org](https://quarto.org/)
 -   Developed[^development] by [Posit](https://posit.co/) (RStudio) as Rmarkdown's next generation. "Code output via integration with Jupyter, Knitr, and Observable" - [GitHub Repo](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
+-   "Open-source scientific and technical publishing system built on Pandoc" - [quarto.org](https://quarto.org/)
 
 
 . . . 
@@ -289,39 +290,63 @@ Visit [Quarto's gallery](https://quarto.org/docs/gallery/) for more examples
 
 ### Documents
 
+::: columns
+
+::: {.column}
 Articles and reports in html, docx, pdf, with complex layouts or based on templates.
 
+Some examples:
+
+* Tufte-inspired layout (in [HTML](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html) and [PDF](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.pdf))
+* Multi-page document with a template, aimed at being printed ([source](https://github.com/nmfs-opensci/quarto_titlepages/blob/main/titlepages/bg-image/article.qmd), [PDF](https://nmfs-opensci.github.io/quarto_titlepages/titlepages/bg-image/article.pdf))
+* Docx document ([source](https://github.com/quarto-dev/quarto-gallery/blob/main/articles/msword/msword.qmd), [output](https://quarto-dev.github.io/quarto-gallery/articles/msword/msword.docx))
+
+:::
+
+::: {.column}
 <!-- [![](images/gallery_document_tufte.png)](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html) -->
 
 [![Shamely copied from Quarto's gallery](images/gallery_documents.png)](https://quarto.org/docs/gallery/)
+:::
+:::
+
 
 ### Presentations
 
+::: columns
+
+::: {.column}
 In ppt, [beamer](https://latex-beamer.com/) or [revealjs](https://revealjs.com/)
 
-[![](images/gallery_slides_mock_workshop.png)](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html)
+:::
+
+::: {.column}
+[![](images/quarto_gallery_slides.png)](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html)
+
+:::
+:::
 
 ### Projects
 
-Such as websites, blogs, wikis... (several `*.qmd` files + `_quarto.yml` with config)
-
 ::: columns
 
-::: {.column width="33%"}
-**Websites**
+::: {.column }
 
-Image here
+Combine several `*.qmd` files + `_quarto.yml` with config. Project is generated using `quarto render` instead of `quarto preview`
+
+* Websites
+    * Quarto website ([source](https://github.com/quarto-dev/quarto-web), [output](https://quarto.org))
+* Books
+    * Telling stories with data ([source](https://github.com/RohanAlexander/telling_stories), [output](https://tellingstorieswithdata.com/))
+* Blogs
+    * A quarto tip a day ([source](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), [output](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/))
+* Wikis
+
+
 :::
-::: {.column width="33%"}
-**Blogs**
+::: {.column}
 
-Image here
-
-:::
-::: {.column width="33%"}
-**Wikis**
-
-Image here
+![](images/quarto_gallery_books.png)
 :::
 :::
 
@@ -329,16 +354,23 @@ Image here
 
 ## What can quarto do? (Interactivity) {.smaller}
 
+::: columns
+
+::: {.column}
+
 Additionally, we can add interactivity[^interactivity] to the previous outputs:
 
 [^interactivity]: More info: [Interactivity overview (Official Guide)](https://quarto.org/docs/interactive/)
 
-::: panel-tabset
+- htmlwidgets ([Documentation](https://quarto.org/docs/interactive/widgets/htmlwidgets.html))
+- jupyterwidgets ([Documentation](https://quarto.org/docs/interactive/widgets/jupyter.html))
+- shiny ([Documentation](https://quarto.org/docs/interactive/shiny/))
+- ObservableJS ([Documentation](https://quarto.org/docs/interactive/ojs/))
 
-### htmlwidgets
 
+:::
 
-
+::: {.column}
 ```{r}
 #| code-fold: true
 #| echo: true
@@ -350,40 +382,12 @@ leaflet() %>%
 
 ```
 
-<small>Documentation here <https://quarto.org/docs/interactive/widgets/htmlwidgets.html></small>
-
-
-### jupyterwidgets
-
-```{.python}
-import plotly.express as px
-import plotly.io as pio
-df = px.data.iris()
-fig = px.scatter(df, x="sepal_width", y="sepal_length", 
-                 color="species", 
-                 marginal_y="violin", marginal_x="box", 
-                 trendline="ols", template="simple_white")
-fig.show()
-```
-
-<small>Documentation here: <https://quarto.org/docs/interactive/widgets/jupyter.html></small>
-
-### shiny
-
-[![Diamonds' explorer](images/gallery_shiny.png)](https://jjallaire.shinyapps.io/diamonds-explorer/)
-
-Documentation here: <https://quarto.org/docs/interactive/shiny/>
-
-### Observable
-
-[![Penguin's explorer](images/gallery_observable_penguins.png)](https://quarto.org/docs/interactive/ojs/)
-
-Documentation here: <https://quarto.org/docs/interactive/ojs/>
-
 :::
 
+:::
+ 
 
-## Key features {background-color="rgb(236, 248, 232)"}
+## Key features {background-color="rgb(236, 248, 232)" .smaller}
  
 -   Language agnostic (Works with `R`, `Python`, `Julia`, `Observable`):
     -   Can combine different languages in a single document
@@ -428,23 +432,37 @@ These references introduce quarto way more extensively than we just did:
     -   [Video Recording](https://www.youtube.com/watch?v=yvi5uXQMvu4)
     -   [Slides](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html)
 
+## Food for thought {visibility="hidden" background-image="https://www.detroitlabs.com/wp-content/uploads/2022/05/detroit-labs-emerging-technologies-why-you-should-avoid-shiny-objects.png" background-opacity="0.7"}
+
+Detroit Labs: [Emerging Technologies: Why You Should Avoid the Shiny Objects](https://www.detroitlabs.com/avoid-shiny-objects-2/)
+
 # Use cases {background-color="#552D62"}
 
 Your turn, now
 
 ## Group formation and cases {background-image="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" background-size="contain" background-opacity="0.1"}
 
+::: columns
+
+::: {.column}
 1. Choose a case from the ([case list](https://github.com/WarwickCIM/quarto-workshop/labels/cases)) on GitHub
 
-. . .
+[2. Each case has a place in the room. Please go to the place for your corresponding case.]{.fragment}
 
-2. Each case has a place in the room. Please go to the place for your corresponding case.
+[3. Form groups of 4 or 5. Say hi to your new friends]{.fragment}
 
-3. Form groups of 4 or 5. Say hi to your new friends.
+[4. Choose **Documentors** and **Spokesperson**]{.fragment}
+:::
 
-. . .
+::: {.column}
 
-4. Choose Documentors and Spokesperson
+![](images/task_list.png)
+
+![](images/task_description.png)
+
+:::
+
+:::
 
 ## Work on your case
 
