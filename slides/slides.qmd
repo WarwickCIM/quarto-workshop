@@ -276,17 +276,17 @@ Anatomy:
 
 ... to its output.
 
-![](https://quarto.org/images/hello-knitr.png)
+![](images/hello-knitr.png)
 
 In this case, an **html document** (line 6) with text, code (folded -see line 9) and output.
 :::
 :::
 
-. . .
-
-Does this sound familiar to you?
+Does this look familiar to you?
 
 ::: notes
+
+We've seen what quarto is, so now let's focus on how it does its thing.
 
 At this point, if there's someone who has used Rmd before may be thinking. But Carlos, you've jjust defined how rmd works!
 
