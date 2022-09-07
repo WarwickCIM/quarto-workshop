@@ -182,6 +182,22 @@ A brief overview to quarto
 :::
 :::
 
+. . .
+
+This might be about to change with quarto
+
+::: notes
+
+But before actually speaking about quarto, we wanted to highlight two items.
+
+first, the shared agreement in the DS community about the importance of literate programming ...
+
+And second, that the way this has been approached greatly differs based on the programming language you may be using.
+
+
+
+:::
+
 ## What's quarto?
 
 According to their creators: 
@@ -197,6 +213,19 @@ From a technical standpoint (Adapted from [Mock, 2022](https://jthomasmock.githu
 > Quarto is a **command line interface** (CLI) [that **renders** plain text formats (`.qmd`, `.rmd`, `.md`) OR mixed formats (`.ipynb`/Jupyter notebook)]{.fragment} [into different **formats** (PDF/Word/HTML)]{.fragment}  [and **outputs** (reports, books, websites, presentations...).]{.fragment} 
 
 [^development]: Development started in January 2021 and is under heavy development (weekly releases)
+
+
+::: notes
+
+So, what's quarto, then?
+
+According to Posit (formerly known as Rstudio), the creators of quarto, quarto is the next generation of Rmarkdown...
+
+Ok, this is how quarto is marketed, but this may not be clear to most of us, so we tried to define it from a more technical point of view.
+
+Adapting from Mock, quarto is...
+
+:::
 
 ## How does it work? (Overview){.smaller}
 
@@ -253,11 +282,27 @@ In this case, an **html document** (line 6) with text, code (folded -see line 9)
 :::
 :::
 
+. . .
+
+Does this sound familiar to you?
+
+::: notes
+
+At this point, if there's someone who has used Rmd before may be thinking. But Carlos, you've jjust defined how rmd works!
+
+And aside from minor changes in the frontmatter, that's true
+
+So probably the next slide will bring some light on the differences
+
+:::
+
 ## How does it work?
 
 This is what happens behind the scenes for single file documents:
 
 ![](images/quarto-diagram.drawio.svg)
+
+. . .
 
 ::: callout-note
 
@@ -265,6 +310,15 @@ Not comprehensive (i.e. does not include projects, bibliographical references an
 
 :::
 
+::: notes
+
+At this point, if there's someone who has used Rmd before may be thinking. But Carlos, you've jjust defined how rmd works!
+
+And aside from minor changes in the frontmatter, that's true
+
+So probably why this diagram will bring some light on the differences
+
+:::
 
 ## How can quarto be called? {.smaller}
 
@@ -305,8 +359,10 @@ quarto --help
 
 :::
 
+
 ::: {.column}
 
+::: {.fragment}
 
 From your favourite IDE:
 
@@ -318,6 +374,7 @@ From your favourite IDE:
 ![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment width="1500" fig-alt="A screenshot of a Quarto document rendered inside VSCode"}
 :::
 
+:::
 :::
 :::
 
@@ -404,10 +461,12 @@ Additionally, we can add interactivity[^interactivity] to the previous outputs:
 
 [^interactivity]: More info: [Interactivity overview (Official Guide)](https://quarto.org/docs/interactive/)
 
-- htmlwidgets ([Documentation](https://quarto.org/docs/interactive/widgets/htmlwidgets.html))
-- jupyterwidgets ([Documentation](https://quarto.org/docs/interactive/widgets/jupyter.html))
-- shiny ([Documentation](https://quarto.org/docs/interactive/shiny/))
-- ObservableJS ([Documentation](https://quarto.org/docs/interactive/ojs/))
+- Web browser:
+    - **htmlwidgets** ([Documentation](https://quarto.org/docs/interactive/widgets/htmlwidgets.html))
+    - **jupyterwidgets** ([Documentation](https://quarto.org/docs/interactive/widgets/jupyter.html))
+    - **ObservableJS** ([Documentation](https://quarto.org/docs/interactive/ojs/))
+- Server side:
+    - **shiny** ([Documentation](https://quarto.org/docs/interactive/shiny/))
 
 
 :::

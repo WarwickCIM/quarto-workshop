@@ -564,6 +564,24 @@
 </div>
 </div>
 </div>
+<div class="fragment">
+<p>This might be about to change with quarto</p>
+<aside class="notes">
+<p>But before actually speaking about quarto, we wanted to highlight two items.</p>
+<p>first, the shared agreement in the DS community about the importance of literate programming …</p>
+<p>And second, that the way this has been approached greatly differs based on the programming language you may be using.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
 </section>
 <section id="whats-quarto" class="slide level2">
 <h2>What’s quarto?</h2>
@@ -577,6 +595,22 @@
 <blockquote>
 <p>Quarto is a <strong>command line interface</strong> (CLI) <span class="fragment">that <strong>renders</strong> plain text formats (<code>.qmd</code>, <code>.rmd</code>, <code>.md</code>) OR mixed formats (<code>.ipynb</code>/Jupyter notebook)</span> <span class="fragment">into different <strong>formats</strong> (PDF/Word/HTML)</span> <span class="fragment">and <strong>outputs</strong> (reports, books, websites, presentations…).</span></p>
 </blockquote>
+<aside class="notes">
+<p>So, what’s quarto, then?</p>
+<p>According to Posit (formerly known as Rstudio), the creators of quarto, quarto is the next generation of Rmarkdown…</p>
+<p>Ok, this is how quarto is marketed, but this may not be clear to most of us, so we tried to define it from a more technical point of view.</p>
+<p>Adapting from Mock, quarto is…</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>Development started in January 2021 and is under heavy development (weekly releases)</p></li></ol></aside></section>
 <section id="how-does-it-work-overview" class="slide level2 smaller">
@@ -625,12 +659,31 @@
 <p>In this case, an <strong>html document</strong> (line 6) with text, code (folded -see line 9) and output.</p>
 </div>
 </div>
+<div class="fragment">
+<p>Does this sound familiar to you?</p>
+<aside class="notes">
+<p>At this point, if there’s someone who has used Rmd before may be thinking. But Carlos, you’ve jjust defined how rmd works!</p>
+<p>And aside from minor changes in the frontmatter, that’s true</p>
+<p>So probably the next slide will bring some light on the differences</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
 </section>
 <section id="how-does-it-work" class="slide level2">
 <h2>How does it work?</h2>
 <p>This is what happens behind the scenes for single file documents:</p>
-
-<img data-src="images/quarto-diagram.drawio.svg" class="r-stretch"><div class="callout callout-note callout-captioned callout-style-default">
+<p><img data-src="images/quarto-diagram.drawio.svg"></p>
+<div class="fragment">
+<div class="callout callout-note callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -642,6 +695,22 @@
 <p>Not comprehensive (i.e.&nbsp;does not include projects, bibliographical references and cross-references -tables, figures, chapters-, add custom css, including files within files…)</p>
 </div>
 </div>
+</div>
+<aside class="notes">
+<p>At this point, if there’s someone who has used Rmd before may be thinking. But Carlos, you’ve jjust defined how rmd works!</p>
+<p>And aside from minor changes in the frontmatter, that’s true</p>
+<p>So probably why this diagram will bring some light on the differences</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
 <section id="how-can-quarto-be-called" class="slide level2 smaller">
@@ -677,11 +746,13 @@
 <span id="cb2-26"><a href="#cb2-26"></a>    <span class="ex">check</span>           [target]            <span class="at">-</span> Verify correct functioning of Quarto installation.</span>
 <span id="cb2-27"><a href="#cb2-27"></a>    <span class="bu">help</span>            [command]           <span class="at">-</span> Show this help or the help of a sub-command.  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
+<div class="fragment">
 <p>From your favourite IDE:</p>
 <div class="r-stack">
 <p><img data-src="https://quarto.org/docs/tools/images/rstudio-preview.png" class="fragment" alt="A screenshot of a Quarto document rendered inside RStudio" width="1500"></p>
 <p><img data-src="https://quarto.org/docs/tools/images/jupyterlab-preview.png" class="fragment" alt="A screenshot of a Quarto document rendered inside JupyterLab" width="1500"></p>
 <p><img data-src="https://quarto.org/docs/computations/images/python-vscode.png" class="fragment" alt="A screenshot of a Quarto document rendered inside VSCode" width="1500"></p>
+</div>
 </div>
 </div>
 </div>
@@ -761,10 +832,16 @@
 <div class="column">
 <p>Additionally, we can add interactivity<sup>1</sup> to the previous outputs:</p>
 <ul>
-<li>htmlwidgets (<a href="https://quarto.org/docs/interactive/widgets/htmlwidgets.html">Documentation</a>)</li>
-<li>jupyterwidgets (<a href="https://quarto.org/docs/interactive/widgets/jupyter.html">Documentation</a>)</li>
-<li>shiny (<a href="https://quarto.org/docs/interactive/shiny/">Documentation</a>)</li>
-<li>ObservableJS (<a href="https://quarto.org/docs/interactive/ojs/">Documentation</a>)</li>
+<li>Web browser:
+<ul>
+<li><strong>htmlwidgets</strong> (<a href="https://quarto.org/docs/interactive/widgets/htmlwidgets.html">Documentation</a>)</li>
+<li><strong>jupyterwidgets</strong> (<a href="https://quarto.org/docs/interactive/widgets/jupyter.html">Documentation</a>)</li>
+<li><strong>ObservableJS</strong> (<a href="https://quarto.org/docs/interactive/ojs/">Documentation</a>)</li>
+</ul></li>
+<li>Server side:
+<ul>
+<li><strong>shiny</strong> (<a href="https://quarto.org/docs/interactive/shiny/">Documentation</a>)</li>
+</ul></li>
 </ul>
 </div><div class="column">
 <div class="cell">
@@ -777,8 +854,8 @@
 <span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">addMarkers</span>(<span class="at">lat=</span><span class="fl">54.9734625</span>, <span class="at">lng=</span><span class="sc">-</span><span class="fl">1.6242486</span>, <span class="at">popup=</span><span class="st">"RSECon 2022"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-606c825ff085accc17f1" style="width:960px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-606c825ff085accc17f1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.9734625,-1.6242486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"RSECon 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[54.9734625,54.9734625],"lng":[-1.6242486,-1.6242486]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5e8aa586131cda5558a8" style="width:960px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5e8aa586131cda5558a8">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.9734625,-1.6242486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"RSECon 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[54.9734625,54.9734625],"lng":[-1.6242486,-1.6242486]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
