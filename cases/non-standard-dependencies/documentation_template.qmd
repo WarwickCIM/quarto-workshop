@@ -1,0 +1,73 @@
+---
+title: "Template"
+author: 
+  - name: "Write your name here"
+    url: http://yourwebsite.com
+    affiliation: Your affiliation
+    affiliation-url: http://yourwebsite.com
+    orcid: 0000-0000-0000-0000
+  - name: "Copy/adapt the previous for the subsequent authors"
+format: html
+editor: visual
+---
+
+::: callout-note
+
+### Quarto references
+
+You may want to read these quarto guides regarding [authoring with markdown](https://quarto.org/docs/authoring/markdown-basics.html) and [using the article layout](https://quarto.org/docs/authoring/article-layout.html).
+
+:::
+
+
+:::{.column-body-outset}
+Outset content... Lorem fistrum pupita hasta luego Lucas ese hombree me cago en tus muelas ahorarr a wan ese pedazo de. Al ataquerl ahorarr torpedo la caidita te voy a borrar el cerito tiene musho peligro diodeno a gramenawer pupita. A wan sexuarl jarl amatomaa. Fistro está la cosa muy malar pecador ahorarr qué dise usteer. Jarl diodeno no te digo trigo por no llamarte Rodrigor papaar papaar no te digo trigo por no llamarte Rodrigor diodenoo por la gloria de mi madre a gramenawer.
+
+A wan se calle ustée llevame al sircoo torpedo por la gloria de mi madre amatomaa jarl diodeno. Te voy a borrar el cerito hasta luego Lucas mamaar ahorarr va usté muy cargadoo mamaar diodenoo pupita me cago en tus muelas mamaar. Hasta luego Lucas ese hombree se calle ustée diodenoo. Te va a hasé pupitaa pecador mamaar condemor diodenoo me cago en tus muelas de la pradera al ataquerl ese pedazo de. Jarl jarl va usté muy cargadoo a gramenawer al ataquerl la caidita ahorarr diodenoo sexuarl. Me cago en tus muelas no puedor no puedor no puedor a peich de la pradera. Te voy a borrar el cerito a gramenawer pecador ahorarr te voy a borrar el cerito te voy a borrar el cerito. 
+:::
+
+## Goal
+
+Describe your goal (you can link to the github issue or copy/paste it here)
+
+## Tools
+
+### Used tools
+
+List/describe any tool used to perform this task (IDE, programming language, libraries (if any)...)
+
+### Alternative tools
+
+List any
+
+## Detailed Process
+
+Explain here the process you followed to .accomplish your assigned task.
+
+-   Step 1
+
+-   Step 2
+
+```{r}
+print("You can use code blocks, too!")
+```
+
+## Discussion
+
+You can follow this outline
+
+-   Comparison with other similar tools
+
+## Conclusion
+
+You can follow this oultine if useful (or delete/merge this section)
+
+-   Concluding remarks
+
+-   Limitations
+
+-   Future actions
+
+## References
+
+Links, books... that may complement this article
