@@ -157,7 +157,7 @@ A brief overview to quarto
 ## Preamble
 
 -   Agreement on importance of Literate programming (concept) and notebooks (artifacts)
--   Lots of different solutions, some are language specific
+-   Lots of different solutions, mostly language specific
 
 . . .
 
@@ -200,17 +200,17 @@ And second, that the way this has been approached greatly differs based on the p
 
 ## What's quarto?
 
-According to their creators: 
+According to their creators[^development] ([Posit](https://posit.co/) -formerly RStudio)): 
 
--   Developed[^development] by [Posit](https://posit.co/) (RStudio) as Rmarkdown's next generation. "Code output via integration with Jupyter, Knitr, and Observable" - [GitHub Repo](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
 -   "Open-source scientific and technical publishing system built on Pandoc" - [quarto.org](https://quarto.org/)
+-   "Code output via integration with Jupyter, Knitr, and Observable" - [GitHub Repo](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
 
 
 . . . 
 
 From a technical standpoint (Adapted from [Mock, 2022](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html#/so-what-is-quarto)):
 
-> Quarto is a **command line interface** (CLI) [that **renders** plain text formats (`.qmd`, `.rmd`, `.md`) OR mixed formats (`.ipynb`/Jupyter notebook)]{.fragment} [into different **formats** (PDF/Word/HTML)]{.fragment}  [and **outputs** (reports, books, websites, presentations...).]{.fragment} 
+> Quarto is a **command line interface** (CLI) [that **renders** mixed-format files (`.ipynb`/Jupyter notebook) OR plain text files (`.qmd`, `.rmd`, `.md`)]{.fragment} [into different **outputs** (reports, books, websites, presentations...)]{.fragment} [, which can be in different **formats** (PDF/Word/HTML...) .]{.fragment} 
 
 [^development]: Development started in January 2021 and is under heavy development (weekly releases)
 
@@ -304,7 +304,7 @@ This is what happens behind the scenes for single file documents:
 
 . . .
 
-::: callout-note
+::: {.callout-note appearance="simple"}
 
 Not comprehensive (i.e. does not include projects, bibliographical references and cross-references -tables, figures, chapters-, add custom css, including files within files...)
 
@@ -431,7 +431,7 @@ In ppt, [beamer](https://latex-beamer.com/) or [revealjs](https://revealjs.com/)
 
 ::: {.column }
 
-Combine several `*.qmd` files + `_quarto.yml` with config. Project is generated using `quarto render` instead of `quarto preview`
+Combine several `*.qmd` files + `_quarto.yml` with config (project type, structure, properties). 
 
 * Websites
     * Quarto website ([source](https://github.com/quarto-dev/quarto-web), [output](https://quarto.org))
@@ -441,6 +441,9 @@ Combine several `*.qmd` files + `_quarto.yml` with config. Project is generated 
     * A quarto tip a day ([source](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), [output](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/))
 * Wikis
 
+::: {.callout-note appearance="simple"}
+Project is generated using `quarto render` instead of `quarto preview`
+:::
 
 :::
 ::: {.column}
@@ -473,7 +476,7 @@ Additionally, we can add interactivity[^interactivity] to the previous outputs:
 
 ::: {.column}
 ```{r}
-#| code-fold: true
+#| code-fold: false
 #| echo: true
 library(leaflet)
 
@@ -583,7 +586,7 @@ Your turn, now
 7. Submit Pull Request to the [Workshop's GitHub repo](https://github.com/WarwickCIM/quarto-workshop/)
 
 
-::: callout-important
+::: {.callout-important appearance="simple"}
 
 **Please document the process!**
 :::
@@ -602,22 +605,47 @@ See you at 16:00
 # [R]{data-id="R"}econ[vene]{data-id="convene"}! {background-color="#552D62" auto-animate=true auto-animate-easing="ease-in-out"}
 For the large group discussion
 
+::: notes
+Ok, now it's time to reconvene
+
+:::
+
 
 # [R]{data-id="R"}SECon-[vene]{data-id="convene"}? {background-color="#552D62" background-image="https://i2-prod.chroniclelive.co.uk/incoming/article5680478.ece/ALTERNATES/s1227b/Quayside-at-night-by-Alan-Firth.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
 For the large group discussion
+
+::: notes
+...or should we say "RSECon-vene?"
+
+Now seriously: this is the time to share your thoughts after having worked with quarto for a while.
+
+:::
 
 ## Group Feedback {background-color="#552D62" background-image="images/feedback.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
 
 * Spokesperson from each group
 * What did you do? What were your thoughts?
 
-## Group Discussion {background-color="#552D62" background-image="images/pelican-discussion.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
+## Group Discussion 
 
+::: columns
+
+::: column
 Some ideas (but feel free to add yours!):
 
 * How are you going to use quarto in the future?
 * If not, why not?
 * What's missing?
+
+:::
+
+::: column
+
+[![We can continue the discussion in Github's repo -discussion's section](images/repo_discussion.png)](https://github.com/WarwickCIM/quarto-workshop/discussions)
+:::
+
+:::
+
 
 # What's next?
 

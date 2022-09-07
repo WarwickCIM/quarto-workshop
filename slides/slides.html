@@ -536,7 +536,7 @@
 <h2>Preamble</h2>
 <ul>
 <li>Agreement on importance of Literate programming (concept) and notebooks (artifacts)</li>
-<li>Lots of different solutions, some are language specific</li>
+<li>Lots of different solutions, mostly language specific</li>
 </ul>
 <div class="fragment">
 <div class="columns">
@@ -585,15 +585,15 @@
 </section>
 <section id="whats-quarto" class="slide level2">
 <h2>What’s quarto?</h2>
-<p>According to their creators:</p>
+<p>According to their creators<sup>1</sup> (<a href="https://posit.co/">Posit</a> -formerly RStudio)):</p>
 <ul>
-<li>Developed<sup>1</sup> by <a href="https://posit.co/">Posit</a> (RStudio) as Rmarkdown’s next generation. “Code output via integration with Jupyter, Knitr, and Observable” - <a href="https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/">GitHub Repo</a></li>
 <li>“Open-source scientific and technical publishing system built on Pandoc” - <a href="https://quarto.org/">quarto.org</a></li>
+<li>“Code output via integration with Jupyter, Knitr, and Observable” - <a href="https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/">GitHub Repo</a></li>
 </ul>
 <div class="fragment">
 <p>From a technical standpoint (Adapted from <a href="https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html#/so-what-is-quarto">Mock, 2022</a>):</p>
 <blockquote>
-<p>Quarto is a <strong>command line interface</strong> (CLI) <span class="fragment">that <strong>renders</strong> plain text formats (<code>.qmd</code>, <code>.rmd</code>, <code>.md</code>) OR mixed formats (<code>.ipynb</code>/Jupyter notebook)</span> <span class="fragment">into different <strong>formats</strong> (PDF/Word/HTML)</span> <span class="fragment">and <strong>outputs</strong> (reports, books, websites, presentations…).</span></p>
+<p>Quarto is a <strong>command line interface</strong> (CLI) <span class="fragment">that <strong>renders</strong> mixed-format files (<code>.ipynb</code>/Jupyter notebook) OR plain text files (<code>.qmd</code>, <code>.rmd</code>, <code>.md</code>)</span> <span class="fragment">into different <strong>outputs</strong> (reports, books, websites, presentations…)</span> <span class="fragment">, which can be in different <strong>formats</strong> (PDF/Word/HTML…) .</span></p>
 </blockquote>
 <aside class="notes">
 <p>So, what’s quarto, then?</p>
@@ -682,7 +682,16 @@
 <p>This is what happens behind the scenes for single file documents:</p>
 <p><img data-src="images/quarto-diagram.drawio.svg"></p>
 <div class="fragment">
-<p><small>Not comprehensive (i.e.&nbsp;does not include projects, bibliographical references and cross-references -tables, figures, chapters-, add custom css, including files within files…)</small></p>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Not comprehensive (i.e.&nbsp;does not include projects, bibliographical references and cross-references -tables, figures, chapters-, add custom css, including files within files…)</p>
+</div>
+</div>
+</div>
 <aside class="notes">
 <p>At this point, if there’s someone who has used Rmd before may be thinking. But Carlos, you’ve jjust defined how rmd works!</p>
 <p>And aside from minor changes in the frontmatter, that’s true</p>
@@ -787,7 +796,7 @@
 <div id="tabset-1-3">
 <div class="columns">
 <div class="column">
-<p>Combine several <code>*.qmd</code> files + <code>_quarto.yml</code> with config. Project is generated using <code>quarto render</code> instead of <code>quarto preview</code></p>
+<p>Combine several <code>*.qmd</code> files + <code>_quarto.yml</code> with config (project type, structure, properties).</p>
 <ul>
 <li>Websites
 <ul>
@@ -803,6 +812,16 @@
 </ul></li>
 <li>Wikis</li>
 </ul>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Project is generated using <code>quarto render</code> instead of <code>quarto preview</code></p>
+</div>
+</div>
+</div>
 </div><div class="column">
 <p><img data-src="images/quarto_gallery_books.png"></p>
 </div>
@@ -832,17 +851,14 @@
 </ul>
 </div><div class="column">
 <div class="cell">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(leaflet)</span>
 <span id="cb3-2"><a href="#cb3-2"></a></span>
 <span id="cb3-3"><a href="#cb3-3"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
 <span id="cb3-4"><a href="#cb3-4"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># Add default OpenStreetMap map tiles</span></span>
 <span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">addMarkers</span>(<span class="at">lat=</span><span class="fl">54.9734625</span>, <span class="at">lng=</span><span class="sc">-</span><span class="fl">1.6242486</span>, <span class="at">popup=</span><span class="st">"RSECon 2022"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
-<div id="htmlwidget-5f3460c541285b5e010b" style="width:960px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5f3460c541285b5e010b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.9734625,-1.6242486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"RSECon 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[54.9734625,54.9734625],"lng":[-1.6242486,-1.6242486]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7f9527f8c095e93c64eb" style="width:960px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7f9527f8c095e93c64eb">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.9734625,-1.6242486,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"RSECon 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[54.9734625,54.9734625],"lng":[-1.6242486,-1.6242486]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -953,13 +969,10 @@
 <li>Commit any changes</li>
 <li>Submit Pull Request to the <a href="https://github.com/WarwickCIM/quarto-workshop/">Workshop’s GitHub repo</a></li>
 </ol>
-<div class="callout callout-important callout-captioned callout-style-default">
+<div class="callout callout-important callout-style-simple">
 <div class="callout-body">
-<div class="callout-caption">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
 <p><strong>Please document the process!</strong></p>
@@ -981,12 +994,39 @@
 <section id="reconvene" class="title-slide slide level1 center" data-background-color="#552D62" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
 <h1 data-id="quarto-animate-title"><span data-id="R">R</span>econ<span data-id="convene">vene</span>!</h1>
 <p>For the large group discussion</p>
+<aside class="notes">
+<p>Ok, now it’s time to reconvene</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 
 <section>
 <section id="rsecon-vene" class="title-slide slide level1 center" data-background-color="#552D62" data-background-image="https://i2-prod.chroniclelive.co.uk/incoming/article5680478.ece/ALTERNATES/s1227b/Quayside-at-night-by-Alan-Firth.jpg" data-background-opacity="0.4" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
 <h1 data-id="quarto-animate-title"><span data-id="R">R</span>SECon-<span data-id="convene">vene</span>?</h1>
 <p>For the large group discussion</p>
+<aside class="notes">
+<p>…or should we say “RSECon-vene?”</p>
+<p>Now seriously: this is the time to share your thoughts after having worked with quarto for a while.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="group-feedback" class="slide level2" data-background-color="#552D62" data-background-image="images/feedback.jpg" data-background-opacity="0.4" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
 <h2 data-id="quarto-animate-title">Group Feedback</h2>
@@ -995,14 +1035,25 @@
 <li>What did you do? What were your thoughts?</li>
 </ul>
 </section>
-<section id="group-discussion" class="slide level2" data-background-color="#552D62" data-background-image="images/pelican-discussion.jpg" data-background-opacity="0.4" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
-<h2 data-id="quarto-animate-title">Group Discussion</h2>
+<section id="group-discussion" class="slide level2">
+<h2>Group Discussion</h2>
+<div class="columns">
+<div class="column">
 <p>Some ideas (but feel free to add yours!):</p>
 <ul>
 <li>How are you going to use quarto in the future?</li>
 <li>If not, why not?</li>
 <li>What’s missing?</li>
 </ul>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://github.com/WarwickCIM/quarto-workshop/discussions"><img data-src="images/repo_discussion.png"></a></p>
+<p></p><figcaption aria-hidden="true">We can continue the discussion in Github’s repo -discussion’s section</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
 </section></section>
 <section id="whats-next" class="title-slide slide level1 center">
 <h1>What’s next?</h1>
