@@ -1,12 +1,11 @@
 ---
 title: "Convert R Markdown to Quarto"
 author: 
-  - name: "Write your name here"
-    url: http://yourwebsite.com
-    affiliation: Your affiliation
-    affiliation-url: http://yourwebsite.com
+  - name: "Heather Turner"
+    url: https://warwick.ac.uk/heatherturner/
+    affiliation: University of Warwick
+    affiliation-url: https://warwick.ac.uk/statistics
     orcid: 0000-0000-0000-0000
-  - name: "Copy/adapt the previous for the subsequent authors"
 format: html
 editor: visual
 ---
@@ -17,43 +16,38 @@ editor: visual
 You may want to read these quarto guides regarding [authoring with markdown](https://quarto.org/docs/authoring/markdown-basics.html) and [using the article layout](https://quarto.org/docs/authoring/article-layout.html).
 :::
 
-::: column-body-outset
-Outset content... Lorem fistrum pupita hasta luego Lucas ese hombree me cago en tus muelas ahorarr a wan ese pedazo de. Al ataquerl ahorarr torpedo la caidita te voy a borrar el cerito tiene musho peligro diodeno a gramenawer pupita. A wan sexuarl jarl amatomaa. Fistro está la cosa muy malar pecador ahorarr qué dise usteer. Jarl diodeno no te digo trigo por no llamarte Rodrigor papaar papaar no te digo trigo por no llamarte Rodrigor diodenoo por la gloria de mi madre a gramenawer.
-
-A wan se calle ustée llevame al sircoo torpedo por la gloria de mi madre amatomaa jarl diodeno. Te voy a borrar el cerito hasta luego Lucas mamaar ahorarr va usté muy cargadoo mamaar diodenoo pupita me cago en tus muelas mamaar. Hasta luego Lucas ese hombree se calle ustée diodenoo. Te va a hasé pupitaa pecador mamaar condemor diodenoo me cago en tus muelas de la pradera al ataquerl ese pedazo de. Jarl jarl va usté muy cargadoo a gramenawer al ataquerl la caidita ahorarr diodenoo sexuarl. Me cago en tus muelas no puedor no puedor no puedor a peich de la pradera. Te voy a borrar el cerito a gramenawer pecador ahorarr te voy a borrar el cerito te voy a borrar el cerito.
-:::
-
 ## Goal
 
-Describe your goal (you can link to the github issue or copy/paste it here)
+To convert an example R markdown file to Quarto.
 
 ## Tools
 
 ### Used tools
 
-List/describe any tool used to perform this task (IDE, programming language, libraries (if any)...)
-
-### Alternative tools
-
-List any
+IDE: RStudio, VS Code or vim
 
 ## Detailed Process
 
 Explain here the process you followed to .accomplish your assigned task.
 
--   Step 1
+-   Step 1: Try compiling an example Quarto document:
 
--   Step 2
+    -   https://github.com/WarwickCIM/quarto-workshop/cases/template/documentation_template.qmd (File \> New File \> Quarto document).
 
-```{r}
-print("You can use code blocks, too!")
-```
+    -   Quarto getting started instructions: https://quarto.org/docs/get-started/. Hello world tutorial includes a Python chunk, so need pyenv and Jupyter to render document.
+
+    -   Create New Quarto Document in RStudio.
+
+-   Step 2: Try converting R markdown file to Quarto (https://jthomasmock.github.io/quarto-2hr-webinar/materials/02-authoring.html#/section)
+    - In Section "Converting knitr chunks", mentions `knitr::convert_chunk_header()` function in dev version of knitr. Find that this is now in CRAN version, so update knitr.
+    - Run `knitr::convert_chunk_header("doc.qmd", output = identity)`. Doesn't just update figure chunks options - converts R markdown chunk options to Quarto cell/chunk comments.
 
 ## Discussion
 
 You can follow this outline
 
--   Comparison with other similar tools
+-   If just install Quarto, still need to install other requirements e.g. R, Rmarkdown, Jupyter, etc.
+-   In VS Code, see qmd, Jupyter notebook showing output of different files (running within VS Code), when want to render document need another Jupyter installation (as running from the command line).
 
 ## Conclusion
 
