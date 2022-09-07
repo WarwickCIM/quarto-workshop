@@ -4,4 +4,4 @@ title: "Jordan's Page"
 
 This is [Jordan's](jordan.qmd) feature test page:
 
-[![Elephant (this image is also a url)](elephant.png)](https://en.wikipedia.org/wiki/Elephant)
+[![Elephant (this image is also a url)](images/elephant.png)](https://en.wikipedia.org/wiki/Elephant)
