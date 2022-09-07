@@ -1,6 +1,6 @@
 # Workshop "Quarto: A library to run them all?"
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Materials for the [RSE Conf 2022](https://rsecon2022.society-rse.org/) workshop: _"Quarto: a Library to run them all?"_, led by Carlos Cámara-Menoyo, James Tripp and Cagatay Turkay.
@@ -62,6 +62,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/brian-maher"><img src="https://avatars.githubusercontent.com/u/6905100?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Brian Maher</b></sub></a><br /><a href="#mentoring-brian-maher" title="Mentoring">🧑‍🏫</a></td>
     <td align="center"><a href="https://warwick.ac.uk/fac/arts/research/digitalhumanities/team/"><img src="https://avatars.githubusercontent.com/u/5781056?v=4?s=100" width="100px;" alt=""/><br /><sub><b>James Tripp</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=jamestripp" title="Code">💻</a> <a href="#ideas-jamestripp" title="Ideas, Planning, & Feedback">🤔</a> <a href="#talk-jamestripp" title="Talks">📢</a></td>
     <td align="center"><a href="https://github.com/eirini-zormpa"><img src="https://avatars.githubusercontent.com/u/30151074?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Eirini Zormpa</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=eirini-zormpa" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.heatherturner.net/"><img src="https://avatars.githubusercontent.com/u/3343008?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Heather Turner</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=hturner" title="Code">💻</a></td>
   </tr>
 </table>
 
