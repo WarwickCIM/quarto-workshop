@@ -1,0 +1,63 @@
+---
+title: "Create a first Quarto document"
+author: 
+  - name: "Heather Turner"
+    url: https://warwick.ac.uk/heatherturner/
+    affiliation: University of Warwick
+    affiliation-url: https://warwick.ac.uk/statistics
+    orcid: 0000-0002-1256-3375
+  - name: "Jim Madge"
+    url: http://yourwebsite.com
+    affiliation: Your affiliation
+    affiliation-url: http://yourwebsite.com
+    orcid: 0000-0000-0000-0000
+  - name: "Eirini Zormpa"
+    url: http://yourwebsite.com
+    affiliation: Your affiliation
+    affiliation-url: http://yourwebsite.com
+    orcid: 0000-0000-0000-0000
+  - name: "Evelina Gabasova"
+    url: http://yourwebsite.com
+    affiliation: Your affiliation
+    affiliation-url: http://yourwebsite.com
+    orcid: 0000-0000-0000-0000            
+format: html
+editor: visual
+---
+
+## Goal
+
+To compile a first Quarto document.
+
+## Tools
+
+### Used tools
+
+IDE: RStudio, VS Code or vim
+
+## Detailed Process
+
+Option 1: Compiling a copy of the template for this documentation (https://github.com/WarwickCIM/quarto-workshop/cases/template/documentation_template.qmd) in vim:
+
+```
+quarto documentation_template.qmd
+```
+
+Option 2: Try compiling the example Quarto document in RStudio
+
+- Open new Quarto file via File \> New File \> Quarto document.
+- Click Render button.
+
+Option 3: Follow the Hello World tutorial on the Quarto website in VS Code: https://quarto.org/docs/get-started/. 
+
+## Discussion
+
+- If just install Quarto, still need to install other requirements e.g. R, Rmarkdown, Jupyter, etc, depending on what you are doing.
+    - E.g. Hello world tutorial includes a Python chunk, so need pyenv and Jupyter to the render document.
+- In VS Code, you have column showing the `.qmd` and a Jupyter notebook that shows the output of the chunks. This output is created by running Jupyter within VS Code. When you want to render document, you need another Jupyter installation as you are then running the from the command line.
+
+## Conclusion
+
+- Before trying to compile a Quarto document, review what code is being used and make sure you have the requirements
+
+- When sharing Quarto documents/writing tutorials, make the requirements clear!

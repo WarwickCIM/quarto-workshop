@@ -1,0 +1,59 @@
+---
+title: "Convert R Markdown to Quarto"
+author: 
+  - name: "Heather Turner"
+    url: https://warwick.ac.uk/heatherturner/
+    affiliation: University of Warwick
+    affiliation-url: https://warwick.ac.uk/statistics
+    orcid: 0000-0002-1256-3375
+  - name: "Jim Madge"
+    url: http://yourwebsite.com
+    affiliation: Your affiliation
+    affiliation-url: http://yourwebsite.com
+    orcid: 0000-0000-0000-0000
+  - name: "Eirini Zormpa"
+    url: http://yourwebsite.com
+    affiliation: Your affiliation
+    affiliation-url: http://yourwebsite.com
+    orcid: 0000-0000-0000-0000
+  - name: "Evelina Gabasova"
+    url: http://yourwebsite.com
+    affiliation: Your affiliation
+    affiliation-url: http://yourwebsite.com
+    orcid: 0000-0000-0000-0000      
+format: html
+editor: visual
+---
+
+## Goal
+
+To convert an example R markdown file to Quarto.
+
+## Tools
+
+### Used tools
+
+IDE: RStudio, VS Code or vim
+
+## Detailed Process
+
+Try converting an R markdown file to Quarto (https://jthomasmock.github.io/quarto-2hr-webinar/materials/02-authoring.html#/section)
+
+1. Change file extension `.rmd` to `.qmd`.
+
+2. Change the output format
+    - Change `output: html_document` to `output: html`: works!
+    - Go back to `output: html_document`: also works!
+    - Change `output: html_document` to `format: html`: works! \[As recommended in the reference slides\]
+    - Change `output: html_document` to `format: html_document`: does not work!
+    
+3. Convert R markdown chunk options to Quarto cell/chunk comments.
+    -   Section "Converting knitr chunks" of the slides mentions a `knitr::convert_chunk_header()` function in dev version of knitr. We found that this is now in CRAN version (1.4), so we updated knitr to this version.
+    - Run `knitr::convert_chunk_header("doc.qmd", output = identity)`.   
+    
+## Discussion
+
+- In RStudio, changing `output` field to `format` changes knit button to Render button.
+- Can compile the Quarto document without converting the knitr chunk options, but it may be a good idea for future maintenance.
+- Also tried converting a set of xaringan slides: can follow the same process, but some slides will be broken as Quarto uses Reveal JS, while xaringan uses remark.js.
+
