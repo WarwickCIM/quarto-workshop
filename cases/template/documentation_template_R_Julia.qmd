@@ -1,0 +1,73 @@
+---
+title: "Using R and Julia in Quarto"
+author: 
+  - name: "Ryan Chan"
+    affiliation: The Alan Turing Institute
+    affiliation-url: http://turing.ac.uk
+format: html
+editor: visual
+---
+
+## Goal
+
+Here, we attempt to create a document using R and Julia. This is a slight variation to the [combining R and Python case](https://github.com/WarwickCIM/quarto-workshop/issues/11).
+
+## Tools
+
+### Used tools
+
+In R, we to install the `JuliaCall` package with `install.packages('JuliaCall')`. 
+
+With Julia, we need the `Random`, `Distribution` and `RCall` packages, which can be done using:
+```
+Using Pkg
+Pkg.add("Random")
+Pkg.add("Distributions")
+Pkg.add("RCall")
+```
+
+## Using R and Julia
+
+Here in this example, we look at how we can access Julia variables in R. First, we simulate 100 samples from a standard Normal distribution in Julia:
+
+```{julia}
+using Random, Distributions
+d = Normal()
+x = rand(d, 100)
+```
+
+We can use the `JuliaCall` package in R and the `julia_eval` function to retrieve the variable from Julia and use R to plot them.
+
+```{R}
+library(JuliaCall)
+x <- julia_eval("x")
+curve(dnorm(x, 0, 1), -4, 4,
+      ylab = 'density',
+      main = 'Standard Normal density',
+      lwd = 3)
+lines(density(x), lwd = 3, lty = 2, col = 'red')
+legend('topright',
+       legend = c("True", "Simulation"),
+       col = c('black', 'red'),
+       lwd = c(3, 3),
+       lty = c(1, 2))
+```
+
+But how about retrieving R variables in Julia?
+
+```{R}
+x_R <- rnorm(100, -1, 0.5)
+```
+
+We can use the `@rget` macro to retrieve the variable from R.
+
+```{julia}
+using RCall
+@rget x_R
+x_R
+```
+
+## References
+
+- [Useful link for using R within Julia](https://www.juliabloggers.com/calling-r-from-julia/#:~:text=Running%20R%20Code%20from%20Julia,like%20a%20normal%20R%20session.)
+- [JuliaCall package documentation](https://cran.r-project.org/web/packages/JuliaCall/index.html) (in particular see vignette)
