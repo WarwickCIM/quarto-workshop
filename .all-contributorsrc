@@ -100,6 +100,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ItIsJordan",
+      "name": "Jordan Byers",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21129425?v=4",
+      "profile": "https://github.com/ItIsJordan",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
