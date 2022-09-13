@@ -1,6 +1,6 @@
 # Workshop "Quarto: A library to run them all?"
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Materials for the [RSE Conf 2022](https://rsecon2022.society-rse.org/) workshop: _"Quarto: a Library to run them all?"_, led by Carlos Cámara-Menoyo, James Tripp and Cagatay Turkay.
@@ -65,6 +65,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://github.com/eirini-zormpa"><img src="https://avatars.githubusercontent.com/u/30151074?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Eirini Zormpa</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=eirini-zormpa" title="Code">💻</a></td>
       <td align="center"><a href="https://www.heatherturner.net/"><img src="https://avatars.githubusercontent.com/u/3343008?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Heather Turner</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=hturner" title="Code">💻</a></td>
       <td align="center"><a href="https://github.com/alessandrofelder"><img src="https://avatars.githubusercontent.com/u/10500965?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alessandro Felder</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=alessandrofelder" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/CamillaBressan"><img src="https://avatars.githubusercontent.com/u/18901431?v=4?s=100" width="100px;" alt=""/><br /><sub><b>CBress</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=CamillaBressan" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
