@@ -1,6 +1,6 @@
 # Workshop "Quarto: A library to run them all?"
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Materials for the [RSE Conf 2022](https://rsecon2022.society-rse.org/) workshop: _"Quarto: a Library to run them all?"_, led by Carlos Cámara-Menoyo, James Tripp and Cagatay Turkay.
@@ -68,6 +68,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center"><a href="https://github.com/CamillaBressan"><img src="https://avatars.githubusercontent.com/u/18901431?v=4?s=100" width="100px;" alt=""/><br /><sub><b>CBress</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=CamillaBressan" title="Code">💻</a></td>
+      <td align="center"><a href="https://vbn.aau.dk/en/persons/104579"><img src="https://avatars.githubusercontent.com/u/971307?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Thomas Arildsen</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=ThomasA" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
