@@ -1,6 +1,6 @@
 # Workshop "Quarto: A library to run them all?"
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Materials for the [RSE Conf 2022](https://rsecon2022.society-rse.org/) workshop: _"Quarto: a Library to run them all?"_, led by Carlos Cámara-Menoyo, James Tripp and Cagatay Turkay.
@@ -56,14 +56,17 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="http://carloscamara.es/en"><img src="https://avatars.githubusercontent.com/u/706549?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Carlos Cámara</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=ccamara" title="Code">💻</a> <a href="#ideas-ccamara" title="Ideas, Planning, & Feedback">🤔</a> <a href="#talk-ccamara" title="Talks">📢</a> <a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=ccamara" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://warwick.ac.uk/fac/cross_fac/cim/people/cagatay-turkay"><img src="https://avatars.githubusercontent.com/u/4129319?v=4?s=100" width="100px;" alt=""/><br /><sub><b>cagatayTurkay</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=cagatayTurkay" title="Code">💻</a> <a href="#ideas-cagatayTurkay" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/brian-maher"><img src="https://avatars.githubusercontent.com/u/6905100?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Brian Maher</b></sub></a><br /><a href="#mentoring-brian-maher" title="Mentoring">🧑‍🏫</a></td>
-    <td align="center"><a href="https://warwick.ac.uk/fac/arts/research/digitalhumanities/team/"><img src="https://avatars.githubusercontent.com/u/5781056?v=4?s=100" width="100px;" alt=""/><br /><sub><b>James Tripp</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=jamestripp" title="Code">💻</a> <a href="#ideas-jamestripp" title="Ideas, Planning, & Feedback">🤔</a> <a href="#talk-jamestripp" title="Talks">📢</a></td>
-    <td align="center"><a href="https://github.com/eirini-zormpa"><img src="https://avatars.githubusercontent.com/u/30151074?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Eirini Zormpa</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=eirini-zormpa" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.heatherturner.net/"><img src="https://avatars.githubusercontent.com/u/3343008?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Heather Turner</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=hturner" title="Code">💻</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center"><a href="http://carloscamara.es/en"><img src="https://avatars.githubusercontent.com/u/706549?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Carlos Cámara</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=ccamara" title="Code">💻</a> <a href="#ideas-ccamara" title="Ideas, Planning, & Feedback">🤔</a> <a href="#talk-ccamara" title="Talks">📢</a> <a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=ccamara" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://warwick.ac.uk/fac/cross_fac/cim/people/cagatay-turkay"><img src="https://avatars.githubusercontent.com/u/4129319?v=4?s=100" width="100px;" alt=""/><br /><sub><b>cagatayTurkay</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=cagatayTurkay" title="Code">💻</a> <a href="#ideas-cagatayTurkay" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center"><a href="https://github.com/brian-maher"><img src="https://avatars.githubusercontent.com/u/6905100?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Brian Maher</b></sub></a><br /><a href="#mentoring-brian-maher" title="Mentoring">🧑‍🏫</a></td>
+      <td align="center"><a href="https://warwick.ac.uk/fac/arts/research/digitalhumanities/team/"><img src="https://avatars.githubusercontent.com/u/5781056?v=4?s=100" width="100px;" alt=""/><br /><sub><b>James Tripp</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=jamestripp" title="Code">💻</a> <a href="#ideas-jamestripp" title="Ideas, Planning, & Feedback">🤔</a> <a href="#talk-jamestripp" title="Talks">📢</a></td>
+      <td align="center"><a href="https://github.com/eirini-zormpa"><img src="https://avatars.githubusercontent.com/u/30151074?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Eirini Zormpa</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=eirini-zormpa" title="Code">💻</a></td>
+      <td align="center"><a href="https://www.heatherturner.net/"><img src="https://avatars.githubusercontent.com/u/3343008?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Heather Turner</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=hturner" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/alessandrofelder"><img src="https://avatars.githubusercontent.com/u/10500965?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alessandro Felder</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=alessandrofelder" title="Code">💻</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
