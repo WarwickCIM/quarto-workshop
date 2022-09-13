@@ -1,6 +1,6 @@
 # Workshop "Quarto: A library to run them all?"
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Materials for the [RSE Conf 2022](https://rsecon2022.society-rse.org/) workshop: _"Quarto: a Library to run them all?"_, led by Carlos Cámara-Menoyo, James Tripp and Cagatay Turkay.
@@ -71,6 +71,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://vbn.aau.dk/en/persons/104579"><img src="https://avatars.githubusercontent.com/u/971307?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Thomas Arildsen</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=ThomasA" title="Code">💻</a></td>
       <td align="center"><a href="https://paddyroddy.github.io/"><img src="https://avatars.githubusercontent.com/u/15052188?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Patrick Roddy</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=paddyroddy" title="Code">💻</a></td>
       <td align="center"><a href="https://github.com/ItIsJordan"><img src="https://avatars.githubusercontent.com/u/21129425?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jordan Byers</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=ItIsJordan" title="Code">💻</a></td>
+      <td align="center"><a href="https://iaanimashaun.herokuapp.com"><img src="https://avatars.githubusercontent.com/u/62275818?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ibrahim Animashaun</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=iaanimashaun" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
