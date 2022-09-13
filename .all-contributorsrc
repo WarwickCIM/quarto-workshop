@@ -82,6 +82,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ThomasA",
+      "name": "Thomas Arildsen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/971307?v=4",
+      "profile": "https://vbn.aau.dk/en/persons/104579",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
