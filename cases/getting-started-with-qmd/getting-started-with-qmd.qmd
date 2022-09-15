@@ -7,20 +7,19 @@ author:
     affiliation-url: https://warwick.ac.uk/statistics
     orcid: 0000-0002-1256-3375
   - name: "Jim Madge"
-    url: http://yourwebsite.com
-    affiliation: Your affiliation
-    affiliation-url: http://yourwebsite.com
-    orcid: 0000-0000-0000-0000
+    url: https://www.turing.ac.uk/people/researchers/jim-madge
+    affiliation: The Alan Turing Institute
+    affiliation-url: https://www.turing.ac.uk/
   - name: "Eirini Zormpa"
-    url: http://yourwebsite.com
-    affiliation: Your affiliation
-    affiliation-url: http://yourwebsite.com
-    orcid: 0000-0000-0000-0000
+    url: https://www.turing.ac.uk/people/eirini-zormpa
+    affiliation: The Alan Turing Institute
+    affiliation-url: https://www.turing.ac.uk/
+    orcid: 0000-0002-6902-7768
   - name: "Evelina Gabasova"
-    url: http://yourwebsite.com
-    affiliation: Your affiliation
-    affiliation-url: http://yourwebsite.com
-    orcid: 0000-0000-0000-0000            
+    url: https://www.turing.ac.uk/people/researchers/evelina-gabasova
+    affiliation: The Alan Turing Institute
+    affiliation-url: https://www.turing.ac.uk/
+    orcid: 0000-0002-3707-0657            
 format: html
 editor: visual
 ---
